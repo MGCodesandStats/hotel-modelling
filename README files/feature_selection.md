@@ -151,7 +151,7 @@ plt.plot(falsepos[cutoff],truepos[cutoff],'o',markersize=10,label="cutoff",fills
 plt.show()
 ```
 
-![image2.png](https://github.com/MGCodesandStats/hotel-modelling/tree/master/images/image2.png)
+![image2.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image2.png)
 
 Now, the AUC (area under the curve) can be calculated:
 
@@ -231,7 +231,7 @@ plt.plot(falsepos[cutoff],truepos[cutoff],'o',markersize=10,label="cutoff",fills
 plt.show()
 ```
 
-![image3.png](https://github.com/MGCodesandStats/hotel-modelling/tree/master/images/image3.png)
+![image3.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image3.png)
 
 **AUC Reading**
 
@@ -336,7 +336,7 @@ weighted avg       0.71      0.72      0.71     12000
 
 **ROC Curve**
 
-![image4.png](https://github.com/MGCodesandStats/hotel-modelling/tree/master/images/image4.png)
+![image4.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image4.png)
 
 **AUC Reading**
 
@@ -374,7 +374,7 @@ weighted avg       0.72      0.72      0.72     12000
 
 **ROC Curve**
 
-![image5.png](https://github.com/MGCodesandStats/hotel-modelling/tree/master/images/image5.png)
+![image5.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image5.png)
 
 **AUC Reading**
 
