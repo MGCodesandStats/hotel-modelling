@@ -49,7 +49,7 @@ b.sort_values(['ArrivalDateYear','ArrivalDateWeekNumber'], ascending=True)
 b
 ```
 
-![hotel-cancellations/images/table](hotel-cancellations/images/table.png)
+![table](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/table.png)
 
 The variables are then stacked together under the numpy format:
 
