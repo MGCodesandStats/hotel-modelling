@@ -194,7 +194,7 @@ arrivaldatemonthcat=pd.Series(arrivaldatemonth)
 
 These features, defined as features *2*, *3*, *4*, and *5*, are not ranked in the top five features by the ExtraTreesClassifier:
 
-![top5.png](top5.png)
+![top5.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/top5.png)
 
 That said, the time of year may well have at least some effect on cancellation frequency, even if this does not rank among the top features.
 
