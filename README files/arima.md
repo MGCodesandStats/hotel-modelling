@@ -49,7 +49,7 @@ b.sort_values(['ArrivalDateYear','ArrivalDateWeekNumber'], ascending=True)
 b
 ```
 
-![table](table.png)
+![table](images/table.png)
 
 The variables are then stacked together under the numpy format:
 
