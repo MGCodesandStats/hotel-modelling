@@ -125,7 +125,7 @@ Here are the generated readings:
 
 Here is a breakdown of the feature ranking by order with the top features:
 
-![feature-score](feature-score.png)
+![feature-score](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/feature-score.png)
 
 From the above, the top six identified features of importance are **reservation status**, **country**, **required car parking spaces**, **deposit type**, **customer type**, and **lead time**.
 
@@ -225,7 +225,7 @@ plt.plot(falsepos[cutoff],truepos[cutoff],'o',markersize=10,label="cutoff",fills
 plt.show()
 ```
 
-![roccurve1](roccurve1.png)
+![roccurve1](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/roccurve1.png)
 
 ## Support Vector Machine (SVM) generation
 
@@ -249,7 +249,7 @@ array([1, 0, 0, ..., 1, 1, 0])
 
 Here is the new ROC curve generated:
 
-![roccurve2](roccurve2.png)
+![roccurve2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/roccurve2.png)
 
 This is the updated confusion matrix:
 
@@ -363,7 +363,7 @@ weighted avg       0.71      0.72      0.71     12000
 
 The ROC curve is generated:
 
-![roccurve3](roccurve3.png)
+![roccurve3](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/roccurve3.png)
 
 Across the test set, the overall prediction accuracy increased to **72%**, while the accuracy for cancellation incidences fell slightly to **69%**.
 
@@ -390,21 +390,21 @@ Once the model has been configured, the last 15 observations are then used as **
 
 Here is a snippet of the output:
 
-![cancellationweeks](cancellationweeks.png)
+![cancellationweeks](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/cancellationweeks.png)
 
 The time series is visualised, and the autocorrelation and partial autocorrelation plots are generated:
 
 **Time Series**
 
-![time-series](time-series.png)
+![time-series](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/time-series.png)
 
 **Autocorrelation**
 
-![autocorrelation](autocorrelation.png)
+![autocorrelation](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/autocorrelation.png)
 
 **Partial Autocorrelation**
 
-![partial-autocorrelation](partial-autocorrelation.png)
+![partial-autocorrelation](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/partial-autocorrelation.png)
 
 ```
 #Dickey-Fuller Test
@@ -457,11 +457,11 @@ Based on the lowest AIC, the **SARIMAX(1, 1, 0)x(0, 1, 0, 52)** configuration is
 
 Here is the output of the model:
 
-![arima-model](arima-model.PNG)
+![arima-model](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/arima-model.PNG)
 
 With **90%** of the series used as the training data to build the ARIMA model, the remaining **10%** is now used to test the predictions of the model. Here are the predictions vs the actual data:
 
-![test-vs-predicted](validation-vs-predicted.png)
+![test-vs-predicted](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/validation-vs-predicted.png)
 
 We can see that while the prediction values were lower than the actual test values, the direction of the two series seem to be following each other.
 
@@ -567,7 +567,7 @@ The RMSE has improved slightly (dropped to 57), while the MDA has dropped to 86%
 
 Here is a plot of the predicted vs actual cancellations:
 
-![predicted-vs-actual](predicted-vs-actual.png)
+![predicted-vs-actual](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-actual.png)
 
 ## ARIMA Modelling on H2 Data
 
@@ -575,15 +575,15 @@ The same procedures were applied - this time using the second dataset.
 
 The following is the ARIMA configuration obtained using pyramid-arima:
 
-![arima-model-2](arima-model-2.PNG)
+![arima-model-2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/arima-model-2.PNG)
 
 **Predicted vs. Validation**
 
-![predicted-vs-val-2](predicted-vs-val-2.png)
+![predicted-vs-val-2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-val-2.png)
 
 **Predicted vs. Actual**
 
-![predicted-vs-actual-2](predicted-vs-actual-2.png)
+![predicted-vs-actual-2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-actual-2.png)
 
 - **RMSE on test data:** 274
 - **Mean Directional Accuracy:** 0.8666
