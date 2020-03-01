@@ -49,7 +49,7 @@ b.sort_values(['ArrivalDateYear','ArrivalDateWeekNumber'], ascending=True)
 b
 ```
 
-![images/table](images/table.png)
+![hotel-cancellations/images/table](hotel-cancellations/images/table.png)
 
 The variables are then stacked together under the numpy format:
 
