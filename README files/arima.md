@@ -461,7 +461,7 @@ Here is the output of the model:
 
 With **90%** of the series used as the training data to build the ARIMA model, the remaining **10%** is now used to test the predictions of the model. Here are the predictions vs the actual data:
 
-![test-vs-predicted](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/validation-vs-predicted.png)
+![validation-vs-predicted](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/validation-vs-predicted.png)
 
 We can see that while the prediction values were lower than the actual test values, the direction of the two series seem to be following each other.
 
