@@ -98,7 +98,7 @@ ext
 ext.sort_values(['extratrees'], ascending=True)
 ```
 
-![image1.png](https://github.com/MGCodesandStats/hotel-modelling/tree/master/images/image1.png)
+![image1.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image1.png)
 
 The top identified features are features 1, 8, and 20 - lead time, country of origin, and average daily rate.
 
