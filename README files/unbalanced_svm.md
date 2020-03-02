@@ -119,5 +119,3 @@ In this example, we have seen how support vector machines can be used to handle 
 ## References
 
 [- Elite Data Science: How to Handle Imbalanced Classes in Machine Learning](https://elitedatascience.com/imbalanced-classes)
-
-[- Predicting Hotel Cancellations with Support Vector Machines and ARIMA](https://towardsdatascience.com/predicting-hotel-cancellations-with-extratreesclassifier-and-logistic-regression-fb9229a95d1e)
