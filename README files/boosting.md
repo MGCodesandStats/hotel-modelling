@@ -188,6 +188,8 @@ The accuracy as indicated by the f1-score is slightly higher at 44%, but the rec
 
 In this example, you have seen the use of various boosting methods to predict hotel cancellations. As mentioned, the boosting method in this instance was set to impose greater penalties on the minor class, which had the result of lowering the overall accuracy as measure by the f1-score since there were more false positives present. However, the recall score increased vastly as a result - if it is assumed that false positives are more tolerable than false negatives in this situation - then one could argue that the model has performed quite well on this basis. For reference, an SVM model run on the same dataset demonstrated an overall accuracy of 63%, while recall on class 1 decreased to 75%.
 
+The datasets and notebooks for this example are available at the [MGCodesandStats GitHub repository](https://github.com/MGCodesandStats/hotel-modelling), along with further research on this topic.
+
 ## Useful References
 
 - [Classification: Precision and Recall](https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall)
