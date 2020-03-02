@@ -18,30 +18,56 @@ Three different feature selection tools are used to analyse this dataset:
 
 The purpose of using these algorithms is to identify features that best help to predict whether a customer will cancel their hotel booking. This is the dependent variable, where (1 = cancel, 0 = follow through with booking).
 
-The features for analysis are as follows:
+The features for analysis are as follows.
 
-1. leadtime
-2. staysweekendnights
-3. staysweeknights
-4. adults
-5. children
-6. babies
-7. meal
-8. country
-9. marketsegment
-10. distributionchannel
-11. isrepeatedguest
-12. previouscancellations
-13. previousbookingsnotcanceled
-14. reservedroomtype
-15. assignedroomtype
-16. bookingchanges
-17. deposittype
-18. dayswaitinglist
-19. customertype
-20. adr (average daily rate)
-21. rcps (required car parking spaces)
-22. totalsqr
+### Interval
+
+```
+leadtime = train_df['LeadTime']
+arrivaldateyear = train_df['ArrivalDateYear']
+arrivaldateweekno = train_df['ArrivalDateWeekNumber']
+arrivaldatedayofmonth = train_df['ArrivalDateDayOfMonth']
+staysweekendnights = train_df['StaysInWeekendNights']
+staysweeknights = train_df['StaysInWeekNights']
+adults = train_df['Adults']
+children = train_df['Children']
+babies = train_df['Babies']
+isrepeatedguest = train_df['IsRepeatedGuest'] 
+previouscancellations = train_df['PreviousCancellations']
+previousbookingsnotcanceled = train_df['PreviousBookingsNotCanceled']
+bookingchanges = train_df['BookingChanges']
+agent = train_df['Agent']
+company = train_df['Company']
+dayswaitinglist = train_df['DaysInWaitingList']
+adr = train_df['ADR']
+rcps = train_df['RequiredCarParkingSpaces']
+totalsqr = train_df['TotalOfSpecialRequests']
+```
+
+### Categorical
+
+```
+arrivaldatemonth = train_df.ArrivalDateMonth.astype("category").cat.codes
+arrivaldatemonthcat=pd.Series(arrivaldatemonth)
+mealcat=train_df.Meal.astype("category").cat.codes
+mealcat=pd.Series(mealcat)
+countrycat=train_df.Country.astype("category").cat.codes
+countrycat=pd.Series(countrycat)
+marketsegmentcat=train_df.MarketSegment.astype("category").cat.codes
+marketsegmentcat=pd.Series(marketsegmentcat)
+distributionchannelcat=train_df.DistributionChannel.astype("category").cat.codes
+distributionchannelcat=pd.Series(distributionchannelcat)
+reservedroomtypecat=train_df.ReservedRoomType.astype("category").cat.codes
+reservedroomtypecat=pd.Series(reservedroomtypecat)
+assignedroomtypecat=train_df.AssignedRoomType.astype("category").cat.codes
+assignedroomtypecat=pd.Series(assignedroomtypecat)
+deposittypecat=train_df.DepositType.astype("category").cat.codes
+deposittypecat=pd.Series(deposittypecat)
+customertypecat=train_df.CustomerType.astype("category").cat.codes
+customertypecat=pd.Series(customertypecat)
+reservationstatuscat=train_df.ReservationStatus.astype("category").cat.codes
+reservationstatuscat=pd.Series(reservationstatuscat)
+```
 
 With regard to these features, certain features such as lead time are **interval** - in other words they can take on a wide range of values and are not necessarily constrained by a particular scale.
 
@@ -63,7 +89,7 @@ y = IsCanceled
 Once the features have been loaded into Python, they are then stored as a numpy stack (or a sequence of arrays):
 
 ```
-x = np.column_stack((leadtime,staysweekendnights,staysweeknights,adults,children,babies,mealcat,countrycat,marketsegmentcat,distributionchannelcat,isrepeatedguest,previouscancellations,previousbookingsnotcanceled,reservedroomtypecat,assignedroomtypecat,bookingchanges,deposittypecat,dayswaitinglist,customertypecat,adr,rcps,totalsqr))
+x = np.column_stack((leadtime,arrivaldateyear,arrivaldatemonthcat,arrivaldateweekno,arrivaldatedayofmonth,staysweekendnights,staysweeknights,adults,children,babies,mealcat,countrycat,marketsegmentcat,distributionchannelcat,isrepeatedguest,previouscancellations,previousbookingsnotcanceled,reservedroomtypecat,assignedroomtypecat,bookingchanges,deposittypecat,dayswaitinglist,customertypecat,adr,rcps,totalsqr,reservationstatuscat))
 x = sm.add_constant(x, prepend=True)
 ```
 
@@ -84,10 +110,13 @@ print(model.feature_importances_)
 Here are the results:
 
 ```
-[0.         0.14435681 0.03919022 0.05801367 0.01937159 0.01329045
- 0.00278273 0.02191758 0.150278   0.06709432 0.02116015 0.01192085
- 0.02025638 0.0049039  0.03403494 0.04488245 0.02894022 0.04152586
- 0.00200197 0.03987167 0.10739852 0.08374473 0.04306299]
+[0.00000000e+00 2.48809571e-02 5.38765461e-03 2.83449418e-03
+ 3.79810248e-03 3.47059669e-03 3.13400622e-03 3.76015081e-03
+ 2.55919654e-03 2.61790593e-03 2.87548922e-04 2.75263105e-03
+ 3.71420453e-02 1.84569752e-02 5.83394041e-03 4.33738703e-03
+ 8.51023083e-03 6.71433130e-04 3.82846350e-03 7.24333726e-03
+ 4.09623483e-03 3.40961337e-02 5.06608127e-04 1.07736457e-02
+ 7.16088830e-03 1.98534730e-02 6.99116062e-03 7.75014798e-01]
  ```
 
 Let's sort this into a data frame and take a look at the top features:
