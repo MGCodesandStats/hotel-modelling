@@ -235,12 +235,9 @@ In this regard, this feature selection method is indicating the time features in
 
 To summarize, we have looked at:
 
+- How to analyse feature data for both categorical and interval features
 - Feature selection using ExtraTreesClassifier
 - Forward and backward feature selection methods
-- Use of SVM with balanced classes to predict cancellation incidences
-- Assessment of prediction accuracy using AUC
-
-Many thanks for your time, and you can also find the relevant GitHub repository for this example [here](https://github.com/MGCodesandStats/feature-selection).
 
 ## Useful References
 
