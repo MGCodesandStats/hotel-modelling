@@ -51,8 +51,6 @@ Well, from the point of view of a hotel - they would likely wish to identify cus
 
 ## SVM and Unbalanced Datasets
 
-### Equal sample size of 0 and 1
-
 The relevant features as outlined above are included for determining whether the customer will cancel their booking.
 
 ```
