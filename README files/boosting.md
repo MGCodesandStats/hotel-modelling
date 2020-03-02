@@ -85,7 +85,7 @@ When comparing the accuracy scores, we see that numerous readings are provided i
 However, a particularly important distinction exists between **precision** and **recall**. 
 
 ```
-Precison = ((True Positive)/(True Positive + False Positive))
+Precision = ((True Positive)/(True Positive + False Positive))
 
 Recall = ((True Positive)/(True Positive + False Negative))
 ```
@@ -117,7 +117,9 @@ xgb_model = xgb.XGBClassifier(learning_rate=0.001,
 xgb_model.fit(x_train, y_train)
 ```
 
-Note that the *scale_pos_weight* parameter in this instance is set to *5*. The reason for this is to impose greater penalties for errors on the minor class, in this case any incidences of *1* in the response variable, i.e. hotel cancellations. The higher the weight, the greater penalty is imposed on errors on the minor class.
+Note that the *scale_pos_weight* parameter in this instance is set to *5*. The reason for this is to impose greater penalties for errors on the minor class, in this case any incidences of *1* in the response variable, i.e. hotel cancellations. The higher the weight, the greater penalty is imposed on errors on the minor class. The reason for doing this is because there are more 0s than 1s in the dataset - i.e. more customers follow through on their bookings than cancel.
+
+Therefore, in order to have an unbiased model, errors on the minor class need to be penalised more severely.
 
 ### Performance on Validation Set
 
