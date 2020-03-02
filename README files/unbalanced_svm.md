@@ -12,6 +12,19 @@ In this particular dataset, the sample size for the non-cancellation class (0) i
 
 Instead, the SVM model can be modified to penalise wrong predictions on the minor class. Let's see how this affects the analysis.
 
+The identified features to be included in the analysis using both the ExtraTreesClassifier and forward and backward feature selection methods are as follows:
+
+- Lead time
+- Country of origin
+- Market segment
+- Deposit type
+- Customer type
+- Required car parking spaces
+- Arrival Date: Year
+- Arrival Date: Month
+- Arrival Date: Week Number
+- Arrival Date: Day of Month
+
 ## SVM and Unbalanced Datasets
 
 ### Equal sample size of 0 and 1
