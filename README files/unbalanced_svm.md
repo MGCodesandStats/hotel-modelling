@@ -116,6 +116,8 @@ In this regard, if it is assumed that false positives are more tolerable than fa
 
 In this example, we have seen how support vector machines can be used to handle unbalanced datasets, and how to interpret confusion matrices for classification accuracy.
 
+The datasets and notebooks for this example are available at the [MGCodesandStats GitHub repository](https://github.com/MGCodesandStats/hotel-modelling), along with further research on this topic.
+
 ## References
 
 [- Elite Data Science: How to Handle Imbalanced Classes in Machine Learning](https://elitedatascience.com/imbalanced-classes)
