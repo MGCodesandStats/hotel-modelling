@@ -4,7 +4,7 @@ Hotel cancellations can be problematic for businesses in the industry - cancella
 
 Aside from analyzing which customers are less likely to cancel their bookings and allow hotels to amend their marketing strategy accordingly, it can also be useful to predict fluctuations in cancellations on a week-by-week basis in order for hotel chains to allocate capacity accordingly.
 
-LSTMs are sequential neural networks that assume dependence between the observations in a particular series. As such, they have increasingly come to be used for time series forecasting purposes. The Jupyter notebooks with full code, plots, and results can be found [here](https://github.com/MGCodesandStats/hotel-cancellations-lstm).
+LSTMs are sequential neural networks that assume dependence between the observations in a particular series. As such, they have increasingly come to be used for time series forecasting purposes.
 
 In the last example, the cancellation data was already sorted into weekly values by pandas. The total weekly cancellations were sorted as follows:
 
@@ -385,7 +385,7 @@ Again, a plot for the predicted vs actual cancellations per week is generated:
 
 ## Comparison with ARIMA
 
-As mentioned, weekly hotel cancellations were predicted using ARIMA instead of LSTM in a [previous post](https://www.michael-grogan.com/hotel-cancellations/).
+Weekly hotel cancellations were predicted using ARIMA instead of LSTM in a previous post.
 
 Here is a comparison of prediction performance across the H1 and H2 datasets for both models.
 
@@ -436,4 +436,4 @@ The above examples have illustrated:
 - Methods to gauge error and accuracy for LSTM model predictions
 - Comparison of LSTM model performance vs ARIMA
 
-Many thanks for your time!
+The datasets and notebooks for this example are available at the [MGCodesandStats GitHub repository](https://github.com/MGCodesandStats/hotel-modelling), along with further research on this topic.
