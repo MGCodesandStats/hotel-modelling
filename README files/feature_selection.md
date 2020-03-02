@@ -129,7 +129,7 @@ ext.sort_values(['extratrees'], ascending=True)
 
 ![image1amended.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image1amended.png)
 
-The top identified features are features 1, 12, 13, 21, 23, 25 (lead time, country of origin, market segment, deposit type, customer type, and required car parking spaces).
+The top identified features are features 1, 12, 13, 21, 23, 25 (lead time, country of origin, market segment, deposit type, customer type, and required car parking spaces). Note that feature **27** (reservation status) is not valid in this case, since this effectively represents the same thing as the response variable - i.e. whether a customer cancelled or followed through with their booking. In this case, including the feature in the analysis would be erroneous.
 
 Using the test set (for which the variables were loaded in separately from the training set), these features are fed into an SVM model and predictions are generated on the test set (more detail regarding the construction of this SVM model can be found [in the following post](https://towardsdatascience.com/svms-random-forests-and-unbalanced-datasets-predicting-hotel-cancellations-2b983c2c5731).
 
