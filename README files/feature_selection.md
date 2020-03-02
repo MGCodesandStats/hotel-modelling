@@ -237,6 +237,8 @@ To summarize, we have looked at:
 - Feature selection using ExtraTreesClassifier
 - Forward and backward feature selection methods
 
+The datasets and notebooks for this example are available at the [MGCodesandStats GitHub repository](https://github.com/MGCodesandStats/hotel-modelling), along with further research on this topic.
+
 ## Useful References
 
 - [Feature selection using Wrapper methods in Python](https://towardsdatascience.com/feature-selection-using-wrapper-methods-in-python-f0d352b346f)
