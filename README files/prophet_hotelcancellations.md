@@ -13,7 +13,7 @@ Prophet()
 
 In this example, Prophet is used for the purposes of forecasting fluctuations in the number of hotel cancellations per week for two separate Portuguese hotels, i.e. the models are run on two separate time series.
 
-In previous articles, [ARIMA](https://towardsdatascience.com/predicting-hotel-cancellations-with-extratreesclassifier-and-logistic-regression-fb9229a95d1e) and [LSTM](https://towardsdatascience.com/predicting-weekly-hotel-cancellations-with-an-lstm-network-c82789028ea1?source=---------10------------------&gi=5671a3507b44) were used as tools to forecast hotel cancellations. The results of Prophet are compared to these two models.
+In previous examples, ARIMA and LSTM were used as tools to forecast hotel cancellations. The results of Prophet are compared to these two models.
 
 Both series were split into 100 weeks of training data and 15 weeks of test data.
 
@@ -220,4 +220,4 @@ Facebook’s Prophet library excels when it comes to modelling time series data 
 
 In this regard, configuring the Prophet model for forecasting weekly hotel cancellations showed superior performance to ARIMA and LSTM in certain circumstances, while LSTM still demonstrated superior performance on the second hotel dataset – where time series data was significantly more volatile.
 
-Many thanks for your time - you can also find the GitHub repository with associated Jupyter Notebooks [here](https://github.com/MGCodesandStats/prophet-hotel-cancellations).
+The datasets and notebooks for this example are available at the [MGCodesandStats GitHub repository](https://github.com/MGCodesandStats/hotel-modelling), along with further research on this topic.
