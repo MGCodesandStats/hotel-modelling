@@ -1,10 +1,3 @@
-[Home](https://mgcodesandstats.github.io/) |
-[Portfolio](https://mgcodesandstats.github.io/portfolio/) |
-[Speaking Engagements](https://mgcodesandstats.github.io/speaking-engagements/) |
-[Terms and Conditions](https://mgcodesandstats.github.io/terms/) |
-[E-mail me](mailto:contact@michaeljgrogan.com) |
-[LinkedIn](https://www.linkedin.com/in/michaeljgrogan/)
-
 # Using Prophet To Forecast Weekly Hotel Cancellations
 
 [Prophet](https://facebook.github.io/prophet/docs/trend_changepoints.html) is an open-source time series tool designed by Facebook. The key feature of Prophet is the ability to fit non-linear trends with the effects of seasonality over certain periods (e.g. daily, monthly, weekly), along with holiday effects.
