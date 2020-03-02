@@ -85,9 +85,9 @@ When comparing the accuracy scores, we see that numerous readings are provided i
 However, a particularly important distinction exists between **precision** and **recall**. 
 
 ```
-**Precison = ((True Positive)/(True Positive + False Positive))**
+Precison = ((True Positive)/(True Positive + False Positive))
 
-**Recall = ((True Positive)/(True Positive + False Negative))**
+Recall = ((True Positive)/(True Positive + False Negative))
 ```
 
 The two readings are often at odds with each other, i.e. it is often not possible to increase precision without reducing recall, and vice versa.
