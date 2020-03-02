@@ -10,8 +10,6 @@ Three different feature selection tools are used to analyse this dataset:
 
 - **ExtraTreesClassifier:** The purpose of the ExtraTreesClassifier is to fit a number of randomized decision trees to the data, and in this regard is a from of ensemble learning. Particularly, random splits of all observations are carried out to ensure that the model does not overfit the data.
 
-- **Univariate Selection with SelectKBest**: SelectKBest is used in this instance to identify the best features to include in the eventual model by using the ANOVA F-value for feature selection (denoted as *f_classif*). It is important to note that the F-value can only be used if the features are ordinal (or quantitative). In the case of categorical variables, then the chi-squared value must be calculated between each feature and the response variable. However, for the purposes of this example, only the interval features will be included in this model for analysis. 
-
 - **Step forward and backward feature selection**: This is a **"wrapper-based"** feature selection method, where the feature selection is based on a specific machine learning algorithm (in this case, the RandomForestClassifier). For forward-step selection, each individual feature is added to the model one at a time, and the features with the highest ROC_AUC score are selected as the best features. When conducting backward feature selection, this process happens in reverse - whereby each feature is dropped from the model one at a time, i.e. the features with the lowest ROC_AUC scores are dropped from the model.
 
 ## Background and Data Manipulation
