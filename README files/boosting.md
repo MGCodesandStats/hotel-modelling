@@ -119,9 +119,69 @@ xgb_model.fit(x_train, y_train)
 
 Note that the *scale_pos_weight* parameter in this instance is set to *5*. The reason for this is to impose greater penalties for errors on the minor class, in this case any incidences of *1* in the response variable, i.e. hotel cancellations. The higher the weight, the greater penalty is imposed on errors on the minor class.
 
+### Performance on Validation Set
+
+Here is the accuracy on the training and validation set:
+
+```
+>>> print("Accuracy on training set: {:.3f}".format(xgb_model.score(x_train, y_train)))
+>>> print("Accuracy on validation set: {:.3f}".format(xgb_model.score(x_val, y_val)))
+
+Accuracy on training set: 0.415
+Accuracy on validation set: 0.414
+```
+
+The predictions are generated:
+
+```
+>>> xgb_predict=xgb_model.predict(x_val)
+>>> xgb_predict
+
+array([1, 1, 1, ..., 1, 1, 1])
+```
+
+Here is a confusion matrix comparing the predicted vs. actual cancellations on the validation set:
+
+```
+>>> from sklearn.metrics import classification_report,confusion_matrix
+>>> print(confusion_matrix(y_val,xgb_predict))
+>>> print(classification_report(y_val,xgb_predict))
+
+[[1393 5873]
+ [   0 2749]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.19      0.32      7266
+           1       0.32      1.00      0.48      2749
+
+    accuracy                           0.41     10015
+   macro avg       0.66      0.60      0.40     10015
+weighted avg       0.81      0.41      0.37     10015
+```
+Note that while the accuracy in terms of the f1-score (41%) is quite low - the recall score for class 1 (cancellations) is 100%. This means that the model is generating many false positives which reduces the overall accuracy - but this has had the effect of increasing recall to 100%, i.e. the model is 100% successful at identifying all the customers who will cancel their booking, even if this results in some false positives.
+
+### Performance on Test Set
+
+Here is the subsequent classification performance of the XGBoost model on H2, which is the test set in this instance.
+
+```
+[[ 1926 44302]
+ [    0 33102]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.04      0.08     46228
+           1       0.43      1.00      0.60     33102
+
+    accuracy                           0.44     79330
+   macro avg       0.71      0.52      0.34     79330
+weighted avg       0.76      0.44      0.30     79330
+```
+
+The accuracy as indicated by the f1-score is slightly higher at 44%, but the recall accuracy for class 1 is at 100% once again.
+
 ## Conclusion
 
-In this example, you have seen the use of various boosting methods to predict hotel cancellations.
+In this example, you have seen the use of various boosting methods to predict hotel cancellations. As mentioned, the boosting method in this instance was set to impose greater penalties on the minor class, which had the result of lowering the overall accuracy as measure by the f1-score since there were more false positives present. However, the recall score increased vastly as a result - if it is assumed that false positives are more tolerable than false negatives in this situation - then one could argue that the model has performed quite well on this basis. For reference, an SVM model run on the same dataset demonstrated an overall accuracy of 63%, while recall on class 1 decreased to 75%.
 
 ## Useful References
 
