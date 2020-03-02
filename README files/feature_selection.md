@@ -1,4 +1,4 @@
-# Feature Selection and Classification Methods: Predicting Hotel Cancellations
+# Feature Selection Methods In Python: Predicting Hotel Cancellations
 
 One of the most important features (no pun intended) of a machine learning project is feature selection.
 
@@ -228,8 +228,6 @@ Here are the identified features:
 As we can see, the identified features are the same as for the forward feature selection. The ExtraTreesClassifier also identified feature no. 1 (lead time) as an important feature, while this method identified features 3, 4, 5 (arrivaldatemonth, arrivaldateweekno, arrivaldatedayofmonth).
 
 In this regard, this feature selection method is indicating the time features in the dataset are of greater importance than the ExtraTreesClassifier method is suggesting.
-
-
 
 ## Conclusion
 
