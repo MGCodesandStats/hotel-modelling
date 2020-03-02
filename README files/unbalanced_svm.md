@@ -25,11 +25,35 @@ The identified features to be included in the analysis using both the ExtraTrees
 - Arrival Date: Week Number
 - Arrival Date: Day of Month
 
+## Precision vs. Recall and f1-score
+
+When comparing the accuracy scores, we see that numerous readings are provided in each confusion matrix.
+
+However, a particularly important distinction exists between **precision** and **recall**. 
+
+```
+Precison = ((True Positive)/(True Positive + False Positive))
+
+Recall = ((True Positive)/(True Positive + False Negative))
+```
+
+The two readings are often at odds with each other, i.e. it is often not possible to increase precision without reducing recall, and vice versa.
+
+An assessment as to the ideal metric to use depends in large part on the specific data under analysis. For example, cancer detection screenings that have false negatives (i.e. indicating patients do not have cancer when in fact they do), is a big no-no. Under this scenario, recall is the ideal metric.
+
+However, for emails - one might prefer to avoid false positives, i.e. sending an important email to the spam folder when in fact it is legitimate.
+
+The f1-score takes both precision and recall into account when devising a more general score.
+
+Which would be more important for predicting hotel cancellations?
+
+Well, from the point of view of a hotel - they would likely wish to identify customers who are ultimately going to cancel their booking with greater accuracy - this allows the hotel to better allocate rooms and resources. Identifying customers who are not going to cancel their bookings may not necessarily add value to the hotel's analysis, as the hotel knows that a significant proportion of customers will ultimately follow through with their bookings in any case.
+
 ## SVM and Unbalanced Datasets
 
 ### Equal sample size of 0 and 1
 
-The relevant features of lead time, country of origin and deposit type are selected as the relevant features for determining whether the customer will cancel their booking.
+The relevant features as outlined above are included for determining whether the customer will cancel their booking.
 
 ```
 y1 = y
@@ -37,7 +61,7 @@ x1 = np.column_stack((leadtime,countrycat,marketsegmentcat,deposittypecat,custom
 x1 = sm.add_constant(x1, prepend=True)
 ```
 
-The data is then split into training and test (technically validation) data:
+The data is then split into training and validation data:
 
 ```
 x1_train, x1_val, y1_train, y1_val = train_test_split(x1, y1, random_state=0)
