@@ -1,4 +1,4 @@
-# Feature Selection Techniques in Python: Predicting Hotel Cancellations
+# Feature Selection and Classification Methods: Predicting Hotel Cancellations
 
 One of the most important features (no pun intended) of a machine learning project is feature selection.
 
@@ -131,69 +131,9 @@ ext.sort_values(['extratrees'], ascending=True)
 
 The top identified features are features 1, 12, 13, 21, 23, 25 (lead time, country of origin, market segment, deposit type, customer type, and required car parking spaces). Note that feature **27** (reservation status) is not valid in this case, since this effectively represents the same thing as the response variable - i.e. whether a customer cancelled or followed through with their booking. In this case, including the feature in the analysis would be erroneous.
 
-Using the test set (for which the variables were loaded in separately from the training set), these features are fed into an SVM model and predictions are generated on the test set (more detail regarding the construction of this SVM model can be found [in the following post](https://towardsdatascience.com/svms-random-forests-and-unbalanced-datasets-predicting-hotel-cancellations-2b983c2c5731).
-
-```
-a = np.column_stack((t_leadtime, t_countrycat, t_adr))
-a = sm.add_constant(a, prepend=True)
-IsCanceled = h2data['IsCanceled']
-b = IsCanceled
-b=b.values
-prh2 = clf.predict(a)
-prh2
-```
-
-Here is a sample of the predictions:
-
-```
-array([0, 0, 1, ..., 0, 1, 0])
-```
-
-A confusion matrix is then generated, which evaluates model performance based on the proportion of true and false positives, along with true and false negatives.
-
-```
-[[5379 1625]
- [1766 3230]]
-              precision    recall  f1-score   support
-
-           0       0.75      0.77      0.76      7004
-           1       0.67      0.65      0.66      4996
-
-    accuracy                           0.72     12000
-   macro avg       0.71      0.71      0.71     12000
-weighted avg       0.72      0.72      0.72     12000
-```
-
-Now, the ROC curve can be plotted, which is simply the true positive rate vs. false positive rate:
-
-```
-import matplotlib.pyplot as plt
-from sklearn import metrics
-from sklearn.metrics import roc_curve
-falsepos,truepos,thresholds=roc_curve(b,clf.decision_function(a))
-plt.plot(falsepos,truepos,label="ROC")
-plt.xlabel("False Positive Rate")
-plt.ylabel("True Positive Rate")
-
-cutoff=np.argmin(np.abs(thresholds))
-plt.plot(falsepos[cutoff],truepos[cutoff],'o',markersize=10,label="cutoff",fillstyle="none")
-plt.show()
-```
-
-![image2.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image2.png)
-
-Now, the AUC (area under the curve) can be calculated:
-
-```
->>> metrics.auc(falsepos, truepos)
-0.7564329733346928
-```
-
-The SVM demonstrated an AUC of 75.6%, which is quite respectable. An AUC of 50% is considered poor, as it means that the model's predictions are no better than random guessing. An AUC significantly above 50% means that the model has some degree of predictive power when classifying based on features.
-
 ## Step forward and backward feature selection
 
-As previously described, the feature selection is based on the RandomForestClassifier. In terms of step forward feature selection, the ROC_AUC score is assessed for each feature as it is added to the model, i.e. the features with the highest scores are added to the model. For step backward feature selection, the process is reversed - features are dropped from the model based on those with the lowest ROC_AUC scores.
+As previously described, this feature selection method is based on the RandomForestClassifier. In terms of step forward feature selection, the ROC_AUC score is assessed for each feature as it is added to the model, i.e. the features with the highest scores are added to the model. For step backward feature selection, the process is reversed - features are dropped from the model based on those with the lowest ROC_AUC scores. The top six features are being selected from the dataset using this feature selection tool.
 
 The forward feature selection is implemented as follows:
 
@@ -203,13 +143,13 @@ from sklearn.metrics import roc_auc_score
 from mlxtend.feature_selection import SequentialFeatureSelector
 
 forward_feature_selector = SequentialFeatureSelector(RandomForestClassifier(n_jobs=-1),
-           k_features=3,
+           k_features=6,
            forward=True,
            verbose=2,
            scoring='roc_auc',
            cv=4)
            
-fselector = forward_feature_selector.fit(x, y)          
+fselector = forward_feature_selector.fit(x, y)                     
 ```
 
 Here is the generated output:
@@ -217,24 +157,36 @@ Here is the generated output:
 ```
 [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
 [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.0s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  23 out of  23 | elapsed:   30.6s finished
+[Parallel(n_jobs=1)]: Done  28 out of  28 | elapsed:   40.8s finished
 
-[2020-02-03 20:49:35] Features: 1/3 -- score: 0.7135936799999999[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020-03-01 19:01:14] Features: 1/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.3s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  27 out of  27 | elapsed:   37.4s finished
+
+[2020-03-01 19:01:52] Features: 2/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.5s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  26 out of  26 | elapsed:   37.3s finished
+
+[2020-03-01 19:02:29] Features: 3/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.6s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  25 out of  25 | elapsed:   40.2s finished
+
+[2020-03-01 19:03:09] Features: 4/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.7s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  24 out of  24 | elapsed:   39.4s finished
+
+[2020-03-01 19:03:49] Features: 5/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
 [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.9s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  22 out of  22 | elapsed:   47.3s finished
+[Parallel(n_jobs=1)]: Done  23 out of  23 | elapsed:   40.7s finished
 
-[2020-02-03 20:50:22] Features: 2/3 -- score: 0.8084175[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.1s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  21 out of  21 | elapsed:   47.5s finished
-
-[2020-02-03 20:51:10] Features: 3/3 -- score: 0.8536544199999999
+[2020-03-01 19:04:30] Features: 6/6 -- score: 1.0
 ```
 
 We can identify the feature names (or numbers in this case, as they are stored in the array) as follows:
 
 ```
 >>> fselector.k_feature_names_
-('1', '8', '9')
+('0', '1', '2', '3', '4', '27')
 ```
 
 The backward feature selection method is more computationally-intensive, as all features in the dataset are being considered.
@@ -243,10 +195,10 @@ We implement this by simply setting *forward=False*.
 
 ```
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
-from sklearn.metrics import roc_auc_score 
+from sklearn.metrics import roc_auc_score
 
 backward_feature_selector = SequentialFeatureSelector(RandomForestClassifier(n_jobs=-1),
-           k_features=3,
+           k_features=6,
            forward=False,
            verbose=2,
            scoring='roc_auc',
@@ -254,45 +206,112 @@ backward_feature_selector = SequentialFeatureSelector(RandomForestClassifier(n_j
            
 bselector = backward_feature_selector.fit(x, y)
 ```
+Here is the generated output:
+
+```
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.4s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  28 out of  28 | elapsed:  1.1min finished
+
+[2020-03-01 19:05:39] Features: 27/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.2s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  27 out of  27 | elapsed:  1.0min finished
+
+[2020-03-01 19:06:42] Features: 26/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.3s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  26 out of  26 | elapsed:   59.0s finished
+
+[2020-03-01 19:07:41] Features: 25/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.9s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  25 out of  25 | elapsed:   55.0s finished
+
+[2020-03-01 19:08:36] Features: 24/6 -- score: 0.9999999378589477[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.2s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  24 out of  24 | elapsed:   52.8s finished
+
+[2020-03-01 19:09:29] Features: 23/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  23 out of  23 | elapsed:   49.7s finished
+
+[2020-03-01 19:10:18] Features: 22/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  22 out of  22 | elapsed:   48.2s finished
+
+[2020-03-01 19:11:06] Features: 21/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.2s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  21 out of  21 | elapsed:   46.1s finished
+
+[2020-03-01 19:11:52] Features: 20/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.2s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  20 out of  20 | elapsed:   42.8s finished
+
+[2020-03-01 19:12:35] Features: 19/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  19 out of  19 | elapsed:   39.6s finished
+
+[2020-03-01 19:13:15] Features: 18/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  18 out of  18 | elapsed:   36.8s finished
+
+[2020-03-01 19:13:52] Features: 17/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  17 out of  17 | elapsed:   34.7s finished
+
+[2020-03-01 19:14:26] Features: 16/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  16 out of  16 | elapsed:   30.6s finished
+
+[2020-03-01 19:14:57] Features: 15/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.7s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  15 out of  15 | elapsed:   28.2s finished
+
+[2020-03-01 19:15:25] Features: 14/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.6s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  14 out of  14 | elapsed:   25.9s finished
+
+[2020-03-01 19:15:51] Features: 13/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  13 out of  13 | elapsed:   24.0s finished
+
+[2020-03-01 19:16:15] Features: 12/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  12 out of  12 | elapsed:   21.5s finished
+
+[2020-03-01 19:16:36] Features: 11/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  11 out of  11 | elapsed:   19.4s finished
+
+[2020-03-01 19:16:56] Features: 10/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.9s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done  10 out of  10 | elapsed:   17.8s finished
+
+[2020-03-01 19:17:14] Features: 9/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   9 out of   9 | elapsed:   17.5s finished
+
+[2020-03-01 19:17:31] Features: 8/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   8 out of   8 | elapsed:   15.3s finished
+
+[2020-03-01 19:17:46] Features: 7/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.7s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   7 out of   7 | elapsed:   13.0s finished
+
+[2020-03-01 19:17:59] Features: 6/6 -- score: 1.0
+```
 
 Here are the identified features:
 
 ```
 >>> bselector.k_feature_names_
-('1', '8', '9')
+('0', '1', '3', '4', '5', '27')
 ```
 
-The output for the backward selection is quite extensive given that each feature is being analysed - it can be found in the relevant Jupyter Notebook on [GitHub](https://github.com/MGCodesandStats/feature-selection/blob/master/README.md) if you are interested.
+As we can see, the identified features are the same as for the forward feature selection. The ExtraTreesClassifier also identified feature no. 1 (lead time) as an important feature, while this method identified features 3, 4, 5 (arrivaldatemonth, arrivaldateweekno, arrivaldatedayofmonth).
 
-As we can see, the identified features are the same as for the forward feature selection. In this regard, we can say with a degree of confidence that these variables (lead time, country, and market segment) are important features for the model.
+In this regard, this feature selection method is indicating the time features in the dataset are of greater importance than the ExtraTreesClassifier method is suggesting.
 
-Again, an SVM is run using these features and a confusion matrix and ROC curve is generated.
 
-**Confusion Matrix**
-
-```
-[[5634 1370]
- [2029 2967]]
-              precision    recall  f1-score   support
-
-           0       0.74      0.80      0.77      7004
-           1       0.68      0.59      0.64      4996
-
-    accuracy                           0.72     12000
-   macro avg       0.71      0.70      0.70     12000
-weighted avg       0.71      0.72      0.71     12000
-```
-
-**ROC Curve**
-
-![image4.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image4.png)
-
-**AUC Reading**
-
-```
->>> metrics.auc(falsepos, truepos)
-0.7471300855647396
-```
 
 ## Conclusion
 
