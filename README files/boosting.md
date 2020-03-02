@@ -102,7 +102,20 @@ Well, from the point of view of a hotel - they would likely wish to identify cus
 
 ## Analysis
 
-X
+The data is firstly split into training and validation data for the H1 dataset, with the H2 dataset being used as the test set for comparing the XGBoost predictions with actual cancellation incidences.
+
+Here is an implementation of the XGBoost algorithm:
+
+```
+import xgboost as xgb
+xgb_model = xgb.XGBClassifier(learning_rate=0.001,
+                            max_depth = 1, 
+                            n_estimators = 100,
+                              scale_pos_weight=5)
+xgb_model.fit(x_train, y_train)
+```
+
+Note that the *scale_pos_weight* parameter in this instance is set to *5*. The reason for this is to impose greater penalties for errors on the minor class, in this case any incidences of *1* in the response variable, i.e. hotel cancellations. The higher the weight, the greater penalty is imposed on errors on the minor class.
 
 ## Conclusion
 
