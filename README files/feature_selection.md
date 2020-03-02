@@ -167,13 +167,7 @@ Here is the generated output:
 [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.5s remaining:    0.0s
 [Parallel(n_jobs=1)]: Done  26 out of  26 | elapsed:   37.3s finished
 
-[2020-03-01 19:02:29] Features: 3/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.6s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  25 out of  25 | elapsed:   40.2s finished
-
-[2020-03-01 19:03:09] Features: 4/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.7s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  24 out of  24 | elapsed:   39.4s finished
+...
 
 [2020-03-01 19:03:49] Features: 5/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
 [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    1.9s remaining:    0.0s
@@ -217,81 +211,7 @@ Here is the generated output:
 [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.2s remaining:    0.0s
 [Parallel(n_jobs=1)]: Done  27 out of  27 | elapsed:  1.0min finished
 
-[2020-03-01 19:06:42] Features: 26/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.3s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  26 out of  26 | elapsed:   59.0s finished
-
-[2020-03-01 19:07:41] Features: 25/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.9s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  25 out of  25 | elapsed:   55.0s finished
-
-[2020-03-01 19:08:36] Features: 24/6 -- score: 0.9999999378589477[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.2s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  24 out of  24 | elapsed:   52.8s finished
-
-[2020-03-01 19:09:29] Features: 23/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  23 out of  23 | elapsed:   49.7s finished
-
-[2020-03-01 19:10:18] Features: 22/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  22 out of  22 | elapsed:   48.2s finished
-
-[2020-03-01 19:11:06] Features: 21/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.2s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  21 out of  21 | elapsed:   46.1s finished
-
-[2020-03-01 19:11:52] Features: 20/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.2s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  20 out of  20 | elapsed:   42.8s finished
-
-[2020-03-01 19:12:35] Features: 19/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  19 out of  19 | elapsed:   39.6s finished
-
-[2020-03-01 19:13:15] Features: 18/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  18 out of  18 | elapsed:   36.8s finished
-
-[2020-03-01 19:13:52] Features: 17/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    3.0s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  17 out of  17 | elapsed:   34.7s finished
-
-[2020-03-01 19:14:26] Features: 16/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  16 out of  16 | elapsed:   30.6s finished
-
-[2020-03-01 19:14:57] Features: 15/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.7s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  15 out of  15 | elapsed:   28.2s finished
-
-[2020-03-01 19:15:25] Features: 14/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.6s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  14 out of  14 | elapsed:   25.9s finished
-
-[2020-03-01 19:15:51] Features: 13/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  13 out of  13 | elapsed:   24.0s finished
-
-[2020-03-01 19:16:15] Features: 12/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  12 out of  12 | elapsed:   21.5s finished
-
-[2020-03-01 19:16:36] Features: 11/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  11 out of  11 | elapsed:   19.4s finished
-
-[2020-03-01 19:16:56] Features: 10/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.9s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done  10 out of  10 | elapsed:   17.8s finished
-
-[2020-03-01 19:17:14] Features: 9/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done   9 out of   9 | elapsed:   17.5s finished
-
-[2020-03-01 19:17:31] Features: 8/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
-[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.8s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done   8 out of   8 | elapsed:   15.3s finished
+...
 
 [2020-03-01 19:17:46] Features: 7/6 -- score: 1.0[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
 [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    2.7s remaining:    0.0s
