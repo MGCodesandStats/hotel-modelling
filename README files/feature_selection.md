@@ -131,7 +131,7 @@ ext.sort_values(['extratrees'], ascending=True)
 
 The top identified features are features 1, 12, 13, 21, 23, 25 (lead time, country of origin, market segment, deposit type, customer type, and required car parking spaces).
 
-Using the test set (for which the variables were loaded in separately from the training set), these features are fed into an SVM model and predictions are generated on the test set.
+Using the test set (for which the variables were loaded in separately from the training set), these features are fed into an SVM model and predictions are generated on the test set (more detail regarding the construction of this SVM model can be found [in the following post](https://towardsdatascience.com/svms-random-forests-and-unbalanced-datasets-predicting-hotel-cancellations-2b983c2c5731).
 
 ```
 a = np.column_stack((t_leadtime, t_countrycat, t_adr))
