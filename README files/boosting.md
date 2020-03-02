@@ -184,6 +184,16 @@ weighted avg       0.76      0.44      0.30     79330
 
 The accuracy as indicated by the f1-score is slightly higher at 44%, but the recall accuracy for class 1 is at 100% once again.
 
+### Calibration: scale_pos_weight
+
+In this instance, it is observed that using a *scale_pos_weight* of 5 resulted in a 100% recall while lowering the f1-score accuracy very significantly to 44%.
+
+However, a recall of 100% can also be unreliable. For instance, suppose that the *scale_pos_weight* was set even higher - which meant that almost all of the predictions indicated a response of 1, i.e. all customers were predicted to cancel their booking.
+
+This model has no inherent value if all the customers are predicted to cancel, since there is no longer any way of identifying the unique attributes of customers who are likely to cancel their booking versus those who do not.
+
+In this regard, a more balanced solution is to have a high recall while also ensuring that the overall accuracy does not fall excessively low.
+
 ## Conclusion
 
 In this example, you have seen the use of various boosting methods to predict hotel cancellations. As mentioned, the boosting method in this instance was set to impose greater penalties on the minor class, which had the result of lowering the overall accuracy as measure by the f1-score since there were more false positives present. However, the recall score increased vastly as a result - if it is assumed that false positives are more tolerable than false negatives in this situation - then one could argue that the model has performed quite well on this basis. For reference, an SVM model run on the same dataset demonstrated an overall accuracy of 63%, while recall on class 1 decreased to 75%.
