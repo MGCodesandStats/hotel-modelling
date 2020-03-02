@@ -158,6 +158,7 @@ Here is a confusion matrix comparing the predicted vs. actual cancellations on t
    macro avg       0.66      0.60      0.40     10015
 weighted avg       0.81      0.41      0.37     10015
 ```
+
 Note that while the accuracy in terms of the f1-score (41%) is quite low - the recall score for class 1 (cancellations) is 100%. This means that the model is generating many false positives which reduces the overall accuracy - but this has had the effect of increasing recall to 100%, i.e. the model is 100% successful at identifying all the customers who will cancel their booking, even if this results in some false positives.
 
 ### Performance on Test Set
@@ -165,6 +166,10 @@ Note that while the accuracy in terms of the f1-score (41%) is quite low - the r
 Here is the subsequent classification performance of the XGBoost model on H2, which is the test set in this instance.
 
 ```
+>>> from sklearn.metrics import classification_report,confusion_matrix
+>>> print(confusion_matrix(b,prh2))
+>>> print(classification_report(b,prh2))
+
 [[ 1926 44302]
  [    0 33102]]
               precision    recall  f1-score   support
