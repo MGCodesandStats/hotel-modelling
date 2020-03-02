@@ -129,9 +129,9 @@ ext.sort_values(['extratrees'], ascending=True)
 
 ![image1amended.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image1amended.png)
 
-The top identified features are features 1, 8, and 20 - lead time, country of origin, and average daily rate.
+The top identified features are features 1, 12, 13, 21, 23, 25 (lead time, country of origin, market segment, deposit type, customer type, and required car parking spaces).
 
-Using the test set (for which the variables were loaded in separately from the training set), these features are fed into the SVM model and predictions are generated on the test set.
+Using the test set (for which the variables were loaded in separately from the training set), these features are fed into an SVM model and predictions are generated on the test set.
 
 ```
 a = np.column_stack((t_leadtime, t_countrycat, t_adr))
@@ -190,86 +190,6 @@ Now, the AUC (area under the curve) can be calculated:
 ```
 
 The SVM demonstrated an AUC of 75.6%, which is quite respectable. An AUC of 50% is considered poor, as it means that the model's predictions are no better than random guessing. An AUC significantly above 50% means that the model has some degree of predictive power when classifying based on features.
-
-## Univariate Selection with SelectKBest (ANOVA F-Value)
-
-As mentioned, SelectKBest is used to identify the top three features in the analysis. In this case, the ANOVA f-value for feature selection is used as the criteria for selection. The chi-squared value would need to be used to determine the relationship between the categorical variables and the response variable, but we will only focus on the interval variables in this instance.
-
-
-```
-from sklearn.feature_selection import SelectKBest
-from sklearn.feature_selection import f_classif
-
-from numpy import set_printoptions
-
-# feature extraction
-test1 = SelectKBest(score_func=f_classif, k=4)
-fit = test1.fit(x_interval, y)
-# summarize scores
-set_printoptions(precision=3)
-print(fit.scores_)
-features = fit.transform(x_interval)
-# summarize selected features
-print(features[0:5,:])
-```
-
-Here are the results:
-
-```
-[     nan 1405.286  176.56   168.045  113.545  155.657   15.45   370.916
-  185.924  229.219  387.25    40.637  294.327 2355.002  278.115]
-[[80.  0.  0.  1.]
- [76.  0.  0.  0.]
- [81.  0.  0.  0.]
- [37.  0.  0.  0.]
- [57.  0.  1.  0.]]
- ```
- 
-The three highest ranked features in this instance are **lead time**, **booking changes**, and **required car parking spaces**.
-
-Here are the SVM results when these features are incorporated:
-
-**Confusion Matrix**
-
-```
-[[2848 4156]
- [ 878 4118]]
-              precision    recall  f1-score   support
-
-           0       0.76      0.41      0.53      7004
-           1       0.50      0.82      0.62      4996
-
-    accuracy                           0.58     12000
-   macro avg       0.63      0.62      0.58     12000
-weighted avg       0.65      0.58      0.57     12000
-```
-
-**ROC Curve**
-
-```
-import matplotlib.pyplot as plt
-from sklearn import metrics
-from sklearn.metrics import roc_curve
-falsepos,truepos,thresholds=roc_curve(b,clf.decision_function(a))
-plt.plot(falsepos,truepos,label="ROC")
-plt.xlabel("False Positive Rate")
-plt.ylabel("True Positive Rate")
-
-cutoff=np.argmin(np.abs(thresholds))
-plt.plot(falsepos[cutoff],truepos[cutoff],'o',markersize=10,label="cutoff",fillstyle="none")
-plt.show()
-```
-
-![image3.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image3.png)
-
-**AUC Reading**
-
-```
->>> metrics.auc(falsepos, truepos)
-0.679318569075706
-```
-
-Here, we see that the AUC is significantly lower than previously. In this regard, it is clear that the ExtraTreesClassifier used previously identifed an important categorical feature that we did not take into account on this occasion.
 
 ## Step forward and backward feature selection
 
@@ -374,55 +294,13 @@ weighted avg       0.71      0.72      0.71     12000
 0.7471300855647396
 ```
 
-Now, considering that some features overlap across each feature selection method, what if we were to include all five features identified as important, i.e. leadtime, countrycat, adr, marketsegmentcat, rcps? Will doing so significantly improve our AUC score? Let's find out!
-
-The relevant features from the test set are specified in the SVM model for analysis:
-
-```
-a = np.column_stack((t_leadtime, t_countrycat, t_adr, t_rcps, t_marketsegmentcat))
-a = sm.add_constant(a, prepend=True)
-IsCanceled = h2data['IsCanceled']
-b = IsCanceled
-b=b.values
-```
-
-**Confusion Matrix**
-
-```
-[[5379 1625]
- [1766 3230]]
-              precision    recall  f1-score   support
-
-           0       0.75      0.77      0.76      7004
-           1       0.67      0.65      0.66      4996
-
-    accuracy                           0.72     12000
-   macro avg       0.71      0.71      0.71     12000
-weighted avg       0.72      0.72      0.72     12000
-```
-
-**ROC Curve**
-
-![image5.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image5.png)
-
-**AUC Reading**
-
-```
->>> metrics.auc(falsepos, truepos)
-0.7564329733346928
-```
-
-As we can see, the AUC in this case is only marginally higher than that yielded by the ExtraTreesClassifier and the forward and backward feature selection. In this regard, including more features in our model has resulted in little improvement.
-
-From a practical point of view, including every available feature in the model increases the risk of multicollinearity - a condition whereby several features are closely related and essentially mean the same thing. Under this scenario, the accuracy of the model predictions do not improve and statistical inferences from the model may no longer be dependable.
-
 ## Conclusion
 
 To summarize, we have looked at:
 
 - Feature selection using ExtraTreesClassifier
-- Use of the ANOVA F-Test in evaluating features of an interval or quantitative nature
 - Forward and backward feature selection methods
+- Use of SVM with balanced classes to predict cancellation incidences
 - Assessment of prediction accuracy using AUC
 
 Many thanks for your time, and you can also find the relevant GitHub repository for this example [here](https://github.com/MGCodesandStats/feature-selection).
