@@ -1,10 +1,3 @@
-[Home](https://mgcodesandstats.github.io/) |
-[Portfolio](https://mgcodesandstats.github.io/portfolio/) |
-[Speaking Engagements](https://mgcodesandstats.github.io/speaking-engagements/) |
-[Terms and Conditions](https://mgcodesandstats.github.io/terms/) |
-[E-mail me](mailto:contact@michaeljgrogan.com) |
-[LinkedIn](https://www.linkedin.com/in/michaeljgrogan/)
-
 # Predicting Weekly Hotel Cancellations with an LSTM Network
 
 Hotel cancellations can be problematic for businesses in the industry - cancellations lead to lost revenue, and this can also cause difficulty in coordinating bookings and adjusting revenue management practices.
