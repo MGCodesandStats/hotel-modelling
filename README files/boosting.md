@@ -184,7 +184,7 @@ weighted avg       0.76      0.44      0.30     79330
 
 The accuracy as indicated by the f1-score is slightly higher at 44%, but the recall accuracy for class 1 is at 100% once again.
 
-### Calibration: scale_pos_weight
+## Calibration: scale_pos_weight
 
 In this instance, it is observed that using a *scale_pos_weight* of 5 resulted in a 100% recall while lowering the f1-score accuracy very significantly to 44%.
 
@@ -193,6 +193,72 @@ However, a recall of 100% can also be unreliable. For instance, suppose that the
 This model has no inherent value if all the customers are predicted to cancel, since there is no longer any way of identifying the unique attributes of customers who are likely to cancel their booking versus those who do not.
 
 In this regard, a more balanced solution is to have a high recall while also ensuring that the overall accuracy does not fall excessively low.
+
+Here are the confusion matrix results for when respective weights of *2*, *3*, *4*, and *5* are used.
+
+### scale_pos_weight = 2
+
+```
+[[36926  9302]
+ [12484 20618]]
+              precision    recall  f1-score   support
+
+           0       0.75      0.80      0.77     46228
+           1       0.69      0.62      0.65     33102
+
+    accuracy                           0.73     79330
+   macro avg       0.72      0.71      0.71     79330
+weighted avg       0.72      0.73      0.72     79330
+```
+
+### scale_pos_weight = 3
+
+```
+[[12650 33578]
+ [ 1972 31130]]
+              precision    recall  f1-score   support
+
+           0       0.87      0.27      0.42     46228
+           1       0.48      0.94      0.64     33102
+
+    accuracy                           0.55     79330
+   macro avg       0.67      0.61      0.53     79330
+weighted avg       0.70      0.55      0.51     79330
+```
+
+### scale_pos_weight = 4
+
+```
+[[ 1926 44302]
+ [    0 33102]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.04      0.08     46228
+           1       0.43      1.00      0.60     33102
+
+    accuracy                           0.44     79330
+   macro avg       0.71      0.52      0.34     79330
+weighted avg       0.76      0.44      0.30     79330
+```
+
+### scale_pos_weight = 5
+
+```
+[[ 1926 44302]
+ [    0 33102]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.04      0.08     46228
+           1       0.43      1.00      0.60     33102
+
+    accuracy                           0.44     79330
+   macro avg       0.71      0.52      0.34     79330
+weighted avg       0.76      0.44      0.30     79330
+```
+
+When the *scale_pos_weight* is set to 3, recall comes in at 94% while accuracy is at 55%. When the *scale_pos_weight* parameter is set to 5, recall is at 100% while the f1-score accuracy falls to 44%. Additionally, note that increasing the parameter from *4* to *5* does not result in any change in either recall or overall accuracy.
+
+In this regard, using a weight of *3* allows for a high recall, while still allowing overall classification accuracy to remain above 50% and allows the hotel a baseline to differentiate between the attributes of customers who cancel their booking and those who do not.
 
 ## Conclusion
 
