@@ -1,4 +1,4 @@
-# Regression-based neural networks: Predicting Hotel Lead Time
+# Regression-based neural networks with TensorFlow v2.0: Predicting Hotel Lead Time
 
 Keras is an API used for running high-level neural networks - the API is now included as the default one under TensorFlow 2.0, which was developed by Google.
 
