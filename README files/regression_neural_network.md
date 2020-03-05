@@ -1,4 +1,4 @@
-# Keras: Regression-based neural networks
+# Regression-based neural networks: Predicting Hotel Lead Time
 
 Keras is an API used for running high-level neural networks - the API is now included as the default one under TensorFlow 2.0, which was developed by Google.
 
@@ -15,6 +15,8 @@ A neural network consists of:
 - Input layers: Layers that take inputs based on existing data
 - Hidden layers: Layers that use backpropagation to optimise the weights of the input variables in order to improve the predictive power of the model
 - Output layers: Output of predictions based on the data from the input and hidden layers
+
+[neuralplot](neuralplot.png)
 
 ## Our Example
 
