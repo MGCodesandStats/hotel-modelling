@@ -185,7 +185,23 @@ The mean lead time across the H2 dataset was 109.74.
 
 ## Epochs vs. Batch Size
 
-x
+A key tradeoff when constructing a neural network concerns that of the **number of epochs** used to train the model, and **batch size**.
+
+- Batch size: Refers to the number of training examples per one forward/backward pass.
+
+- Epoch: One forward and backward pass for all training examples.
+
+This summary on [StackOverflow](https://stackoverflow.com/questions/4752626/epoch-vs-iteration-when-training-neural-networks) goes into further detail regarding the above definitions.
+
+The key tradeoff faced when constructing a neural network is between the batch size and number of iterations.
+
+For instance, the training data contains 24,036 samples and the batch size is 150. This means that 160 iterations are required to complete 1 epoch.
+
+Therefore, one can either increase the batch size to have less iterations per epoch, or the batch size is reduced which means more iterations are required per epoch.
+
+This means that all else being equal, the neural network either needs a higher batch size to train across a fixed number of epochs, or a lower batch size to train across a higher number of epochs.
+
+
 
 ## Conclusion
 
