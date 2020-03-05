@@ -16,12 +16,12 @@ A neural network consists of:
 - Hidden layers: Layers that use backpropagation to optimise the weights of the input variables in order to improve the predictive power of the model
 - Output layers: Output of predictions based on the data from the input and hidden layers
 
-[neuralplot.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/neuralplot.png)
+[https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/neuralplot.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/neuralplot.png)
 
 ## Our Example
 
 For this example, we use a linear activation function within the keras library to create a regression-based neural network. We will use the cars dataset. Essentially, we are trying to predict the value of a potential car sale (i.e. how much a particular person will spend on buying a car) for a customer based on the following attributes:
-a
+
 - Age
 - Gender
 - Average miles driven per day
