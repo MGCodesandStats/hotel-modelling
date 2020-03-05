@@ -1,11 +1,12 @@
 # Keras: Regression-based neural networks
 
-Keras is an API used for running high-level neural networks. The model runs on top of TensorFlow, and was developed by Google.
+Keras is an API used for running high-level neural networks - the API is now included as the default one under TensorFlow 2.0, which was developed by Google.
 
 The main competitor to Keras at this point in time is PyTorch, developed by Facebook. While PyTorch has a somewhat higher level of community support, it is a particularly verbose language and I personally prefer Keras for greater simplicity and ease of use in building and deploying models.
 
 In this particular example, a neural network will be built in Keras to solve a regression problem, i.e. one where our dependent variable (y) is in interval format and we are trying to predict the quantity of y with as much accuracy as possible.
-What Is A Neural Network?
+
+## What Is A Neural Network?
 
 A neural network is a computational system that creates predictions based on existing data. Let us train and test a neural network using the neuralnet library in R.
 
@@ -26,7 +27,8 @@ For this example, we use a linear activation function within the keras library t
 - Monthly income
 
 Firstly, we import our libraries. Note that you will need TensorFlow installed on your system to be able to execute the below code. Depending on your operating system, you can find one of my YouTube tutorials on how to install on Windows 10 here.
-Libraries
+
+*Libraries*
 
 ```
 import matplotlib.pyplot as plt
@@ -42,7 +44,7 @@ from tensorflow.python.keras.layers import Dense
 from tensorflow.python.keras.wrappers.scikit_learn import KerasRegressor
 ```
 
-Set Directory
+*Set Directory*
 
 ```
 import os;
