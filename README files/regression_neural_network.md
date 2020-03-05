@@ -20,7 +20,7 @@ A neural network consists of:
 
 ## Background
 
-When it comes to hotel bookings, **lead time** is a particularly important metric. This is the number of days between when the customer makes their booking and when they are meant to stay at the hotel.
+This study focuses on hotel booking analysis. When it comes to hotel bookings, **lead time** is a particularly important metric. This is the number of days between when the customer makes their booking and when they are meant to stay at the hotel.
 
 Gauging lead time allows hotels to more accurately conduct cash flow projections and allocate rooms more efficiently.
 
