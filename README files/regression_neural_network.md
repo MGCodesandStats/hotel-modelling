@@ -21,7 +21,7 @@ A neural network consists of:
 ## Our Example
 
 For this example, we use a linear activation function within the keras library to create a regression-based neural network. We will use the cars dataset. Essentially, we are trying to predict the value of a potential car sale (i.e. how much a particular person will spend on buying a car) for a customer based on the following attributes:
-
+a
 - Age
 - Gender
 - Average miles driven per day
