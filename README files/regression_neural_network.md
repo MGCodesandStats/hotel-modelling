@@ -16,7 +16,7 @@ A neural network consists of:
 - Hidden layers: Layers that use backpropagation to optimise the weights of the input variables in order to improve the predictive power of the model
 - Output layers: Output of predictions based on the data from the input and hidden layers
 
-[https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/neuralplot.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/neuralplot.png)
+[neuralplot.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/neuralplot.png)
 
 ## Our Example
 
