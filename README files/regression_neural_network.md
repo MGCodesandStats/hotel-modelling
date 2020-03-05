@@ -82,6 +82,24 @@ X_train, X_test, y_train, y_test = train_test_split(xscale, yscale)
 
 One of the most important considerations when training a neural network is choosing the number of neurons to include in the input and hidden layers. Given that the output layer is the result layer, this layer has 1 neuron present by default.
 
+As explained in this article by [Farhad Malik](https://medium.com/fintechexplained/what-are-hidden-layers-4f54f7328263), the number of neurons in each layer is configured as follows:
+
+- **Input layer:** The number of neurons in the input layer is calculated as follows:
+
+```Number of features in the training set + 1```
+
+In this case, as there were 10 features in the training set to begin with, **11** input neurons are defined accordingly.
+
+- **Hidden layer:** One hidden layer is defined, as a single layer is suitable when working with most datasets. The number of neurons in the hidden layer is determined as follows:
+
+```
+Training Data Samples/Factor * (Input Neurons + Output Neurons)
+```
+
+A factor of 1 is set in this case, the purpose of the factor being to prevent overfitting. A factor can take a value between 1 and 10. With 11 neurons in the input layer, 1 neuron in the output layer and 24036 observations in the training set, the hidden layer is assigned 2,003 neurons.
+
+- **Output layer:** As this is the result layer, the output layer takes a value of 1 by default.
+
 ```
 model = Sequential()
 model.add(Dense(12, input_dim=11, kernel_initializer='normal', activation='relu'))
