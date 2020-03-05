@@ -18,9 +18,13 @@ A neural network consists of:
 
 ![neuralplot.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/neuralplot.png)
 
-## Our Example
+## Background
 
-For this example, we use a linear activation function within the keras library to create a regression-based neural network. The purpose of this neural network is to predict a **lead time** value for each customer, which is the number of days between when the customer makes their booking and when they are meant to stay at the hotel. The lead time value applies irrespective of whether the customer ultimately cancels their hotel booking. The chosen features that form the input for this neural network are as follows:
+When it comes to hotel bookings, **lead time** is a particularly important metric. This is the number of days between when the customer makes their booking and when they are meant to stay at the hotel.
+
+Gauging lead time allows hotels to more accurately conduct cash flow projections and allocate rooms more efficiently.
+
+For this example, we use a linear activation function within the keras library to create a regression-based neural network. The purpose of this neural network is to predict a **lead time** value for each customer. The lead time value applies irrespective of whether the customer ultimately cancels their hotel booking. The chosen features that form the input for this neural network are as follows:
 
 - IsCanceled
 - Country of origin
