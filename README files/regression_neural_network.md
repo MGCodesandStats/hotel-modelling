@@ -20,55 +20,56 @@ A neural network consists of:
 
 ## Our Example
 
-For this example, we use a linear activation function within the keras library to create a regression-based neural network. We will use the cars dataset. Essentially, we are trying to predict the value of a potential car sale (i.e. how much a particular person will spend on buying a car) for a customer based on the following attributes:
+For this example, we use a linear activation function within the keras library to create a regression-based neural network. The purpose of this neural network is to predict a **lead time** value for each customer, which is the number of days between when the customer makes their booking and when they are meant to stay at the hotel. The lead time value applies irrespective of whether the customer ultimately cancels their hotel booking. The chosen features that form the input for this neural network are as follows:
 
-- Age
-- Gender
-- Average miles driven per day
-- Personal debt
-- Monthly income
+- IsCanceled
+- Country of origin
+- Market segment
+- Deposit type
+- Customer type
+- Required car parking spaces
+- Arrival Date: Year
+- Arrival Date: Month
+- Arrival Date: Week Number
+- Arrival Date: Day of Month
 
-Firstly, we import our libraries. Note that you will need TensorFlow installed on your system to be able to execute the below code. Depending on your operating system, you can find one of my YouTube tutorials on how to install on Windows 10 here.
+Firstly, the relevant libraries are imported. Note that you will need TensorFlow installed on your system to be able to execute the below code.
 
 *Libraries*
 
 ```
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Dense
+from tensorflow.python.keras.wrappers.scikit_learn import KerasRegressor
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import math
+from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import KFold
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.python.keras.models import Sequential
-from tensorflow.python.keras.layers import Dense
-from tensorflow.python.keras.wrappers.scikit_learn import KerasRegressor
+from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import r2_score
 ```
 
-*Set Directory*
-
-```
-import os;
-path="C:/yourdirectory"
-os.chdir(path)
-os.getcwd()
-```
-
-Since we are implementing a neural network, the variables need to be normalized in order for the neural network to interpret them properly. Therefore, our variables are transformed using the MaxMinScaler():
+As a neural network is being implemented, the variables need to be normalized for the network to interpret them properly. Therefore, the variables are transformed using the MaxMinScaler():
 
 ```
 #Variables
-dataset=np.loadtxt("cars.csv", delimiter=",")
-x=dataset[:,0:5]
-y=dataset[:,5]
-y=np.reshape(y, (-1,1))
+y1=np.reshape(y1, (-1,1))
 scaler_x = MinMaxScaler()
 scaler_y = MinMaxScaler()
-print(scaler_x.fit(x))
-xscale=scaler_x.transform(x)
-print(scaler_y.fit(y))
-yscale=scaler_y.transform(y)
+print(scaler_x.fit(x1))
+xscale=scaler_x.transform(x1)
+print(scaler_y.fit(y1))
+yscale=scaler_y.transform(y1)
 ```
 
 The data is then split into training and test data:
@@ -77,7 +78,7 @@ The data is then split into training and test data:
 X_train, X_test, y_train, y_test = train_test_split(xscale, yscale)
 ```
 
-## Keras Model Configuration: Neural Network API
+## Keras Model Configuration
 
 Now, we train the neural network. We are using the five input variables (age, gender, miles, debt, and income), along with two hidden layers of 12 and 8 neurons respectively, and finally using the linear activation function to process the output.
 
