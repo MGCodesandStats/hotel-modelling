@@ -172,7 +172,16 @@ Using the neural network model generated on the H1 dataset, the features from th
 
 The calculated **mean absolute error** and **root mean squared error** are as follows:
 
-x
+```
+>>> mean_absolute_error(btest, bpred)
+75.76811913597841
+
+>>> mean_squared_error(btest, bpred)
+>>> math.sqrt(mean_squared_error(btest, bpred))
+99.24540016992077
+```
+
+The mean lead time across the H2 dataset was 109.74.
 
 ## Epochs vs. Batch Size
 
