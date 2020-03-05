@@ -78,14 +78,14 @@ The data is then split into training and test data:
 X_train, X_test, y_train, y_test = train_test_split(xscale, yscale)
 ```
 
-## Keras Model Configuration
+## Neural Network Configuration
 
-Now, we train the neural network. We are using the five input variables (age, gender, miles, debt, and income), along with two hidden layers of 12 and 8 neurons respectively, and finally using the linear activation function to process the output.
+One of the most important considerations when training a neural network is choosing the number of neurons to include in the input and hidden layers. Given that the output layer is the result layer, this layer has 1 neuron present by default.
 
 ```
 model = Sequential()
-model.add(Dense(12, input_dim=5, kernel_initializer='normal', activation='relu'))
-model.add(Dense(8, activation='relu'))
+model.add(Dense(12, input_dim=11, kernel_initializer='normal', activation='relu'))
+model.add(Dense(2003, activation='relu'))
 model.add(Dense(1, activation='linear'))
 model.summary()
 ```
