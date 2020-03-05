@@ -191,7 +191,7 @@ A key tradeoff when constructing a neural network concerns that of the **number 
 
 - Epoch: One forward and backward pass for all training examples.
 
-This summary on [StackOverflow](https://stackoverflow.com/questions/4752626/epoch-vs-iteration-when-training-neural-networks) goes into further detail regarding the above definitions.
+This excellent summary on [StackOverflow](https://stackoverflow.com/questions/4752626/epoch-vs-iteration-when-training-neural-networks) goes into further detail regarding the above definitions.
 
 The key tradeoff faced when constructing a neural network is between the batch size and number of iterations.
 
@@ -201,15 +201,50 @@ Therefore, one can either increase the batch size to have less iterations per ep
 
 This means that all else being equal, the neural network either needs a higher batch size to train across a fixed number of epochs, or a lower batch size to train across a higher number of epochs.
 
+### 150 epochs and batch_size = 50
 
+Here is the model performance on the test set when the number of epochs are increased to 150 and the batch size is lowered to 50.
+
+```
+>>> mean_absolute_error(btest, bpred)
+
+78.76378749147307
+
+>>> mean_squared_error(btest, bpred)
+>>> math.sqrt(mean_squared_error(btest, bpred))
+
+104.91980166114139
+```
+
+The MAE and RMSE were slightly lower when using 30 epochs and a batch size of 150 - suggesting that a smaller number of epochs with a larger batch size was superior in predicting lead times.
+
+### 150 epochs and batch_size = 150
+
+However, what if both the number of epochs and batch size is set to 150? Do the results improve any further?
+
+```
+>>> mean_absolute_error(btest, bpred)
+
+75.9663069505167
+
+>>> mean_squared_error(btest, bpred)
+>>> math.sqrt(mean_squared_error(btest, bpred))
+
+101.82723099070178
+```
+
+When compared with a batch size of 150 over 30 epochs, the results are virtually identical, with the RMSE being slightly lower when 30 epochs are used.
+
+In this regard, increasing both the batch size and number of epochs has not resulted in an improvement to the model performance on the test set.
 
 ## Conclusion
 
-In this tutorial, you have learned how to:
+This example has illustrated how to:
 
 - Construct neural networks with Keras
 - Scale data appropriately with MinMaxScaler
 - Calculate training and test losses
 - Make predictions using the neural network model
+- Considerations of the tradeoff between number of iterations and batch size
 
-Many thanks for your time.
+The datasets and notebooks for this example are available at the [MGCodesandStats GitHub repository](https://github.com/MGCodesandStats/hotel-modelling), along with further research on this topic.
