@@ -166,16 +166,17 @@ plt.show()
 
 Both the training and validation loss decrease in an exponential fashion as the number of epochs is increased, suggesting that the model gains a high degree of accuracy as our epochs (or number of forward and backward passes) is increased.
 
-## Epochs vs. Batch Size
+## Predictions
+
+Using the neural network model generated on the H1 dataset, the features from the H2 dataset are now fed into the network in order to predict lead times for H2 and compare these predictions with the actual lead times.
+
+The calculated **mean absolute error** and **root mean squared error** are as follows:
 
 x
 
-## Predictions
+## Epochs vs. Batch Size
 
-So, we’ve seen how we can train a neural network model, and then validate our training data against our test data in order to determine the accuracy of our model.
-
-However, what if we now wish to use the model to estimate unseen data?
-
+x
 
 ## Conclusion
 
