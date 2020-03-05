@@ -146,9 +146,9 @@ Epoch 30/30
 24036/24036 [==============================] - 0s 11us/sample - loss: 0.0093 - mse: 0.0093 - mae: 0.0717 - val_loss: 0.0100 - val_mse: 0.0100 - val_mae: 0.0730
 ```
 
-Here, we can see that keras is calculating both the training loss and validation loss, i.e. the deviation between the predicted y and actual y as measured by the mean squared error.
+Here, we can see that both the training loss and validation loss is being calculated, i.e. the deviation between the predicted y and actual y as measured by the mean squared error.
 
-As you can see, we have specified 30 epochs for our model. This means that we are essentially training our model over 30 forward and backward passes, with the expectation that our loss will decrease with each epoch, meaning that our model is predicting the value of y more accurately as we continue to train the model.
+30 epochs have been specified for our model. This means that we are essentially training our model over 30 forward and backward passes, with the expectation that our loss will decrease with each epoch, meaning that our model is predicting the value of y more accurately as we continue to train the model.
 
 Let’s see what this looks like when we plot our respective losses:
 
@@ -165,7 +165,12 @@ plt.show()
 ```
 
 Both the training and validation loss decrease in an exponential fashion as the number of epochs is increased, suggesting that the model gains a high degree of accuracy as our epochs (or number of forward and backward passes) is increased.
-Predictions
+
+## Epochs vs. Batch Size
+
+x
+
+## Predictions
 
 So, we’ve seen how we can train a neural network model, and then validate our training data against our test data in order to determine the accuracy of our model.
 
