@@ -1,3 +1,5 @@
+# Keras: Regression-based neural networks
+
 Keras is an API used for running high-level neural networks. The model runs on top of TensorFlow, and was developed by Google.
 
 The main competitor to Keras at this point in time is PyTorch, developed by Facebook. While PyTorch has a somewhat higher level of community support, it is a particularly verbose language and I personally prefer Keras for greater simplicity and ease of use in building and deploying models.
@@ -13,7 +15,7 @@ A neural network consists of:
 - Hidden layers: Layers that use backpropagation to optimise the weights of the input variables in order to improve the predictive power of the model
 - Output layers: Output of predictions based on the data from the input and hidden layers
 
-# Our Example
+## Our Example
 
 For this example, we use a linear activation function within the keras library to create a regression-based neural network. We will use the cars dataset. Essentially, we are trying to predict the value of a potential car sale (i.e. how much a particular person will spend on buying a car) for a customer based on the following attributes:
 
@@ -71,7 +73,7 @@ The data is then split into training and test data:
 X_train, X_test, y_train, y_test = train_test_split(xscale, yscale)
 ```
 
-# Keras Model Configuration: Neural Network API
+## Keras Model Configuration: Neural Network API
 
 Now, we train the neural network. We are using the five input variables (age, gender, miles, debt, and income), along with two hidden layers of 12 and 8 neurons respectively, and finally using the linear activation function to process the output.
 
@@ -166,7 +168,7 @@ print("X=%s, Predicted=%s" % (Xnew[0], ynew[0]))
 X=[  40.    0.   26. 9000. 8000.], Predicted=[13686.491]
 ```
 
-# Conclusion
+## Conclusion
 
 In this tutorial, you have learned how to:
 
