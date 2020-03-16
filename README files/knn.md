@@ -168,5 +168,5 @@ Many thanks for your time, and the associated GitHub repository for this example
 
 References
 
-- GitHub repository (Msanjayds): Cross-Validation calculation
-- Machine Learning Mastery: SMOTE Oversampling for Imbalanced Classification with Python
+- [GitHub repository (Msanjayds): Cross-Validation calculation](https://github.com/Msanjayds/Scikit-learn/blob/master/CrossValidation.ipynb)
+- [Machine Learning Mastery: SMOTE Oversampling for Imbalanced Classification with Python](https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/)
