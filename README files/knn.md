@@ -166,7 +166,7 @@ In this example, you have seen:
 
 Many thanks for your time, and the associated GitHub repository for this example can be found [here](https://github.com/MGCodesandStats/hotel-modelling).
 
-References
+## References
 
 - [GitHub repository (Msanjayds): Cross-Validation calculation](https://github.com/Msanjayds/Scikit-learn/blob/master/CrossValidation.ipynb)
 - [Machine Learning Mastery: SMOTE Oversampling for Imbalanced Classification with Python](https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/)
