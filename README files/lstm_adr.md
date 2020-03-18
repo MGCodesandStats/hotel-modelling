@@ -410,7 +410,7 @@ RMSE: 37.813123
 
 Again, a plot for the predicted vs actual weekly ADR is generated:
 
-![7_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/7_adr.png)
+![8_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/8_adr.png)
 
 For the H2 dataset, the mean weekly ADR on the test set came in at **131.42**, with RMSE and MFE errors low by comparison.
 
