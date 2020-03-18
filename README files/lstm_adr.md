@@ -1,4 +1,4 @@
-# Forecasting ADR Trends For Hotels Using LSTM
+# Forecasting Average Daily Rate Trends For Hotels Using LSTM
 
 Here is how an LSTM model can be used to forecast the ADR (average daily rate) for hotels - a cornerstone metric within the industry.
 
@@ -14,7 +14,7 @@ Essentially, ADR is measuring the average price of a hotel room over a given per
 
 ## Background
 
-The [dataset](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations) under study consists of cancellation bookings for a Portuguese hotel which includes the ADR for each individual booking as one of the included variables. Using time series analysis, let us assume that the hotel wishes to 1) calculate the average ADR value across all customers in a given week and 2) use this data to forecast future ADR trends.
+The [dataset](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations) under study consists of cancellation bookings for a Portuguese hotel which includes the ADR for each individual booking as one of the included variables. Using time series analysis, let us assume that the hotel wishes to 1) calculate the average ADR value across all bookings for a given week and 2) use this data to forecast future weekly ADR trends - by weekly ADR we mean the average ADR across all bookings in any one week - hereafter referred to as "weekly ADR".
 
 A long-short term memory network (LSTM) is used to do this. LSTMs are sequential neural networks that assume dependence between the observations in a particular series. As such, they have increasingly come to be used for time series forecasting purposes.
 
@@ -36,7 +36,7 @@ df4.sort_values(['FullDate'], ascending=True)
 
 Here is what the new dataframe looks like:
 
-2_adr
+![2_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/2_adr.png)
 
 As a side note, the full notebook and datasets are available at the link for the GitHub repository provided below, where the data manipulation procedures are illustrated in more detail.
 
@@ -56,7 +56,7 @@ plt.title("Weekly ADR")
 plt.show()
 ```
 
-3_adr
+![3_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/3_adr.png)
 
 ## LSTM Model Configuration
 
@@ -168,7 +168,7 @@ dict_keys(['loss', 'val_loss'])
 
 This is a visual representation of the training and validation loss:
 
-4_adr
+![4_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/4_adr.png)
 
 ## Training and Validation Predictions
 
@@ -230,7 +230,7 @@ Validation Score: 9.08 RMSE
 
 Here is a plot of the predictions:
 
-5_adr
+![5_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/5_adr.png)
 
 The test and prediction arrays are reshaped accordingly, and the function for *mean directional accuracy* is defined:
 
