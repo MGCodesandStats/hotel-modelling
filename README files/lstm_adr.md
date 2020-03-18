@@ -16,4 +16,11 @@ The dataset under study is that of a Portuguese hotel which consists of the ADR 
 
 A long-short term memory network (LSTM) is used to do this.
 
+For reference, ADR per customer is included - given that some customers are also companies as well as individuals, which results in more than one room per booking in many cases.
+
 ## Data Manipulation
+
+Using pandas, the full date (year and week number) is joined with the corresponding ADR Value for each booking.
+
+1_adr
+
