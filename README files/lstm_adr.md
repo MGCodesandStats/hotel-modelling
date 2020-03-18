@@ -24,7 +24,7 @@ For reference, ADR per customer is included - given that some customers are also
 
 Using pandas, the full date (year and week number) is joined with the corresponding ADR Value for each booking.
 
-![1_adr](1_adr.png)
+![1_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/1_adr.png)
 
 These data points were then grouped together to obtain the average ADR per week across all bookings as follows:
 
