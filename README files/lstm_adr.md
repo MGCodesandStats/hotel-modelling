@@ -24,3 +24,16 @@ Using pandas, the full date (year and week number) is joined with the correspond
 
 1_adr
 
+These data points were then grouped together to obtain the average ADR per week across all bookings as follows:
+
+```
+df4 = df3.groupby('FullDate').agg("mean")
+df4
+df4.sort_values(['FullDate'], ascending=True)
+```
+
+Here is what the new dataframe looks like:
+
+2_adr
+
+As a side note, the full notebook and datasets are available at the link for the GitHub repository provided below, where the data manipulation procedures are illustrated in more detail.
