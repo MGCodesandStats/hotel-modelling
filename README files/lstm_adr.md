@@ -1,6 +1,6 @@
 # Forecasting ADR Trends For Hotels Using LSTM
 
-Average Daily Rate (ADR) is recognised as one of the most important metrics for hotels.
+Average Daily Rate (ADR) is recognised as one of the most important [metrics for hotels](https://roompricegenie.com/average-rate-adr/).
 
 It is calculated as follows:
 
