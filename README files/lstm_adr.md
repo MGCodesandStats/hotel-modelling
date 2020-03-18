@@ -340,7 +340,7 @@ dtype: float32
 
 Here is the calculated **MDA**, **RMSE**, and **MFE (mean forecast error)**.
 
-**MDA**
+**MDA = 0.86**
 
 ```
 >>> mda(actualpd, ynewpd)
@@ -348,7 +348,7 @@ Here is the calculated **MDA**, **RMSE**, and **MFE (mean forecast error)**.
 0.8666666666666667
 ```
 
-**RMSE**
+**RMSE = 32.46**
 
 ```
 >>> mse = mean_squared_error(actualpd, ynewpd)
@@ -358,7 +358,7 @@ Here is the calculated **MDA**, **RMSE**, and **MFE (mean forecast error)**.
 RMSE: 32.465499
 ```
 
-**MFE**
+**MFE = -28.06**
 
 ```
 >>> forecast_error = (ynewpd-actualpd)
@@ -371,6 +371,8 @@ RMSE: 32.465499
 Here is a plot of the predicted vs actual weekly ADR:
 
 7_adr
+
+With the mean weekly ADR for the test set coming in at **160.49**, the RMSE and MFE performance do look reasonably strong (the lower the error, the better).
 
 ## H2 results
 
@@ -409,3 +411,15 @@ RMSE: 37.813123
 Again, a plot for the predicted vs actual cancellations per week is generated:
 
 8_adr
+
+For the H2 dataset, the mean weekly ADR on the test set came in at **131.42**, with RMSE and MFE errors low by comparison.
+
+## Conclusion
+
+In this example, you have seen how ADR can be forecasted using an LSTM model. Specifically, the above examples have illustrated:
+
+- How to construct an LSTM model
+- Methods to gauge error and accuracy for LSTM model predictions
+- Comparison of LSTM model performance vs ARIMA
+
+The datasets and notebooks for this example are available at the [MGCodesandStats GitHub repository](https://github.com/MGCodesandStats/hotel-modelling), along with further research on this topic.
