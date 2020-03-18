@@ -1,4 +1,4 @@
-## Forecasting ADR Trends For Hotels Using LSTM
+# Forecasting ADR Trends For Hotels Using LSTM
 
 Average Daily Rate (ADR) is recognised as one of the most important metrics for hotels.
 
@@ -56,3 +56,4 @@ plt.show()
 
 3_adr
 
+## LSTM Model Configuration
