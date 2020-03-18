@@ -372,7 +372,7 @@ RMSE: 32.465499
 
 Here is a plot of the predicted vs actual weekly ADR:
 
-7_adr
+![6_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/6_adr.png)
 
 With the mean weekly ADR for the test set coming in at **160.49**, the RMSE and MFE performance do look reasonably strong (the lower the error, the better).
 
@@ -380,7 +380,7 @@ With the mean weekly ADR for the test set coming in at **160.49**, the RMSE and 
 
 The same procedure was carried out on the H2 dataset (ADR data for a separate hotel in Portugal). Here are the results when comparing the predictions to the test set:
 
-**MDA**
+**MDA = 0.86**
 
 ```
 >>> mda(actualpd, ynewpd)
@@ -388,7 +388,7 @@ The same procedure was carried out on the H2 dataset (ADR data for a separate ho
 0.8666666666666667
 ```
 
-**RMSE**
+**RMSE = 37.81**
 
 ```
 >>> mse = mean_squared_error(actualpd, ynewpd)
@@ -398,7 +398,7 @@ The same procedure was carried out on the H2 dataset (ADR data for a separate ho
 RMSE: 37.813123
 ```
 
-**MFE**
+**MFE = -34.26**
 
 ```
 >>> forecast_error = (ynewpd-actualpd)
@@ -410,7 +410,7 @@ RMSE: 37.813123
 
 Again, a plot for the predicted vs actual weekly ADR is generated:
 
-8_adr
+![7_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/7_adr.png)
 
 For the H2 dataset, the mean weekly ADR on the test set came in at **131.42**, with RMSE and MFE errors low by comparison.
 
