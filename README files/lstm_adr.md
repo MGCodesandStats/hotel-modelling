@@ -1,5 +1,7 @@
 # Forecasting ADR Trends For Hotels Using LSTM
 
+Here is how an LSTM model can be used to forecast the ADR (average daily rate) for hotels - a cornerstone metric within the industry.
+
 Average Daily Rate (ADR) is recognised as one of the most important [metrics for hotels](https://roompricegenie.com/average-rate-adr/).
 
 It is calculated as follows:
@@ -316,7 +318,7 @@ array([0.02734422, 0.02657082, 0.12983991, 0.21810737, 0.27148032,
 The array is converted back to the original value format:
 
 ```
->>> ynew = ynew * np.abs(maxcancel-mincancel) + np.min(tseries)
+>>> ynew = ynew * np.abs(maxt-mint) + np.min(tseries)
 >>> ynewpd=pd.Series(ynew)
 >>> ynewpd
 
@@ -389,8 +391,6 @@ The same procedure was carried out on the H2 dataset (ADR data for a separate ho
 **RMSE**
 
 ```
-# mean cancellations per week for this hotel was 280 across the test set
-
 >>> mse = mean_squared_error(actualpd, ynewpd)
 >>> rmse = sqrt(mse)
 >>> print('RMSE: %f' % rmse)
@@ -408,7 +408,7 @@ RMSE: 37.813123
 -34.26281750539097
 ```
 
-Again, a plot for the predicted vs actual cancellations per week is generated:
+Again, a plot for the predicted vs actual weekly ADR is generated:
 
 8_adr
 
