@@ -37,3 +37,22 @@ Here is what the new dataframe looks like:
 2_adr
 
 As a side note, the full notebook and datasets are available at the link for the GitHub repository provided below, where the data manipulation procedures are illustrated in more detail.
+
+A plot of the time series is generated:
+
+```
+import matplotlib.pyplot as plt
+plt.plot(tseries)
+plt.tick_params(
+    axis='x',          # changes apply to the x-axis
+    which='both',      # both major and minor ticks are affected
+    bottom=False,      # ticks along the bottom edge are off
+    top=False,         # ticks along the top edge are off
+    labelbottom=False) # labels along the bottom edge are off
+plt.ylabel('ADR')
+plt.title("Weekly ADR")
+plt.show()
+```
+
+3_adr
+
