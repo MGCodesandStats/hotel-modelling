@@ -249,9 +249,9 @@ The mean directional accuracy is now calculated:
 0.8571428571428571
 ```
 
-An MDA of **86%** is obtained, meaning that the model correctly predicts the direction of the actual weekly cancellation trends 86% of the time.
+An MDA of **86%** is obtained, meaning that the model correctly predicts the direction of the actual weekly ADR trends 86% of the time.
 
-As seen above, a validation score of **9.08** RMSE was also obtained. RMSE is a measure of the deviation in cancellations from the actual values, and assumes the same numerical format as the same. The mean weekly ADR across the validation data was **69.99**.
+As seen above, a validation score of **9.08** RMSE was also obtained. RMSE is a measure of the deviation in weekly ADR from the actual values, and assumes the same numerical format as the same. The mean weekly ADR across the validation data was **69.99**.
 
 The mean forecast error on the validation data came in at **0.1023**:
 
@@ -269,10 +269,12 @@ Now that the model has been trained, the next step is to test the predictions of
 
 As previously explained, the value at time *t* is being predicted by LSTM using the values *t-1*, *t-2*, *t-3*, *t-4*, and *t-5*.
 
-The last 10 weekly cancellation values in the series are predicted in this case.
+The last 15 weekly ADR values in the series are predicted in this case.
 
 ```
-actual = np.array([[161,131,139,150,157,173,140,182,143,100]])
+actual = tseries.iloc[100:115]
+actual = np.array(actual)
+actual
 ```
 
 The previously built model is now used to predict each value using the previous five values in the time series:
@@ -282,16 +284,15 @@ The previously built model is now used to predict each value using the previous 
 # (t) and (t-5)
 >>> XNew
 
-array([[130, 202, 117, 152, 131],
-       [202, 117, 152, 131, 161],
-       [117, 152, 131, 161, 131],
-       [152, 131, 161, 131, 139],
-       [131, 161, 131, 139, 150],
-       [161, 131, 139, 150, 157],
-       [131, 139, 150, 157, 173],
-       [139, 150, 157, 173, 140],
-       [150, 157, 173, 140, 182],
-       [157, 173, 140, 182, 143]])
+array([[ 82.1267268 ,  90.48381679,  85.81940503,  84.46819121,
+         83.25621451],
+       [ 90.48381679,  85.81940503,  84.46819121,  83.25621451,
+         84.12304147],
+...
+       [189.16831978, 198.22268542, 208.71251185, 211.52835052,
+        211.16204036],
+       [198.22268542, 208.71251185, 211.52835052, 211.16204036,
+        210.28488251]])
 ```
 
 The variables are scaled appropriately, and ```model.predict``` is invoked:
@@ -306,8 +307,9 @@ ynew=model.predict(Xnewformat)
 Here is an array of the generated predictions:
 
 ```
-array([0.14147764, 0.38846755, 0.33262578, 0.30260864, 0.24446128,
-       0.44191664, 0.52529824, 0.5520171 , 0.4564184 , 0.5267743 ],
+array([0.02734422, 0.02657082, 0.12983991, 0.21810737, 0.27148032,
+       0.3479783 , 0.37128675, 0.5604272 , 0.7467782 , 0.9080055 ,
+       0.96596056, 0.9626333 , 0.8943093 , 0.8230606 , 0.75791305],
       dtype=float32)
 ```
 
@@ -318,16 +320,21 @@ The array is converted back to the original value format:
 >>> ynewpd=pd.Series(ynew)
 >>> ynewpd
 
-0     43.427349
-1     94.801254
-2     83.186165
-3     76.942596
-4     64.847946
-5    105.918663
-6    123.262032
-7    128.819550
-8    108.935028
-9    123.569054
+0      46.396572
+1      46.265270
+2      63.797688
+3      78.783218
+4      87.844559
+5     100.831940
+6     104.789108
+7     136.900269
+8     168.537842
+9     195.910065
+10    205.749329
+11    205.184448
+12    193.584808
+13    181.488617
+14    170.428253
 dtype: float32
 ```
 
@@ -338,7 +345,7 @@ Here is the calculated **MDA**, **RMSE**, and **MFE (mean forecast error)**.
 ```
 >>> mda(actualpd, ynewpd)
 
-0.8
+0.8666666666666667
 ```
 
 **RMSE**
@@ -348,7 +355,7 @@ Here is the calculated **MDA**, **RMSE**, and **MFE (mean forecast error)**.
 >>> rmse = sqrt(mse)
 >>> print('RMSE: %f' % rmse)
 
-RMSE: 64.344693
+RMSE: 32.465499
 ```
 
 **MFE**
@@ -358,7 +365,10 @@ RMSE: 64.344693
 >>> mean_forecast_error = np.mean(forecast_error)
 >>> mean_forecast_error
 
--52.22903633117676
+-28.05934314151199
 ```
 
-Here is a plot of the predicted vs actual cancellations per week:
+Here is a plot of the predicted vs actual weekly ADR:
+
+7_adr
+
