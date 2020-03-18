@@ -372,3 +372,40 @@ Here is a plot of the predicted vs actual weekly ADR:
 
 7_adr
 
+## H2 results
+
+The same procedure was carried out on the H2 dataset (ADR data for a separate hotel in Portugal). Here are the results when comparing the predictions to the test set:
+
+**MDA**
+
+```
+>>> mda(actualpd, ynewpd)
+
+0.8666666666666667
+```
+
+**RMSE**
+
+```
+# mean cancellations per week for this hotel was 280 across the test set
+
+>>> mse = mean_squared_error(actualpd, ynewpd)
+>>> rmse = sqrt(mse)
+>>> print('RMSE: %f' % rmse)
+
+RMSE: 37.813123
+```
+
+**MFE**
+
+```
+>>> forecast_error = (ynewpd-actualpd)
+>>> mean_forecast_error = np.mean(forecast_error)
+>>> mean_forecast_error
+
+-34.26281750539097
+```
+
+Again, a plot for the predicted vs actual cancellations per week is generated:
+
+8_adr
