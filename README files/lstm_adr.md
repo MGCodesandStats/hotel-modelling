@@ -14,7 +14,11 @@ Essentially, ADR is measuring the average price of a hotel room over a given per
 
 ## Background
 
-The [dataset](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations) under study consists of cancellation bookings for a Portuguese hotel which includes the ADR for each individual booking as one of the included variables. Using time series analysis, let us assume that the hotel wishes to 1) calculate the average ADR value across all bookings for a given week and 2) use this data to forecast future weekly ADR trends - by weekly ADR we mean the average ADR across all bookings in any one week - hereafter referred to as "weekly ADR".
+The [dataset](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations) under study consists of cancellation bookings for a Portuguese hotel which includes the ADR for each individual booking as one of the included variables.
+
+Using time series analysis, let us assume that the hotel wishes to 1) calculate the average ADR value across all bookings for a given week and 2) use this data to forecast future weekly ADR trends - by weekly ADR we mean the average ADR across all bookings in any one week - hereafter referred to as "weekly ADR".
+
+One will note in the dataset that there are numerous cancellation incidences with a positive ADR value — it is assumed in this case that even though the customer cancelled, they were still ultimately charged for the booking (e.g. cancelling past the cancellation deadline, etc).
 
 A long-short term memory network (LSTM) is used to do this. LSTMs are sequential neural networks that assume dependence between the observations in a particular series. As such, they have increasingly come to be used for time series forecasting purposes.
 
