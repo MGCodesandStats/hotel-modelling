@@ -354,29 +354,25 @@ Here is the calculated **MDA**, **RMSE**, and **MFE (mean forecast error)**.
 0.8666666666666667
 ```
 
-**RMSE = 32.46**
+**RMSE = 33.27**
 
 ```
 >>> mse = mean_squared_error(actualpd, ynewpd)
 >>> rmse = sqrt(mse)
 >>> print('RMSE: %f' % rmse)
 
-RMSE: 32.465499
+RMSE: 33.277599
 ```
 
-**MFE = -28.06**
+**MFE = -29.30**
 
 ```
 >>> forecast_error = (ynewpd-actualpd)
 >>> mean_forecast_error = np.mean(forecast_error)
 >>> mean_forecast_error
 
--28.05934314151199
+-29.301021252270456
 ```
-
-Here is a plot of the predicted vs actual weekly ADR:
-
-![6_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/6_adr.png)
 
 With the mean weekly ADR for the test set coming in at **160.49**, the RMSE and MFE performance do look reasonably strong (the lower the error, the better).
 
@@ -392,29 +388,25 @@ The same procedure was carried out on the H2 dataset (ADR data for a separate ho
 0.8666666666666667
 ```
 
-**RMSE = 37.81**
+**RMSE = 37.25**
 
 ```
 >>> mse = mean_squared_error(actualpd, ynewpd)
 >>> rmse = sqrt(mse)
 >>> print('RMSE: %f' % rmse)
 
-RMSE: 37.813123
+RMSE: 37.253612
 ```
 
-**MFE = -34.26**
+**MFE = -33.50**
 
 ```
 >>> forecast_error = (ynewpd-actualpd)
 >>> mean_forecast_error = np.mean(forecast_error)
 >>> mean_forecast_error
 
--34.26281750539097
+-33.50923525034539
 ```
-
-Again, a plot for the predicted vs actual weekly ADR is generated:
-
-![8_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/8_adr.png)
 
 For the H2 dataset, the mean weekly ADR on the test set came in at **131.42**, with RMSE and MFE errors low by comparison.
 
