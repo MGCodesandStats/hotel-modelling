@@ -6,7 +6,7 @@ Each individual article with relevant findings can be accessed as below:
 
 - [Classification of Hotel Cancellations Using KNN and SMOTE](https://www.michael-grogan.com/hotel-modelling/articles/knn)
 
-- [Feature Selection Methods In Python: Predicting Hotel Cancellations](https://www.michael-grogan.com/hotel-modelling/articles/feature_selection)
+- [Feature Selection Methods](https://www.michael-grogan.com/hotel-modelling/articles/feature_selection)
 
 - [Forecasting Average Daily Rate Trends For Hotels Using LSTM](https://www.michael-grogan.com/hotel-modelling/articles/lstm_adr)
 
@@ -20,4 +20,4 @@ Each individual article with relevant findings can be accessed as below:
 
 - [Using Prophet To Forecast Weekly Hotel Cancellations](https://www.michael-grogan.com/hotel-modelling/articles/prophet_hotelcancellations)
 
-- [XGBoost and Classification: Predicting Hotel Cancellations](https://www.michael-grogan.com/hotel-modelling/articles/boosting)
+- [XGBoost and Classification](https://www.michael-grogan.com/hotel-modelling/articles/boosting)
