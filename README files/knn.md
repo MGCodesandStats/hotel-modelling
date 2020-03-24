@@ -25,7 +25,7 @@ Counter is imported for the purposes of summarizing the class distributions.
 
 For instance, the original class distribution comprised of 0: 28938 and 1: 11122. However, after applying the SMOTE oversampling technique, we now see that the number of observations in each class are equal.
 
-![1_knn.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/1_knn.png)
+![1_knn.png](1_knn.png)
 
 A train-test split is then invoked to separate the data into training and validation data.
 
@@ -72,7 +72,7 @@ Validation set score: 0.83
 
 Here is a visual of the training classes versus test predictions as illustrated by the KNN model:
 
-![2_knn.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/2_knn.png)
+![2_knn.png](2_knn.png)
 
 While the validation set score of 0.84 was impressive, how do we know whether we were simply lucky in selecting the validation set that validated the predictions of the model? To ensure that this is not just a random fluke, the k-fold cross validation technique can be used.
 

@@ -34,11 +34,11 @@ Here is a visual inspection of the two time series:
 
 ### H1
 
-![h1](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/h1.png)
+![h1](h1.png)
 
 ### H2
 
-![h2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/h2.png)
+![h2](h2.png)
 
 ## Trend Changepoints
 
@@ -48,7 +48,7 @@ For this example, 20 changepoints are specified for the prediction.
 
 As an example, here is a visual overview of the specified changepoints for H2 (the second time series):
 
-![1](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/1.png)
+![1](1.png)
 
 In the first instance, the predictions are generated without any seasonality, i.e. daily, weekly, and yearly seasonality are disabled.
 
@@ -97,7 +97,7 @@ forecast_data = pro_change.predict(future_data)
 pro_change.plot(forecast_data);
 ```
 
-![h1forecasts.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/h1forecasts.png)
+![h1forecasts.png](h1forecasts.png)
 
 ### H1 Results
 
@@ -120,7 +120,7 @@ forecast_data = pro_change.predict(future_data)
 pro_change.plot(forecast_data);
 ```
 
-![h2forecasts.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/h2forecasts.png)
+![h2forecasts.png](h2forecasts.png)
 
 ### H2 Results
 
@@ -183,12 +183,12 @@ pro_holiday.plot(forecast_data);
 
 ## Forecast for Model 1
 
-![2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/2.png)
+![2](2.png)
 
 
 ## Forecast for Model 2
 
-![3](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/3.png)
+![3](3.png)
 
 Here are the H1 and H2 Results for the second Prophet model:
 

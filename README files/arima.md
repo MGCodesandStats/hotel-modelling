@@ -16,21 +16,21 @@ Once the model has been configured, the last 15 observations are then used as **
 
 Here is a snippet of the output:
 
-![cancellationweeks](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/cancellationweeks.png)
+![cancellationweeks](cancellationweeks.png)
 
 The time series is visualised, and the autocorrelation and partial autocorrelation plots are generated:
 
 **Time Series**
 
-![time-series](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/time-series.png)
+![time-series](time-series.png)
 
 **Autocorrelation**
 
-![autocorrelation](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/autocorrelation.png)
+![autocorrelation](autocorrelation.png)
 
 **Partial Autocorrelation**
 
-![partial-autocorrelation](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/partial-autocorrelation.png)
+![partial-autocorrelation](partial-autocorrelation.png)
 
 ```
 #Dickey-Fuller Test
@@ -83,11 +83,11 @@ Based on the lowest AIC, the **SARIMAX(1, 1, 0)x(0, 1, 0, 52)** configuration is
 
 Here is the output of the model:
 
-![arima-model](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/arima-model.PNG)
+![arima-model](arima-model.PNG)
 
 With **90%** of the series used as the training data to build the ARIMA model, the remaining **10%** is now used to test the predictions of the model. Here are the predictions vs the actual data:
 
-![validation-vs-predicted](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/validation-vs-predicted.png)
+![validation-vs-predicted](validation-vs-predicted.png)
 
 We can see that while the prediction values were lower than the actual test values, the direction of the two series seem to be following each other.
 
@@ -193,7 +193,7 @@ The RMSE has improved slightly (dropped to 57), while the MDA has dropped to 86%
 
 Here is a plot of the predicted vs actual cancellations:
 
-![predicted-vs-actual](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-actual.png)
+![predicted-vs-actual](predicted-vs-actual.png)
 
 ## ARIMA Modelling on H2 Data
 
@@ -201,15 +201,15 @@ The same procedures were applied - this time using the second dataset.
 
 The following is the ARIMA configuration obtained using pyramid-arima:
 
-![arima-model-2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/arima-model-2.PNG)
+![arima-model-2](arima-model-2.PNG)
 
 **Predicted vs. Validation**
 
-![predicted-vs-val-2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-val-2.png)
+![predicted-vs-val-2](predicted-vs-val-2.png)
 
 **Predicted vs. Actual**
 
-![predicted-vs-actual-2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-actual-2.png)
+![predicted-vs-actual-2](predicted-vs-actual-2.png)
 
 - **RMSE on test data:** 274
 - **Mean Directional Accuracy:** 0.8666

@@ -28,7 +28,7 @@ For reference, ADR per customer is included - given that some customers are also
 
 Using pandas, the full date (year and week number) is joined with the corresponding ADR Value for each booking.
 
-![1_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/1_adr.png)
+![1_adr](1_adr.png)
 
 These data points were then grouped together to obtain the average ADR per week across all bookings as follows:
 
@@ -40,7 +40,7 @@ df4.sort_values(['FullDate'], ascending=True)
 
 Here is what the new dataframe looks like:
 
-![2_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/2_adr.png)
+![2_adr](2_adr.png)
 
 As a side note, the full notebook and datasets are available at the link for the GitHub repository provided below, where the data manipulation procedures are illustrated in more detail.
 
@@ -60,7 +60,7 @@ plt.title("Weekly ADR")
 plt.show()
 ```
 
-![3_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/3_adr.png)
+![3_adr](3_adr.png)
 
 ## LSTM Model Configuration
 
@@ -172,7 +172,7 @@ dict_keys(['loss', 'val_loss'])
 
 This is a visual representation of the training and validation loss:
 
-![4_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/4_adr.png)
+![4_adr](4_adr.png)
 
 ## Training and Validation Predictions
 
@@ -234,7 +234,7 @@ Validation Score: 9.08 RMSE
 
 Here is a plot of the predictions:
 
-![5_adr](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/5_adr.png)
+![5_adr](5_adr.png)
 
 The test and prediction arrays are reshaped accordingly, and the function for *mean directional accuracy* is defined:
 

@@ -125,7 +125,7 @@ ext
 ext.sort_values(['extratrees'], ascending=True)
 ```
 
-![image1amended.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/image1amended.png)
+![image1amended.png](image1amended.png)
 
 The top identified features are features 1, 12, 13, 21, 23, 25 (lead time, country of origin, market segment, deposit type, customer type, and required car parking spaces). Note that feature **27** (reservation status) is not valid in this case, since this effectively represents the same thing as the response variable - i.e. whether a customer cancelled or followed through with their booking. In this case, including the feature in the analysis would be erroneous.
 

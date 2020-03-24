@@ -8,13 +8,13 @@ LSTMs are sequential neural networks that assume dependence between the observat
 
 In the last example, the cancellation data was already sorted into weekly values by pandas. The total weekly cancellations were sorted as follows:
 
-![cancellationweeks.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/cancellationweeks.png)
+![cancellationweeks.png](cancellationweeks.png)
 
 Now, an LSTM is used to predict cancellations for both the validation and test sets, and ultimately gauge model performance in terms of mean directional accuracy and root mean square error (RMSE).
 
 Here is a sample of the time series:
 
-![time-series](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/time-series.png)
+![time-series](time-series.png)
 
 The Dickey-Fuller test was used to test for stationarity. With a p-value of 0.05, a unit root is not indicated to be present and the alternative hypothesis of stationarity is supported.
 
@@ -153,7 +153,7 @@ dict_keys(['loss', 'val_loss'])
 
 This is a visual representation of the training and validation loss:
 
-![model-loss-H1](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/model-loss-H1.png)
+![model-loss-H1](model-loss-H1.png)
 
 ## Training and Validation Predictions
 
@@ -216,7 +216,7 @@ Validation Score: 36.61 RMSE
 
 Here is a plot of the predictions:
 
-![h1predictiongraph.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/h1predictiongraph.png)
+![h1predictiongraph.png](h1predictiongraph.png)
 
 The test and prediction arrays are reshaped accordingly, and the function for *mean directional accuracy* is defined:
 
@@ -341,7 +341,7 @@ RMSE: 64.344693
 
 Here is a plot of the predicted vs actual cancellations per week:
 
-![predicted-vs-test.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-test.png)
+![predicted-vs-test.png](predicted-vs-test.png)
 
 As we can see, the MDA has dropped slightly, and the RMSE has increased to 66. Based on the graph and the mean forecast error, the model has a tendency to underestimate the values for the weekly cancellations; i.e. the forecast is negatively biased.
 
@@ -381,7 +381,7 @@ RMSE: 92.000303
 
 Again, a plot for the predicted vs actual cancellations per week is generated:
 
-![predicted-vs-test-2.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-test-2.png)
+![predicted-vs-test-2.png](predicted-vs-test-2.png)
 
 ## Comparison with ARIMA
 
@@ -416,11 +416,11 @@ Let's compare the two time series once again.
 
 **H1**
 
-![predicted-vs-test.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-test.png)
+![predicted-vs-test.png](predicted-vs-test.png)
 
 **H2**
 
-![predicted-vs-test-2.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/predicted-vs-test-2.png)
+![predicted-vs-test-2.png](predicted-vs-test-2.png)
 
 It can be observed that the second time series is significantly more volatile than the first (there is more of a "zig-zag" pattern present).
 
