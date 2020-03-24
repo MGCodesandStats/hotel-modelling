@@ -16,7 +16,7 @@ A neural network consists of:
 - Hidden layers: Layers that use backpropagation to optimise the weights of the input variables in order to improve the predictive power of the model
 - Output layers: Output of predictions based on the data from the input and hidden layers
 
-![neuralplot.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/neuralplot.png)
+![neuralplot.png](neuralplot.png)
 
 ## Background
 
@@ -166,7 +166,7 @@ plt.legend(['train', 'validation'], loc='upper left')
 plt.show()
 ```
 
-![loss-30-epochs.png](https://github.com/MGCodesandStats/hotel-modelling/blob/master/images/loss-30-epochs.png)
+![loss-30-epochs.png](loss-30-epochs.png)
 
 Both the training and validation loss decrease in an exponential fashion as the number of epochs is increased, suggesting that the model gains a high degree of accuracy as our epochs (or number of forward and backward passes) is increased.
 
