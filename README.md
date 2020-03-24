@@ -4,20 +4,20 @@ The purpose of this project is to predict hotel cancellations for two separate h
 
 Each individual article with relevant findings can be accessed as below:
 
-- https://www.michael-grogan.com/hotel-modelling/articles/arima
+- [Classification of Hotel Cancellations Using KNN and SMOTE](https://www.michael-grogan.com/hotel-modelling/articles/knn)
 
-- https://www.michael-grogan.com/hotel-modelling/articles/boosting
+- [Feature Selection Methods In Python: Predicting Hotel Cancellations](https://www.michael-grogan.com/hotel-modelling/articles/feature_selection)
 
-- https://www.michael-grogan.com/hotel-modelling/articles/feature_selection
+- [Forecasting Average Daily Rate Trends For Hotels Using LSTM](https://www.michael-grogan.com/hotel-modelling/articles/lstm_adr)
 
-- https://www.michael-grogan.com/hotel-modelling/articles/knn
+- [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm)
 
-- https://www.michael-grogan.com/hotel-modelling/articles/lstm_adr
+- [Predicting Weekly Hotel Cancellations with ARIMA](https://www.michael-grogan.com/hotel-modelling/articles/arima)
 
-- https://www.michael-grogan.com/hotel-modelling/articles/lstm_weeklycancellations
+- [Predicting Weekly Hotel Cancellations with an LSTM Network](https://www.michael-grogan.com/hotel-modelling/articles/lstm_weeklycancellations)
 
-- https://www.michael-grogan.com/hotel-modelling/articles/prophet_hotelcancellations
+- [Regression-based neural networks with TensorFlow v2.0: Predicting Hotel Lead Time](https://www.michael-grogan.com/hotel-modelling/articles/regression_neural_network)
 
-- https://www.michael-grogan.com/hotel-modelling/articles/regression_neural_network
+- [Using Prophet To Forecast Weekly Hotel Cancellations](https://www.michael-grogan.com/hotel-modelling/articles/prophet_hotelcancellations)
 
-- https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm
+- [XGBoost and Classification: Predicting Hotel Cancellations](https://www.michael-grogan.com/hotel-modelling/articles/boosting)
