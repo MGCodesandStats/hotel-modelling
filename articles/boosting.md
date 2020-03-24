@@ -1,4 +1,4 @@
-    # XGBoost and Classification: Predicting Hotel Cancellations
+# XGBoost and Classification: Predicting Hotel Cancellations
 
 Boosting is quite a popular technique in machine learning, which aims to improve prediction accuracy by combining many weak models into one strong model.
 
