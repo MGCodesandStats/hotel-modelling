@@ -1,3 +1,11 @@
+[Home](https://mgcodesandstats.github.io/) |
+[Medium](https://medium.com/@firstclassanalyticsmg) |
+[LinkedIn](https://www.linkedin.com/in/michaeljgrogan/) |
+[GitHub](https://github.com/mgcodesandstats) |
+[Speaking Engagements](https://mgcodesandstats.github.io/speaking-engagements/) |
+[Terms](https://mgcodesandstats.github.io/terms/) |
+[E-mail](mailto:contact@michael-grogan.com)
+
 # XGBoost and Classification: Predicting Hotel Cancellations
 
 Boosting is quite a popular technique in machine learning, which aims to improve prediction accuracy by combining many weak models into one strong model.
