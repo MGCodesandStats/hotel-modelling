@@ -18,6 +18,4 @@ Each individual article with relevant findings can be accessed as below:
 
 - [Regression-based neural networks with TensorFlow v2.0: Predicting Hotel Lead Time](https://www.michael-grogan.com/hotel-modelling/articles/regression_neural_network)
 
-- [Using Prophet To Forecast Weekly Hotel Cancellations](https://www.michael-grogan.com/hotel-modelling/articles/prophet_hotelcancellations)
-
 - [XGBoost and Classification](https://www.michael-grogan.com/hotel-modelling/articles/boosting)
