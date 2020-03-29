@@ -1,6 +1,6 @@
 # Predicting Hotel Cancellations with Machine Learning
 
-The purpose of this project is to predict hotel cancellations for two separate hotels in Portugal, both on a classification and time series basis. Included in the GitHub repository are the datasets and notebooks for all models run.
+The purpose of this project is to predict hotel cancellations for two separate hotels in Portugal, both on a classification and time series basis. Included in the GitHub repository are the datasets and notebooks for all models run. The Python version used is 3.6.5.
 
 Each individual article with relevant findings can be accessed as below:
 
