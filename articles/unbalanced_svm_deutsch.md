@@ -49,6 +49,8 @@ Im Allgemeinen, man würde ein falsches Positiv bevorzugen, da es dem Hotelmanag
 
 Die Daten werden in Training und Validation aufgeteilt, und das Modell wird auf dem H1-Datensatz trainiert.
 
+Das 'class_weight' ist auf 'balanced' eingestellt. Dies bedeutet, dass Fehler in der Nebenklasse stärker bestraft werden.
+
 ```
 y1 = y
 x1 = np.column_stack((leadtime,countrycat,marketsegmentcat,deposittypecat,customertypecat,rcps,arrivaldateyear,arrivaldatemonthcat,arrivaldateweekno,arrivaldatedayofmonth))
