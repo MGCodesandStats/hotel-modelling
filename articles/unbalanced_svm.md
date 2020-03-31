@@ -40,7 +40,7 @@ When comparing the accuracy scores, we see that numerous readings are provided i
 However, a particularly important distinction exists between **precision** and **recall**. 
 
 ```
-Precison = ((True Positive)/(True Positive + False Positive))
+Precision = ((True Positive)/(True Positive + False Positive))
 
 Recall = ((True Positive)/(True Positive + False Negative))
 ```
