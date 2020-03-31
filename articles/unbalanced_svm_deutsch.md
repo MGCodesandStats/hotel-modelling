@@ -104,4 +104,6 @@ In diesem Beispiel man hat gesehen, wie man kann eine Support Vector Machine fü
 
 Die Datensätze und Notizbücher sind verfügbar hier: [MGCodesandStats GitHub Repository](https://github.com/MGCodesandStats/hotel-modelling).
 
+Dieser Artikel in Englisch: [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm)
+
 Eine weitere nützliche Referenz: [Elite Data Science: How to Handle Imbalanced Classes in Machine Learning](https://elitedatascience.com/imbalanced-classes)
