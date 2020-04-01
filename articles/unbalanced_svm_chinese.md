@@ -8,7 +8,7 @@
 
 # 分类和: 支持向量机 (SVM)
 
-- This is a translated summary of the original article (in my best Chinese!): [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm)
+*This is a translated summary of the original article (in my best Chinese!): [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm)*
 
 不平衡的种类是一个问题. 为什么？
 
