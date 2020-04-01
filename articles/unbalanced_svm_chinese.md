@@ -47,8 +47,6 @@ Precision的增加通常会导致Recall的减少，反之亦然。
 
 说实话假阳性在这个情况下, 因为我们要发现什么客户有取消风险。
 
-## SVM und Unausgeglichene Klassen
-
 第H1资料集是我们的训练集.
 
 ```
