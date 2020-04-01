@@ -8,6 +8,8 @@
 
 # Unausgeglichene Klassen: Vorhersage von Hotelstornierungen mit Support Vector Machines
 
+- This is a translated summary of the original article (in my best German!): [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm)
+
 Unausgeglichene Klassen können Probleme verursachen wenn man Daten analysieren will. Warum?
 
 Eine unausgeglichene Klasse verursacht eine Situation, in der das Modell die Hauptklasse stärker in den Vordergrund stellt.
