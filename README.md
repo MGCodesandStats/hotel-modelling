@@ -12,13 +12,13 @@ The purpose of this project is to predict hotel cancellations for two separate h
 
 ## Summary of Results
 
-- SVM (Support Vector Machines) showed the highest overall F1 acccuracy score of **70%** in classifying hotel booking cancellations (both customers that cancel versus those that follow through with the booking). Recall (for booking cancellations) came in at **69%**.
+* SVM (Support Vector Machines) showed the highest overall F1 acccuracy score of **70%** in classifying hotel booking cancellations (both customers that cancel versus those that follow through with the booking). Recall (for booking cancellations) came in at **69%**.
 
-- However, XGBoost demonstrated a recall of **94%** for booking cancellations (i.e. of all customers who cancelled their hotel booking, the model correctly identified 94% of these), while overall accuracy came in at **55%**.
+* However, XGBoost demonstrated a recall of **94%** for booking cancellations (i.e. of all customers who cancelled their hotel booking, the model correctly identified 94% of these), while overall accuracy came in at **55%**.
 
-- ARIMA showed a superior performance in forecasting weekly hotel cancellations for dataset H1, while LSTM showed superior performance for dataset H2.
+* ARIMA showed a superior performance in forecasting weekly hotel cancellations for dataset H1, while LSTM showed superior performance for dataset H2.
 
-- An LSTM model was used to forecast ADR (average daily rate) trends, while a regression-based neural network was used to predict lead time across customers. Findings are available in more detail below.
+* An LSTM model was used to forecast ADR (average daily rate) trends, while a regression-based neural network was used to predict lead time across customers. Findings are available in more detail below.
 
 ## Findings
 
@@ -26,20 +26,24 @@ Each individual article with relevant findings can be accessed as below:
 
 ### Feature Selection, Classification and Regression
 
-- [Classification of Hotel Cancellations Using KNN and SMOTE](https://www.michael-grogan.com/hotel-modelling/articles/knn)
+* [Classification of Hotel Cancellations Using KNN and SMOTE](https://www.michael-grogan.com/hotel-modelling/articles/knn)
 
-- [Feature Selection Methods](https://www.michael-grogan.com/hotel-modelling/articles/feature_selection)
+* [Feature Selection Methods](https://www.michael-grogan.com/hotel-modelling/articles/feature_selection)
 
-- [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm)
+* [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm)
 
-- [Regression-based neural networks with TensorFlow v2.0: Predicting Hotel Lead Time](https://www.michael-grogan.com/hotel-modelling/articles/regression_neural_network)
+* [Regression-based neural networks with TensorFlow v2.0: Predicting Hotel Lead Time](https://www.michael-grogan.com/hotel-modelling/articles/regression_neural_network)
 
-- [XGBoost and Classification](https://www.michael-grogan.com/hotel-modelling/articles/boosting)
+* [XGBoost and Classification](https://www.michael-grogan.com/hotel-modelling/articles/boosting)
 
 ### Time Series Forecasting
 
-- [Forecasting Average Daily Rate Trends For Hotels Using LSTM](https://www.michael-grogan.com/hotel-modelling/articles/lstm_adr)
+* [Forecasting Average Daily Rate Trends For Hotels Using LSTM](https://www.michael-grogan.com/hotel-modelling/articles/lstm_adr)
 
-- [Predicting Weekly Hotel Cancellations with ARIMA](https://www.michael-grogan.com/hotel-modelling/articles/arima)
+* [Predicting Weekly Hotel Cancellations with ARIMA](https://www.michael-grogan.com/hotel-modelling/articles/arima)
 
-- [Predicting Weekly Hotel Cancellations with an LSTM Network](https://www.michael-grogan.com/hotel-modelling/articles/lstm_weeklycancellations)
+* [Predicting Weekly Hotel Cancellations with an LSTM Network](https://www.michael-grogan.com/hotel-modelling/articles/lstm_weeklycancellations)
+
+* Some translations in Chinese and German:
+    + [分类和: 支持向量机 (SVM)](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm_chinese)
+    + [Unausgeglichene Klassen: Vorhersage von Hotelstornierungen mit SVM](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm_deutsch) 
