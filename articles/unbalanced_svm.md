@@ -39,7 +39,7 @@ An SVM is a supervised learning model that can be used for both classification a
 
 The SVM model provides an assessment of the importance of each training point when defining the decision limit between two classes.
 
-![svm-plane.png][svm-plane.png]
+![svm-plane.png](svm-plane.png)
 
 The few training points selected that lie on the decision boundary between the two classes are called support vectors.
 

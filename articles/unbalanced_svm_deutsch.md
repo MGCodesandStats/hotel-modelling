@@ -39,7 +39,7 @@ Dieses Modell wird sowohl für Klassifizierungs- als auch für Regressionsaufgab
 
 Das SVM-Modell ermöglicht eine Beurteilung, wie wichtig jeder Trainingspunkt für die Definition der Entscheidungsgrenze zwischen den beiden Klassen ist.
 
-![svm-plane.png][svm-plane.png]
+![svm-plane.png](svm-plane.png)
 
 Die wenigen ausgewählten Trainingspunkte, die an der Entscheidungsgrenze zwischen den beiden Klassen liegen, werden als Unterstützungsvektoren bezeichnet.
 
