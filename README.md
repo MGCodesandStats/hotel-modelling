@@ -18,6 +18,23 @@ The purpose of this project is to predict hotel cancellations for two separate h
 
 * ARIMA showed stronger performance in predicting weekly cancellations across H1, while LSTM showed stronger performance across the H2 dataset.
 
+**H1 Results**
+
+| Reading      | ARIMA | LSTM |
+| ----------- | ----------- | ----------- |
+| MDA      | 0.86       | 0.8       |
+| RMSE   | 57.95        | 60.92       |
+| MFE   | -12.72        | -51.62        |
+
+
+**H2 Results**
+
+| Reading      | ARIMA | LSTM |
+| ----------- | ----------- | ----------- |
+| MDA      | 0.86       | 0.8       |
+| RMSE   | 274.08        | 109.53        |
+| MFE   | 156.33        | 54.07        |
+
 Each individual article with relevant findings can be accessed as below:
 
 ### Feature Selection and Classification
