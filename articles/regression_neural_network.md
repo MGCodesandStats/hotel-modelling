@@ -134,26 +134,26 @@ Let’s now fit our model.
 
 Train on 24036 samples, validate on 6009 samples
 Epoch 1/30
-24036/24036 [==============================] - 0s 18us/sample - loss: 0.0145 - mse: 0.0145 - mae: 0.0949 - val_loss: 0.0126 - val_mse: 0.0126 - val_mae: 0.0865
+24036/24036 [==============================] - 0s 18us/sample - loss: 0.0149 - mse: 0.0149 - mae: 0.0973 - val_loss: 0.0135 - val_mse: 0.0135 - val_mae: 0.0890
 Epoch 2/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0116 - mse: 0.0116 - mae: 0.0835 - val_loss: 0.0118 - val_mse: 0.0118 - val_mae: 0.0873
+24036/24036 [==============================] - 0s 11us/sample - loss: 0.0126 - mse: 0.0126 - mae: 0.0878 - val_loss: 0.0117 - val_mse: 0.0117 - val_mae: 0.0846
 Epoch 3/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0109 - mse: 0.0109 - mae: 0.0801 - val_loss: 0.0110 - val_mse: 0.0110 - val_mae: 0.0815
+24036/24036 [==============================] - 0s 12us/sample - loss: 0.0113 - mse: 0.0113 - mae: 0.0820 - val_loss: 0.0120 - val_mse: 0.0120 - val_mae: 0.0875
 Epoch 4/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0106 - mse: 0.0106 - mae: 0.0788 - val_loss: 0.0109 - val_mse: 0.0109 - val_mae: 0.0823
+24036/24036 [==============================] - 0s 14us/sample - loss: 0.0110 - mse: 0.0110 - mae: 0.0804 - val_loss: 0.0108 - val_mse: 0.0108 - val_mae: 0.0805
 Epoch 5/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0106 - mse: 0.0106 - mae: 0.0785 - val_loss: 0.0106 - val_mse: 0.0106 - val_mae: 0.0791
+24036/24036 [==============================] - 0s 13us/sample - loss: 0.0108 - mse: 0.0108 - mae: 0.0792 - val_loss: 0.0106 - val_mse: 0.0106 - val_mae: 0.0781
 ...
 Epoch 26/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0095 - mse: 0.0095 - mae: 0.0722 - val_loss: 0.0100 - val_mse: 0.0100 - val_mae: 0.0742
+24036/24036 [==============================] - 0s 20us/sample - loss: 0.0096 - mse: 0.0096 - mae: 0.0730 - val_loss: 0.0097 - val_mse: 0.0097 - val_mae: 0.0725
 Epoch 27/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0095 - mse: 0.0095 - mae: 0.0721 - val_loss: 0.0100 - val_mse: 0.0100 - val_mae: 0.0760
+24036/24036 [==============================] - 0s 19us/sample - loss: 0.0096 - mse: 0.0096 - mae: 0.0727 - val_loss: 0.0097 - val_mse: 0.0097 - val_mae: 0.0722
 Epoch 28/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0094 - mse: 0.0094 - mae: 0.0719 - val_loss: 0.0097 - val_mse: 0.0097 - val_mae: 0.0733
+24036/24036 [==============================] - 0s 19us/sample - loss: 0.0096 - mse: 0.0096 - mae: 0.0728 - val_loss: 0.0097 - val_mse: 0.0097 - val_mae: 0.0732
 Epoch 29/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0094 - mse: 0.0094 - mae: 0.0718 - val_loss: 0.0097 - val_mse: 0.0097 - val_mae: 0.0724
+24036/24036 [==============================] - 0s 19us/sample - loss: 0.0095 - mse: 0.0095 - mae: 0.0724 - val_loss: 0.0096 - val_mse: 0.0096 - val_mae: 0.0733
 Epoch 30/30
-24036/24036 [==============================] - 0s 11us/sample - loss: 0.0093 - mse: 0.0093 - mae: 0.0717 - val_loss: 0.0100 - val_mse: 0.0100 - val_mae: 0.0730
+24036/24036 [==============================] - 0s 19us/sample - loss: 0.0096 - mse: 0.0096 - mae: 0.0726 - val_loss: 0.0106 - val_mse: 0.0106 - val_mae: 0.0788
 ```
 
 Here, we can see that both the training loss and validation loss is being calculated, i.e. the deviation between the predicted y and actual y as measured by the mean squared error.
@@ -186,11 +186,11 @@ The calculated **mean absolute error** and **root mean squared error** are as fo
 
 ```
 >>> mean_absolute_error(btest, bpred)
-75.76811913597841
+83.97777165096376
 
 >>> mean_squared_error(btest, bpred)
 >>> math.sqrt(mean_squared_error(btest, bpred))
-99.24540016992077
+106.55153357442843  
 ```
 
 The mean lead time across the H2 dataset was 109.74.
@@ -220,12 +220,12 @@ Here is the model performance on the test set when the number of epochs are incr
 ```
 >>> mean_absolute_error(btest, bpred)
 
-78.76378749147307
+77.7379216230445
 
 >>> mean_squared_error(btest, bpred)
 >>> math.sqrt(mean_squared_error(btest, bpred))
 
-104.91980166114139
+103.62788287410419
 ```
 
 The MAE and RMSE were slightly lower when using 30 epochs and a batch size of 150 - suggesting that a smaller number of epochs with a larger batch size was superior in predicting lead times.
@@ -237,12 +237,12 @@ However, what if both the number of epochs and batch size is set to 150? Do the 
 ```
 >>> mean_absolute_error(btest, bpred)
 
-75.9663069505167
+80.70327151341507
 
 >>> mean_squared_error(btest, bpred)
 >>> math.sqrt(mean_squared_error(btest, bpred))
 
-101.82723099070178
+106.31792797643529
 ```
 
 When compared with a batch size of 150 over 30 epochs, the results are virtually identical, with the RMSE being slightly lower when 30 epochs are used.

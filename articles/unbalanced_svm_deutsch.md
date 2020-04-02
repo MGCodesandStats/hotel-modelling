@@ -31,6 +31,18 @@ Im Modell werden folgende Funktionen verwendet:
 - Arrival Date: Week Number
 - Arrival Date: Day of Month
 
+## Was ist SVM?
+
+SVM (Support Vector Machines) ist eine mathematisches Modell für betreute Lernzwecke.
+
+Dieses Modell wird sowohl für Klassifizierungs- als auch für Regressionsaufgaben verwendet.
+
+Das SVM-Modell ermöglicht eine Beurteilung, wie wichtig jeder Trainingspunkt für die Definition der Entscheidungsgrenze zwischen den beiden Klassen ist.
+
+![svm-plane.png][svm-plane.png]
+
+Die wenigen ausgewählten Trainingspunkte, die an der Entscheidungsgrenze zwischen den beiden Klassen liegen, werden als Unterstützungsvektoren bezeichnet.
+
 ## "Precision" (präzision) gegen "Recall" und f1-score
 
 **Precision** und **Recall** werden wie folgt berechnet:

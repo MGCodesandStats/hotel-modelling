@@ -101,7 +101,9 @@ Here is a sample of the output:
 ```
 array([[0.35915778],
        [0.42256282],
+       [0.53159902],
 ...
+       [0.27125524],
        [0.26293747],
        [0.25547682]])
 ```
@@ -130,21 +132,24 @@ When the *previous* parameter is set to this, this essentially means that the va
 Here is a sample of the *Y_train* array:
 
 ```
-array([0.25961538, 0.39423077, 0.26442308, 0.35576923, 0.64423077,
-       0.29807692, 0.82692308, 0.52403846, 0.37019231, 0.88461538,
-       0.00961538, 0.38461538, 0.14423077, 0.14903846, 0.19230769,
+array([0.70858066, 0.75574219, 0.7348692 , 0.63555916, 0.34629856,
+       0.32723163, 0.18514608, 0.21056117, 0.13243974, 0.1321469 ,
+       0.06636683, 0.09516089, 0.02223529, 0.02497857, 0.06036494,
 ...
-       0.28846154, 0.20673077, 0.10576923, 0.33653846])
+       0.12222412, 0.07324677, 0.05206859, 0.05937164, 0.04205497,
+       0.0867528 , 0.10976084, 0.0236608 , 0.11987636])
 ```
 
 Here is a sample of the *X_train* array:
 
 ```
-array([0.70858066, 0.75574219, 0.7348692 , 0.63555916, 0.34629856,
-       0.32723163, 0.18514608, 0.21056117, 0.13243974, 0.1321469 ,
+array([[0.35915778, 0.42256282, 0.53159902, 0.6084246 , 0.63902841],
+       [0.42256282, 0.53159902, 0.6084246 , 0.63902841, 0.70858066],
+       [0.53159902, 0.6084246 , 0.63902841, 0.70858066, 0.75574219],
 ...
-       0.12222412, 0.07324677, 0.05206859, 0.05937164, 0.04205497,
-       0.0867528 , 0.10976084, 0.0236608 , 0.11987636])
+       [0.07324677, 0.05206859, 0.05937164, 0.04205497, 0.0867528 ],
+       [0.05206859, 0.05937164, 0.04205497, 0.0867528 , 0.10976084],
+       [0.05937164, 0.04205497, 0.0867528 , 0.10976084, 0.0236608 ]])
 ```       
 
 100 epochs are run:
@@ -167,14 +172,14 @@ Here are some sample results:
 ```
 Train on 59 samples, validate on 15 samples
 Epoch 1/100
-59/59 - 1s - loss: 0.0996 - val_loss: 0.0030
+59/59 - 1s - loss: 0.0689 - val_loss: 0.0027
 Epoch 2/100
-59/59 - 0s - loss: 0.0711 - val_loss: 0.0086
+59/59 - 0s - loss: 0.0431 - val_loss: 0.0118
 ...
 Epoch 99/100
-59/59 - 0s - loss: 0.0071 - val_loss: 0.0033
+59/59 - 0s - loss: 0.0070 - val_loss: 0.0031
 Epoch 100/100
-59/59 - 0s - loss: 0.0071 - val_loss: 0.0036
+59/59 - 0s - loss: 0.0071 - val_loss: 0.0034
 dict_keys(['loss', 'val_loss'])
 ```
 
@@ -236,8 +241,8 @@ print('Validation Score: %.2f RMSE' % (valScore))
 **Training and Validation Scores**
 
 ```
-Train Score: 12.80 RMSE
-Validation Score: 9.08 RMSE
+Train Score: 12.71 RMSE
+Validation Score: 8.83 RMSE
 ```
 
 Here is a plot of the predictions:
@@ -265,16 +270,16 @@ The mean directional accuracy is now calculated:
 
 An MDA of **86%** is obtained, meaning that the model correctly predicts the direction of the actual weekly ADR trends 86% of the time.
 
-As seen above, a validation score of **9.08** RMSE was also obtained. RMSE is a measure of the deviation in weekly ADR from the actual values, and assumes the same numerical format as the same. The mean weekly ADR across the validation data was **69.99**.
+As seen above, a validation score of **8.83** RMSE was also obtained. RMSE is a measure of the deviation in weekly ADR from the actual values, and assumes the same numerical format as the same. The mean weekly ADR across the validation data was **69.99**.
 
-The mean forecast error on the validation data came in at **0.1023**:
+The mean forecast error on the validation data came in at **-1.419**:
 
 ```
 >>> forecast_error = (predictions-Y_val)
 >>> forecast_error
 >>> mean_forecast_error = np.mean(forecast_error)
 >>> mean_forecast_error
-0.10234788890946435
+-1.419167548625413
 ```
 
 ## Testing on unseen (test) data
@@ -321,9 +326,9 @@ ynew=model.predict(Xnewformat)
 Here is an array of the generated predictions:
 
 ```
-array([0.02734422, 0.02657082, 0.12983991, 0.21810737, 0.27148032,
-       0.3479783 , 0.37128675, 0.5604272 , 0.7467782 , 0.9080055 ,
-       0.96596056, 0.9626333 , 0.8943093 , 0.8230606 , 0.75791305],
+array([0.02153895, 0.0157201 , 0.12966183, 0.22085814, 0.26296526,
+       0.33762595, 0.35830092, 0.54184073, 0.73585206, 0.8718423 ,
+       0.92918825, 0.9334069 , 0.8861607 , 0.81483454, 0.76510745],
       dtype=float32)
 ```
 
@@ -334,21 +339,21 @@ The array is converted back to the original value format:
 >>> ynewpd=pd.Series(ynew)
 >>> ynewpd
 
-0      46.396572
-1      46.265270
-2      63.797688
-3      78.783218
-4      87.844559
-5     100.831940
-6     104.789108
-7     136.900269
-8     168.537842
-9     195.910065
-10    205.749329
-11    205.184448
-12    193.584808
-13    181.488617
-14    170.428253
+0      45.410988
+1      44.423096
+2      63.767456
+3      79.250229
+4      86.398926
+5      99.074379
+6     102.584457
+7     133.744766
+8     166.682877
+9     189.770493
+10    199.506348
+11    200.222565
+12    192.201385
+13    180.092041
+14    171.649673
 dtype: float32
 ```
 
@@ -362,24 +367,24 @@ Here is the calculated **MDA**, **RMSE**, and **MFE (mean forecast error)**.
 0.8666666666666667
 ```
 
-**RMSE = 33.27**
+**RMSE = 33.77**
 
 ```
 >>> mse = mean_squared_error(actualpd, ynewpd)
 >>> rmse = sqrt(mse)
 >>> print('RMSE: %f' % rmse)
 
-RMSE: 33.277599
+RMSE: 33.775573
 ```
 
-**MFE = -29.30**
+**MFE = -30.17**
 
 ```
 >>> forecast_error = (ynewpd-actualpd)
 >>> mean_forecast_error = np.mean(forecast_error)
 >>> mean_forecast_error
 
--29.301021252270456
+-30.173496939933216
 ```
 
 With the mean weekly ADR for the test set coming in at **160.49**, the RMSE and MFE performance do look reasonably strong (the lower the error, the better).
@@ -396,24 +401,24 @@ The same procedure was carried out on the H2 dataset (ADR data for a separate ho
 0.8666666666666667
 ```
 
-**RMSE = 37.25**
+**RMSE = 38.15**
 
 ```
 >>> mse = mean_squared_error(actualpd, ynewpd)
 >>> rmse = sqrt(mse)
 >>> print('RMSE: %f' % rmse)
 
-RMSE: 37.253612
+RMSE: 38.155347
 ```
 
-**MFE = -33.50**
+**MFE = -34.43**
 
 ```
 >>> forecast_error = (ynewpd-actualpd)
 >>> mean_forecast_error = np.mean(forecast_error)
 >>> mean_forecast_error
 
--33.50923525034539
+-34.437111023457376
 ```
 
 For the H2 dataset, the mean weekly ADR on the test set came in at **131.42**, with RMSE and MFE errors low by comparison.

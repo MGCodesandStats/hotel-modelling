@@ -144,18 +144,26 @@ Here are some sample results:
 ```
 Train on 59 samples, validate on 15 samples
 Epoch 1/20
-59/59 - 2s - loss: 0.1268 - val_loss: 0.0809
+59/59 - 0s - loss: 0.0865 - val_loss: 0.0408
 Epoch 2/20
-59/59 - 0s - loss: 0.0701 - val_loss: 0.0429
+59/59 - 0s - loss: 0.0583 - val_loss: 0.0328
 Epoch 3/20
-59/59 - 0s - loss: 0.0492 - val_loss: 0.0315
+59/59 - 0s - loss: 0.0516 - val_loss: 0.0332
+Epoch 4/20
+59/59 - 0s - loss: 0.0503 - val_loss: 0.0348
+Epoch 5/20
+59/59 - 0s - loss: 0.0497 - val_loss: 0.0341
 ...
+Epoch 16/20
+59/59 - 0s - loss: 0.0453 - val_loss: 0.0336
+Epoch 17/20
+59/59 - 0s - loss: 0.0449 - val_loss: 0.0333
 Epoch 18/20
-59/59 - 0s - loss: 0.0384 - val_loss: 0.0312
+59/59 - 0s - loss: 0.0445 - val_loss: 0.0329
 Epoch 19/20
-59/59 - 0s - loss: 0.0381 - val_loss: 0.0318
+59/59 - 0s - loss: 0.0447 - val_loss: 0.0338
 Epoch 20/20
-59/59 - 0s - loss: 0.0379 - val_loss: 0.0314
+59/59 - 0s - loss: 0.0442 - val_loss: 0.0329
 dict_keys(['loss', 'val_loss'])
 ```
 
@@ -179,13 +187,13 @@ Here is a sample of training and test predictions:
 
 ```
 >>> trainpred
-array([[0.3734436 ],
-       [0.3474584 ],
-       [0.35780156],
+array([[0.32294273],
+       [0.3152437 ],
+       [0.36545992],
 ...
-       [0.2811486 ],
-       [0.3259096 ],
-       [0.26670212]], dtype=float32)
+       [0.31116793],
+       [0.2784281 ],
+       [0.24806169]], dtype=float32)
 ```
 
 **Test Predictions**
@@ -193,13 +201,13 @@ array([[0.3734436 ],
 ```
 >>> valpred
 
-array([[0.26329553],
-       [0.30377024],
-       [0.3673252 ],
+array([[0.24374226],
+       [0.2790607 ],
+       [0.30287346],
 ...
-       [0.51859236],
-       [0.45417845],
-       [0.37038326]], dtype=float32)
+       [0.41147274],
+       [0.47115234],
+       [0.4726988 ]], dtype=float32)
 ```
 
 The predictions are converted back to normal values using ```scaler.inverse_transform```, and the training and test score is calculated.
@@ -218,8 +226,8 @@ print('Test Score: %.2f RMSE' % (testScore))
 **Training and Validation Scores**
 
 ```
-Train Score: 39.60 RMSE
-Validation Score: 36.61 RMSE
+Train Score: 42.31 RMSE
+Validation Score: 36.90 RMSE
 ```
 
 Here is a plot of the predictions:
@@ -334,7 +342,7 @@ Here is the calculated **MDA**, **RMSE**, and **MFE (mean forecast error)**.
 >>> rmse = sqrt(mse)
 >>> print('RMSE: %f' % rmse)
 
-RMSE: 64.344693
+RMSE: 60.922363
 ```
 
 **MFE**
@@ -344,7 +352,7 @@ RMSE: 64.344693
 >>> mean_forecast_error = np.mean(forecast_error)
 >>> mean_forecast_error
 
--52.22903633117676
+-51.62492065429687
 ```
 
 Here is a plot of the predicted vs actual cancellations per week:
@@ -374,7 +382,7 @@ The same procedure was carried out on the H2 dataset (cancellation data for a se
 >>> rmse = sqrt(mse)
 >>> print('RMSE: %f' % rmse)
 
-RMSE: 92.000303
+RMSE: 109.532103
 ```
 
 **MFE**
@@ -384,7 +392,7 @@ RMSE: 92.000303
 >>> mean_forecast_error = np.mean(forecast_error)
 >>> mean_forecast_error
 
-29.195832824707033
+54.073117065429685  
 ```
 
 Again, a plot for the predicted vs actual cancellations per week is generated:
@@ -402,8 +410,8 @@ Here is a comparison of prediction performance across the H1 and H2 datasets for
 | Reading      | ARIMA | LSTM |
 | ----------- | ----------- | ----------- |
 | MDA      | 0.86       | 0.8       |
-| RMSE   | 57.95        | 64.34       |
-| MFE   | -12.72        | -52.22        |
+| RMSE   | 57.95        | 60.92       |
+| MFE   | -12.72        | -51.62        |
 
 
 ### H2 Results
@@ -411,8 +419,8 @@ Here is a comparison of prediction performance across the H1 and H2 datasets for
 | Reading      | ARIMA | LSTM |
 | ----------- | ----------- | ----------- |
 | MDA      | 0.86       | 0.8       |
-| RMSE   | 274.07        | 92.00        |
-| MFE   | 156.32        | 29.19       |
+| RMSE   | 274.08        | 109.53        |
+| MFE   | 156.33        | 54.07        |
 
 Based on the RMSE measure, LSTM shows superior performance for H2.
 

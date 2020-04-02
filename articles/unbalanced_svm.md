@@ -33,6 +33,16 @@ The identified features to be included in the analysis using both the ExtraTrees
 - Arrival Date: Week Number
 - Arrival Date: Day of Month
 
+# What Is an SVM?
+
+An SVM is a supervised learning model that can be used for both classification and regression tasks.
+
+The SVM model provides an assessment of the importance of each training point when defining the decision limit between two classes.
+
+![svm-plane.png][svm-plane.png]
+
+The few training points selected that lie on the decision boundary between the two classes are called support vectors.
+
 ## Precision vs. Recall and f1-score
 
 When comparing the accuracy scores, we see that numerous readings are provided in each confusion matrix.
@@ -99,7 +109,7 @@ Here is the classification performance of this model on the validation set:
 weighted avg       0.75      0.70      0.72     10015
 ```
 
-Recall for class 1 comes in at 61%, while the f1-score accuracy comes in at 76%. Now, let's test the prediction performance on H2 (the test set).
+Recall for class 1 comes in at 69%, while the f1-score accuracy comes in at 70%. Now, let's test the prediction performance on H2 (the test set).
 
 ```
 [[25217 21011]

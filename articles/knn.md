@@ -75,7 +75,7 @@ The training and test set scores are generated:
 
 ```
 Training set score: 0.87
-Validation set score: 0.83
+Validation set score: 0.84
 ```
 
 Here is a visual of the training classes versus test predictions as illustrated by the KNN model:
@@ -97,20 +97,20 @@ print("Mean score: {}".format(np.mean(scores)))
 The mean score across the 10 folds comes in at 0.67:
 
 ```
-Cross-validated scores: [0.80597789 0.79111956 0.71510021 0.71129924 0.69212163 0.63337941
- 0.6412649  0.59858303 0.6251944  0.54207707]
-Mean score: 0.6756117332309184
+Cross-validated scores: [0.802868   0.78749136 0.72322046 0.7085349  0.69246717 0.61886662
+ 0.64195611 0.59633662 0.62415759 0.54155867]
+Mean score: 0.6737457499824752
 ```
 
 Here is a breakdown of the model performance according to a confusion matrix:
 
 ```
-[[5754 1529]
- [ 824 6362]]
+[[5762 1521]
+ [ 801 6385]]
               precision    recall  f1-score   support
 
-           0       0.87      0.79      0.83      7283
-           1       0.81      0.89      0.84      7186
+           0       0.88      0.79      0.83      7283
+           1       0.81      0.89      0.85      7186
 
     accuracy                           0.84     14469
    macro avg       0.84      0.84      0.84     14469
@@ -143,26 +143,26 @@ Well, from the point of view of a hotel — they would likely wish to identify c
 
 Let us see how the results look when the model makes predictions on H2 (the test set).
 
-Here, we see that the f1-score accuracy has decreased significantly to 55%.
+Here, we see that the f1-score accuracy has decreased significantly to 58%.
 
 ```
-[[15958 30270]
- [ 5602 27500]]
+[[20399 25829]
+ [ 7805 25297]]
               precision    recall  f1-score   support
 
-           0       0.74      0.35      0.47     46228
-           1       0.48      0.83      0.61     33102
+           0       0.72      0.44      0.55     46228
+           1       0.49      0.76      0.60     33102
 
-    accuracy                           0.55     79330
-   macro avg       0.61      0.59      0.54     79330
-weighted avg       0.63      0.55      0.53     79330
+    accuracy                           0.58     79330
+   macro avg       0.61      0.60      0.57     79330
+weighted avg       0.63      0.58      0.57     79330
 ```
 
-However, the recall for the cancellation class (1) stands at 83%. As mentioned, precision and recall are often at odds with each other simply due to the fact that false positives tend to increase recall, while false negatives tend to increase precision.
+However, the recall for the cancellation class (1) stands at 76%. As mentioned, precision and recall are often at odds with each other simply due to the fact that false positives tend to increase recall, while false negatives tend to increase precision.
 
 Assuming that the hotel would like to maximise recall (i.e. tolerate a certain number of false positives while at the same time identifying all customers who will cancel their booking), then this model meets that criteria.
 
-Of all customers who cancel their booking, this model correctly identifies 83% of those customers.
+Of all customers who cancel their booking, this model correctly identifies 76% of those customers.
 
 ## Conclusion
 

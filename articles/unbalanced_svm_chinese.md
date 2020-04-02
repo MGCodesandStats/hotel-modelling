@@ -33,6 +33,16 @@
 - Arrival Date: Week Number
 - Arrival Date: Day of Month
 
+# 什么是SVM？
+
+SVM是可用于分类和回归任务的监督学习模型。
+
+当定义两个班级之间的决策极限时，SVM模型可以评估每个训练点的重要性。
+
+！[svm-plane.png][svm-plane.png]
+
+所选的位于两个类别之间的决策边界上的几个训练点称为支持向量。
+
 ## "Precision" 和 "Recall" 和 "f1-score"
 
 **Precision** und **Recall** 计算为:
