@@ -1,6 +1,4 @@
 [Home](https://mgcodesandstats.github.io/) |
-[Medium](https://medium.com/@firstclassanalyticsmg) |
-[LinkedIn](https://www.linkedin.com/in/michaeljgrogan/) |
 [GitHub](https://github.com/mgcodesandstats) |
 [Speaking Engagements](https://mgcodesandstats.github.io/speaking-engagements/) |
 [Terms](https://mgcodesandstats.github.io/terms/) |
