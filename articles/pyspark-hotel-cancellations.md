@@ -146,4 +146,4 @@ In this example, we have seen:
 
 Many thanks for your time - any thoughts or feedback are greatly appreciated!
 
-The relevant GitHub repository for this example can be found [here](https://github.com/MGCodesandStats/hotel-modelling), and you can also find more of my data science content at [michael-grogan.com](https://michael-grogan.com/).
+The relevant GitHub repository for this example can be found [here](https://github.com/MGCodesandStats/hotel-modelling/tree/master/notebooks%20and%20datasets/spark), and you can also find more of my data science content at [michael-grogan.com](https://michael-grogan.com/).
