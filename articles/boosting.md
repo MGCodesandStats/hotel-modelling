@@ -14,6 +14,23 @@ In this example, boosting techniques are used to determine whether a customer wi
 
 ## Data Overview and Feature Selection
 
+The training data is imported from an AWS S3 bucket as follows:
+
+```
+import boto3
+import botocore
+import pandas as pd
+from sagemaker import get_execution_role
+
+role = get_execution_role()
+
+bucket = 'yourbucketname'
+data_key_train = 'H1full.csv'
+data_location_train = 's3://{}/{}'.format(bucket, data_key_train)
+
+train_df = pd.read_csv(data_location_train)
+```
+
 Hotel cancellations represent the response (or dependent) variable, where 1 = cancel, 0 = follow through with booking.
 
 The features for analysis are as follows.
@@ -170,6 +187,15 @@ weighted avg       0.81      0.41      0.37     10015
 Note that while the accuracy in terms of the f1-score (41%) is quite low - the recall score for class 1 (cancellations) is 100%. This means that the model is generating many false positives which reduces the overall accuracy - but this has had the effect of increasing recall to 100%, i.e. the model is 100% successful at identifying all the customers who will cancel their booking, even if this results in some false positives.
 
 ### Performance on Test Set
+
+As previously, the test set is also imported from the relevant S3 bucket:
+
+```
+data_key_test = 'H2full.csv'
+data_location_test = 's3://{}/{}'.format(bucket, data_key_test)
+
+h2data = pd.read_csv(data_location_test)
+```
 
 Here is the subsequent classification performance of the XGBoost model on H2, which is the test set in this instance.
 
