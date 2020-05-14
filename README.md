@@ -58,8 +58,3 @@ Each individual article with relevant findings can be accessed as below:
 * [Predicting Weekly Hotel Cancellations with ARIMA](https://www.michael-grogan.com/hotel-modelling/articles/arima)
 
 * [Predicting Weekly Hotel Cancellations with an LSTM Network](https://www.michael-grogan.com/hotel-modelling/articles/lstm_weeklycancellations)
-
-### Some translations in Chinese and German
-
-* [分类和: 支持向量机 (SVM)](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm_chinese)
-* [Unausgeglichene Klassen: Vorhersage von Hotelstornierungen mit SVM](https://www.michael-grogan.com/hotel-modelling/articles/unbalanced_svm_deutsch)
