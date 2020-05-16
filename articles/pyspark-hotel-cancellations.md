@@ -59,9 +59,9 @@ myProject=pythonbq(
 )
 ```
 
-Here is a display of the table in Jupyter Notebook:
+Here is a display of the table with the selected features in Jupyter Notebook:
 
-![jupyter-notebook-table](jupyter-notebook-table.png)
+![select-clause](select-clause.png)
 
 The relevant features and output label are loaded:
 
