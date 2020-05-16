@@ -16,7 +16,7 @@ Here is an example of an ML pipeline built for predicting hotel cancellations wi
 
 Specifically, the pipeline is set up as follows:
 
-1. The hotel cancellation table is downloaded from a Google BigQuery database into a Jupyter Notebook with pythonbq – a Python client for BigQuery.
+1. Selected columns from the hotel cancellation table are downloaded from a Google BigQuery database into a Jupyter Notebook with pythonbq – a Python client for BigQuery.
 
 2. A Spark session is initialised using pyspark. The relevant data transformations are conducted to allow the GBTClassifier to work with the relevant data.
 
