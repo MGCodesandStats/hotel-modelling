@@ -33,7 +33,7 @@ Firstly, a train-test split is invoked to separate the data into training and va
 x1_train, x1_val, y1_train, y1_val = train_test_split(x_scaled, y1, random_state=0)
 ```
 
-The original class distribution is comprised of **0: 21672**, **1: 8373**.
+The original class distribution is comprised of **0**: 21672, **1**: 8373.
 
 ```
 >>> counter = Counter(y_train)
