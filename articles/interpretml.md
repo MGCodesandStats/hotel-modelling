@@ -114,7 +114,7 @@ The top 5 features are identified.
 
 ![top_features.png](top_features.png)
 
-Lead time, stays on weekend nights, required car parking spaces, country, and assigned room type are identified as the five most influential factors on whether a customer will cancel their hotel booking or not.
+Lead time (*feature 1*), stays on weekend nights (*feature 5*), required car parking spaces (*feature 15*), country (*feature 19*), and assigned room type (*feature 23*) are identified as the five most influential factors on whether a customer will cancel their hotel booking or not.
 
 Let's compare the accuracy metrics from the confusion matrix to that of a standard XGBoost model run using the same features:
 
@@ -160,7 +160,7 @@ show(lime_local)
 
 ![lime.png](lime.png)
 
-While the importance of features differ somewhat from the Explainable Boosting Classifier, features 15 and 19 (required car parking spaces and country) are still identified as important influencing factors on hotel cancellations.
+While the importance of features differs somewhat from the Explainable Boosting Classifier, required car parking spaces and country (*features 15 and 19*) are still identified as important influencing factors on hotel cancellations.
 
 Here is the ROC curve generated on the test set:
 
