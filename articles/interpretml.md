@@ -16,7 +16,11 @@ Here is an example of the use of the Explainable Boosting Machine (EBM) in predi
 
 ## Data Preparation
 
-The H1 dataset is used for training purposes, while H2 is used for testing the model predictions.
+The H1 dataset is used for training purposes, while the H2 dataset is used for testing the model predictions.
+
+Here is a sample of the dataset structure - which is available at the GitHub repository referenced at the end of this article.
+
+![dataimage.png](dataimage.png)
 
 All features in the dataset are included, with the exception of variables containing NULL values (*children*, *agent*, *company*), along with *ReservationStatusDate*.
 
