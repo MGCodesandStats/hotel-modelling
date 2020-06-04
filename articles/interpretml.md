@@ -6,9 +6,9 @@
 
 # Predicting Hotel Cancellations Using InterpretML
 
-**Interpretability** is an increasingly necessary facet of machine learning.
+**Interpretability** is an underlooked, yet necessary facet of machine learning.
 
-In order to deploy models into production and make research findings understandable to a non-technical audience, intelligibility of ML models as just as important as accuracy.
+In order to deploy models into production and make research findings understandable to a non-technical audience, intelligibility or understanding of model findings are just as important as accuracy.
 
 The purpose of the InterpretML package developed by Microsoft is to allow for increased intelligibility of black box machine learning models, while maintaining strong accuracy performance.
 
