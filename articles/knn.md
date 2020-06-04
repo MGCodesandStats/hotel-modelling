@@ -14,11 +14,11 @@ Given that this dataset is unbalanced, i.e. there are more 0s (non-cancellations
 
 ## SMOTE Oversampling Technique
 
-As mentioned, the dataset in question is unbalanced. As a result, it is necessary to oversample the minor class (1 = cancellations) in order to ensure that the KNN results are not skewed towards the major class.
+Given the uneven nature of the dataset, it is necessary to oversample the minor class (1 = cancellations) in order to ensure that the KNN results are not skewed towards the major class.
 
-This can be done by using the SMOTE technique.
+This can be done by using the SMOTE oversampling technique.
 
-After having imported and scaled the data using MinMaxScaler, SMOTE can be imported from the imblearn library:
+After having imported and scaled the data using MinMaxScaler, SMOTE can be imported from the imblearn library. Counter is imported for the purposes of summarizing the class distributions.
 
 ```
 import imblearn
@@ -27,31 +27,33 @@ from imblearn.over_sampling import SMOTE
 from collections import Counter
 ```
 
-Counter is imported for the purposes of summarizing the class distributions.
-
-For instance, the original class distribution comprised of 0: 28938 and 1: 11122. However, after applying the SMOTE oversampling technique, we now see that the number of observations in each class are equal.
-
-![1_knn.png](1_knn.png)
-
-A train-test split is then invoked to separate the data into training and validation data.
+Firstly, a train-test split is invoked to separate the data into training and validation data.
 
 ```
 x1_train, x1_val, y1_train, y1_val = train_test_split(x_scaled, y1, random_state=0)
 ```
 
-Specifically, this model is being trained on the H1 hotel dataset (with a subset of this dataset being used for validation), while H2 is being used as the test data to compare predictions with the actual responses.
+The original class distribution is comprised of 0: 21672, 1: 8373.
 
-## K-Fold Cross Validation and KNN
+```
+>>> counter = Counter(y_train)
+>>> print(counter)
 
-One important caveat regarding the train-test split method is that depending on the nature of the split, we may find a situation where the model performs well on one random set of validation data but not on another.
+Counter({0: 21672, 1: 8373})
+```
 
-Therefore, should we find a situation where the model is performing well in predicting one validation set - it does not necessarily mean that it will do so for all sets.
+However, after applying the SMOTE oversampling technique, we now see that the number of observations in each class are equal.
 
-In this regard, a K-fold cross-validation technique is used whereby the data is split into k subsamples with an equal number of observations. A single subsample is used as the validation data while the remaining k-1 subsamples are used as training data. This process is then repeated, with each subsample being used once as the validation data, with the process repeated k times.
+```
+>>> oversample = SMOTE()
+>>> x_train, y_train = oversample.fit_resample(x_train, y_train)
+>>> counter = Counter(y_train)
+>>> print(counter)
 
-Using trial and error, I decided on k=10 as the appropriate number of folds.
+Counter({1: 21672, 0: 21672})
+```
 
-Here is the training and test score when a simple train-test split is used.
+## Model Performance
 
 The model is configured as follows:
 
@@ -72,54 +74,34 @@ plt.show()
 The training and test set scores are generated:
 
 ```
-Training set score: 0.87
-Validation set score: 0.84
+Training set score: 0.88
+Validation set score: 0.46
 ```
 
 Here is a visual of the training classes versus test predictions as illustrated by the KNN model:
 
 ![2_knn.png](2_knn.png)
 
-While the validation set score of 0.84 was impressive, how do we know whether we were simply lucky in selecting the validation set that validated the predictions of the model? To ensure that this is not just a random fluke, the k-fold cross validation technique can be used.
-
-The value of k (number of subsets) is set to 10 in this instance.
+Here is a breakdown of model performance according to a confusion matrix:
 
 ```
-# Cross Validation: 
-from sklearn.model_selection import cross_val_score, cross_val_predict
-scores = cross_val_score(model, x_scaled, y1, cv=10)
-print ("Cross-validated scores:", scores)
-print("Mean score: {}".format(np.mean(scores)))
-```
-
-The mean score across the 10 folds comes in at 0.67:
-
-```
-Cross-validated scores: [0.802868   0.78749136 0.72322046 0.7085349  0.69246717 0.61886662
- 0.64195611 0.59633662 0.62415759 0.54155867]
-Mean score: 0.6737457499824752
-```
-
-Here is a breakdown of the model performance according to a confusion matrix:
-
-```
-[[5762 1521]
- [ 801 6385]]
+[[2286 4980]
+ [ 440 2309]]
               precision    recall  f1-score   support
 
-           0       0.88      0.79      0.83      7283
-           1       0.81      0.89      0.85      7186
+           0       0.84      0.31      0.46      7266
+           1       0.32      0.84      0.46      2749
 
-    accuracy                           0.84     14469
-   macro avg       0.84      0.84      0.84     14469
-weighted avg       0.84      0.84      0.84     14469
+    accuracy                           0.46     10015
+   macro avg       0.58      0.58      0.46     10015
+weighted avg       0.70      0.46      0.46     10015
 ```
 
-The accuracy according to the f1-score is reasonably good at 84%.
+While overall accuracy is quite low at 46%, recall according to the f1-score is reasonably good at 84%.
 
 ### Precision vs. Recall
 
-However, when working with classification data, one must also pay attention to the precision versus recall readings, as opposed to simply overall accuracy.
+When working with classification data, one must also pay attention to the precision versus recall readings, as opposed to simply overall accuracy.
 
 ```
 Precision = ((True Positive)/(True Positive + False Positive))
@@ -133,6 +115,7 @@ An assessment as to the ideal metric to use depends in large part on the specifi
 However, for emails — one might prefer to avoid false positives, i.e. sending an important email to the spam folder when in fact it is legitimate.
 
 The f1-score takes both precision and recall into account when devising a more general score.
+
 Which would be more important for predicting hotel cancellations?
 
 Well, from the point of view of a hotel — they would likely wish to identify customers who are ultimately going to cancel their booking with greater accuracy — this allows the hotel to better allocate rooms and resources. Identifying customers who are not going to cancel their bookings may not necessarily add value to the hotel’s analysis, as the hotel knows that a significant proportion of customers will ultimately follow through with their bookings in any case.
@@ -141,26 +124,34 @@ Well, from the point of view of a hotel — they would likely wish to identify c
 
 Let us see how the results look when the model makes predictions on H2 (the test set).
 
-Here, we see that the f1-score accuracy has decreased significantly to 58%.
+Here, we see that the f1-score accuracy has increased slightly to 52%.
 
 ```
-[[20399 25829]
- [ 7805 25297]]
+[[12569 33659]
+ [ 4591 28511]]
               precision    recall  f1-score   support
 
-           0       0.72      0.44      0.55     46228
-           1       0.49      0.76      0.60     33102
+           0       0.73      0.27      0.40     46228
+           1       0.46      0.86      0.60     33102
 
-    accuracy                           0.58     79330
-   macro avg       0.61      0.60      0.57     79330
-weighted avg       0.63      0.58      0.57     79330
+    accuracy                           0.52     79330
+   macro avg       0.60      0.57      0.50     79330
+weighted avg       0.62      0.52      0.48     79330
 ```
 
-However, the recall for the cancellation class (1) stands at 76%. As mentioned, precision and recall are often at odds with each other simply due to the fact that false positives tend to increase recall, while false negatives tend to increase precision.
+However, the recall for the cancellation class (1) stands at 86%. As mentioned, precision and recall are often at odds with each other simply due to the fact that false positives tend to increase recall, while false negatives tend to increase precision.
 
 Assuming that the hotel would like to maximise recall (i.e. tolerate a certain number of false positives while at the same time identifying all customers who will cancel their booking), then this model meets that criteria.
 
-Of all customers who cancel their booking, this model correctly identifies 76% of those customers.
+Of all customers who cancel their booking, this model correctly identifies 86% of those customers.
+
+## Model Assessment
+
+While a higher recall is assumed to be a better way to judge this model, this cannot necessarily come at the expense of lower accuracy.
+
+If recall is penalising false negatives, then it is also favouring false positives - having too many false positives defeats the purpose of the model - as this is essentially assuming that all customers will cancel, which is not the case.
+
+In this regard, accuracy and recall would ideally be maximised. For instance, an [XGBoost model](https://www.michael-grogan.com/hotel-modelling/articles/boosting) demonstrated a recall of 94% with an f1-score accuracy of 55% - both of which were slightly higher than in this example. 
 
 ## Conclusion
 
