@@ -18,7 +18,7 @@ Here is an example of the use of the Explainable Boosting Machine (EBM) in predi
 
 The H1 dataset is used for training purposes, while the H2 dataset is used for testing the model predictions.
 
-Here is a sample of the dataset structure - which is available at the GitHub repository referenced at the end of this article.
+The original datasets and research by Antonio et al. can be found at the reference at the end of this article. Here is a sample of the dataset:
 
 ![dataimage.png](dataimage.png)
 
@@ -192,6 +192,7 @@ As mentioned, the emphasis of InterpretML is on making model results **intelligi
 Many thanks for reading, and the GitHub repository for this project with associated code can be found [here](https://github.com/MGCodesandStats/hotel-modelling).
 
 ## References
+- [Antonio, Almeida, and Nunes: Using Data Science to Predict Hotel Booking Cancellations](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations)
 
 - [GitHub: Fit interpretable models. Explain blackbox machine learning.](https://github.com/interpretml/interpret)
 
