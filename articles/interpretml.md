@@ -1,3 +1,9 @@
+[Home](https://mgcodesandstats.github.io/) |
+[GitHub](https://github.com/mgcodesandstats) |
+[Speaking Engagements](https://mgcodesandstats.github.io/speaking-engagements/) |
+[Terms](https://mgcodesandstats.github.io/terms/) |
+[E-mail](mailto:contact@michael-grogan.com)
+
 # Predicting Hotel Cancellations Using InterpretML
 
 **Interpretability** is an increasingly necessary facet of machine learning.
