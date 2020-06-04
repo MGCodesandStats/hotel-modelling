@@ -108,7 +108,7 @@ Here is the generated ROC curve:
 
 The top 5 features are identified.
 
-![topfeatures.png](topfeatures.png)
+![top_features.png](top_features.png)
 
 Lead time, stays on weekend nights, required car parking spaces, country, and assigned room type are identified as the five most influential factors on whether a customer will cancel their hotel booking or not.
 
