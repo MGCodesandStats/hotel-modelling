@@ -155,11 +155,7 @@ In this regard, accuracy and recall would ideally be maximised. For instance, an
 
 ## Conclusion
 
-In this example, you have seen:
-
-- The use of KNN as a classification algorithm
-- How K-fold cross-validation can provide a better overview of model performance
-- Importance of precision versus recall in judging model performance.
+In this example, we have examined how to use KNN as a classification algorithm, as well as the importance of precision versus recall in judging model performance.
 
 Many thanks for your time, and the associated GitHub repository for this example can be found [here](https://github.com/MGCodesandStats/hotel-modelling).
 
