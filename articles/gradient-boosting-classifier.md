@@ -141,3 +141,9 @@ Many thanks for reading, and the GitHub repository for this project with associa
 ## References
 
 - [Antonio, Almeida, and Nunes: Using Data Science to Predict Hotel Booking Cancellations](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations)
+
+- [Data Science Stack Exchange: How To Interpret The Output of XGBoost Importance?](https://datascience.stackexchange.com/questions/12318/how-to-interpret-the-output-of-xgboost-importance)
+
+- [Permutation Feature Importance](https://scikit-learn.org/stable/modules/permutation_importance.html)
+
+- [TensorFlow Core - Gradient Boosted Trees: Model understanding](https://www.tensorflow.org/tutorials/estimator/boosted_trees_model_understanding)
