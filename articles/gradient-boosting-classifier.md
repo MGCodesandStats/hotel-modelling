@@ -144,6 +144,8 @@ Many thanks for reading, and the GitHub repository for this project with associa
 
 - [Data Science Stack Exchange: How To Interpret The Output of XGBoost Importance?](https://datascience.stackexchange.com/questions/12318/how-to-interpret-the-output-of-xgboost-importance)
 
+- [Jupyter Notebook Output](https://github.com/MGCodesandStats/hotel-modelling/tree/master/notebooks%20and%20datasets/tensorflow/tf-estimator)
+
 - [Permutation Feature Importance](https://scikit-learn.org/stable/modules/permutation_importance.html)
 
 - [TensorFlow Core - Gradient Boosted Trees: Model understanding](https://www.tensorflow.org/tutorials/estimator/boosted_trees_model_understanding)

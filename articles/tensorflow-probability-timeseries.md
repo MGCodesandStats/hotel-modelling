@@ -133,4 +133,6 @@ Many thanks for reading, and the GitHub repository for this project with associa
 
 - [Antonio, Almeida, and Nunes: Using Data Science to Predict Hotel Booking Cancellations](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations)
 
+- [Jupyter Notebook Output](https://github.com/MGCodesandStats/hotel-modelling/blob/master/notebooks%20and%20datasets/tensorflow/tf-probability/Structural_Time_Series_Modeling_Hotel_Cancellations.ipynb)
+
 - [TensorFlow Blog: Structural Time Series modeling](https://blog.tensorflow.org/2019/03/structural-time-series-modeling-in.html)
