@@ -4,7 +4,7 @@
 [Terms](https://mgcodesandstats.github.io/terms/) |
 [E-mail](mailto:contact@michael-grogan.com)
 
-# TensorFlow Probabilty: Predicting Weekly Hotel Cancellations with Structural Time Series Modelling
+# TensorFlow Probability: Predicting Weekly Hotel Cancellations with Structural Time Series Modelling
 
 The TensorFlow probability library allows for detailed data analysis using statistics and probability methodologies. In addition, this library is also quite effective at time series forecasting.
 
