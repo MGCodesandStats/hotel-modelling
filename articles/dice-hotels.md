@@ -12,7 +12,7 @@ By "Diverse Counterfactual Explanations", we mean decisions made by a model that
 
 Let's take an example.
 
-![4-dice.png](4-dice.png)
+![4-diceimg.png](4-diceimg.png)
 
 Here is an instance where a customer did not cancel their hotel booking.
 
@@ -24,9 +24,9 @@ When looking at the counterfactual explanations above - instances where a custom
 
 - **Lead Time** is significantly higher across the four examples.
 
-- Only one customer belongs to the **Offline TA/TO** market segment.
+- One customer still  belongs to the **Offline TA/TO** market segment.
 
-- Two of the four cancellations are still **contract** customers.
+- One of the four cancellations is still a **contract** customer.
 
 - The **distribution channel** and number of **required car parking spaces** remains the same.
 
@@ -45,6 +45,8 @@ In order to generate the DiCE explanations above:
 4. A DiCE explanation instance is then generated in order to explain the result of the outcome variable.
 
 5. Counterfactual examples are then produced (as per the example above) to explain the conditions that could potentially change the outcome variable.
+
+6. *Proximity* and *diversity* are modified in order to examine how data that is close to the original input versus data that has been significantly changed affect the counterfactual explanations.
 
 On point 3, a handy feature of DiCE is the ability to discard old data while retaining the model training parameters. Such a practice is consistent with **FAIR** data principles, which stipulates that data should be **F**indable, **A**ccessible, **I**nteroperable and **R**eusable.
 
@@ -93,11 +95,11 @@ history
 
 Here is a plot of the model loss:
 
-![1-dice.png](1-dice.png)
+![1-diceimg.png](1-diceimg.png)
 
 This is a plot of the training and validation accuracy:
 
-![2-dice.png](2-dice.png)
+![2-diceimg.png](2-diceimg.png)
 
 The model is now stored as a DiCE model for explanation purposes:
 
@@ -151,7 +153,7 @@ dice_exp = exp.generate_counterfactuals(query_instance, total_CFs=4, desired_cla
 dice_exp.visualize_as_dataframe()
 ```
 
-![3-dice.png](3-dice.png)
+![3-diceimg.png](3-diceimg.png)
 
 Here, a case with an original outcome of **1**, i.e. a cancellation, is generated. It is also observed that counterexamples where a customer does not cancel their hotel booking are also generated.
 
@@ -174,15 +176,37 @@ dice_exp_2 = exp.generate_counterfactuals(query_instance_2, total_CFs=4, desired
 dice_exp_2.visualize_as_dataframe()
 ```
 
-![4-dice.png](4-dice.png)
+![4-diceimg.png](4-diceimg.png)
 
 These are just some examples of how counterfactual explanations can be generated.
 
 In these instances, four counterfactual examples were produced (total_CFs=4), with the "opposite" class being of interest.
 
+###  Proximity vs. Diversity
+
 It is possible to use DiCE to generate deeper insights as regards counterfactual explanations.
 
 For instance, consideration may be given to the **proximity** of the explanations to the original input as well as the **diversity** of those explanations, i.e. the range of suggested changes to the explanations in question. The [DiCE GitHub README](https://github.com/interpretml/DiCE) provides more explanation on these.
+
+Here are the counterfactual explanations when the *proximity_weight* is increased to *1.5*.
+
+**Query Instance 1**
+
+![5-diceimg.png](5-diceimg.png)
+
+**Query Instance 2**
+
+![6-diceimg.png](6-diceimg.png)
+
+Now, let's set the *diversity_weight* to *2.5*, with *proximity_weight* at *0*.
+
+**Query Instance 1**
+
+![7-diceimg.png](7-diceimg.png)
+
+**Query Instance 2**
+
+![8-diceimg.png](8-diceimg.png)
 
 # Conclusion
 
@@ -191,6 +215,7 @@ In this article, you have seen:
 - How DiCE can be used to generate counterfactual explanations
 - How DiCE can retain model training without having to retain the data itself
 - Modification of neural network output so as to be compatible with DiCE
+- Use of proximity and diversity to generate informed counterfactual explanations
 
 Many thanks for your time, and the associated GitHub repository for this example can be found [here](https://github.com/MGCodesandStats/hotel-modelling/tree/master/notebooks%20and%20datasets/tensorflow/tf-keras).
 
