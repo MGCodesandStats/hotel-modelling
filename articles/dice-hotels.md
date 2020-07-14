@@ -10,7 +10,7 @@ DiCE is part of the broader InterpretML library, and is great at generating "Div
 
 By "Diverse Counterfactual Explanations", we mean decisions made by a model that would be influential enough to change the outcome variable.
 
-Let's take an example.
+In this example, counterfactual explanations are generated in order to analyse differences between customers who cancel their hotel booking versus those that do not. This analysis is based on the original study by [Antonio, Almeida, and Nunes, 2016](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations)
 
 ![4-diceimg.png](4-diceimg.png)
 
