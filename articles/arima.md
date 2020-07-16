@@ -10,7 +10,9 @@ Hotel cancellations can cause issues for many businesses in the industry. Not on
 
 Data analytics can help to solve this issue, in terms of identifying the customers who are most likely to cancel – allowing a hotel chain to adjust its marketing strategy accordingly.
 
-An ARIMA model is used to determine whether hotel cancellations can also be predicted in advance. This will be done using the Algarve Hotel dataset in the first instance (H1full.csv). Since we are now seeking to predict the time series trend, all observations are now included in this dataset (cancellations and non-cancellations, irrespective of whether the dataset as a whole is uneven).
+An ARIMA model is used to determine whether hotel cancellations can also be predicted in advance. This will be done using the Algarve Hotel dataset in the first instance (H1.csv). The original study and datasets are available from [Antonio, Almeida, and Nunes (2016): Using Data Science to Predict Hotel Booking Cancellations](https://towardsdatascience.com/predicting-weekly-hotel-cancellations-with-arima-4cb4f1849ef6).
+
+Since we are now seeking to predict the time series trend, all observations are now included in this dataset (cancellations and non-cancellations, irrespective of whether the dataset as a whole is uneven).
 
 To do this, cancellations are analysed on a weekly basis (i.e. the number of cancellations for a given week are summed up).
 
