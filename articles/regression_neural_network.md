@@ -1,4 +1,4 @@
-# Regression-based neural networks with TensorFlow v2.0: Predicting Average Daily Rates
+# Regression-based neural networks: Predicting Average Daily Rates for Hotels
 
 Keras is an API used for running high-level neural networks - the API is now included as the default one under TensorFlow 2.0, which was developed by Google.
 
