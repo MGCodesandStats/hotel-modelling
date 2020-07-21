@@ -2,9 +2,7 @@
 
 The purpose of a decision tree is to visualise features of a model by means of a tree-like graph, and infer the importance (and lack thereof) of each feature in affecting the output variable.
 
-![decision-tree.png](decision-tree.png)
-
-As above, the decision tree structure consists of:
+The decision tree structure consists of:
 
 - **Nodes:** Each decision tree consists of what are called **root nodes** and **decision nodes**. 
 - **Branches:** Represent the outcome of each decision taken across the nodes.
@@ -85,7 +83,6 @@ DecisionTreeRegressor(ccp_alpha=0.0, criterion='mse', max_depth=4,
                       min_samples_leaf=1, min_samples_split=2,
                       min_weight_fraction_leaf=0.0, presort='deprecated',
                       random_state=None, splitter='best')
-                      
 ```
 
 Here are the generated predictions when using the validation data:
@@ -123,6 +120,8 @@ Then, the tree image can be imported:
 Here is a sample visual of the decision tree:
 
 ![decision-tree.png](decision-tree.png)
+
+The full tree can be viewed [here](https://github.com/MGCodesandStats/hotel-modelling/blob/master/notebooks%20and%20datasets/tensorflow/tf-keras/tree.pdf).
 
 Let's assess how the model predictions performed on the validation data both on a **mean absolute error** and **root mean squared error** basis.
 
