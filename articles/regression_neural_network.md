@@ -22,6 +22,8 @@ A neural network consists of:
 
 This study focuses on hotel booking analysis. When it comes to hotel bookings, **average daily rate (ADR)** is a particularly important metric. This reflects the average rate per day that a particular customer pays throughout their stay.
 
+This analysis is based on the original study by [Antonio, Almeida, and Nunes, 2016](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations).
+
 Gauging ADR allows hotels to more accurately identify its most profitable customers and tailor its marketing strategies accordingly.
 
 For this example, we use a linear activation function within the keras library to create a regression-based neural network. The purpose of this neural network is to predict an **ADR** value for each customer. The chosen features that form the input for this neural network are as follows:
