@@ -163,9 +163,9 @@ Recall for class 1 comes in at **94%**, while the f1-score accuracy comes in at 
 weighted avg       0.62      0.48      0.41     79330
 ```
 
-We see that recall for class 1 is down slightly to **92%**, while f1-score accuracy comes in at **48%**. 
+We see that recall for class 1 is down slightly to **92%**, while f1-score accuracy comes in at **48%**.
 
-Clearly, there is a tradeoff between higher recall and overall higher accuracy. Given that most entries in the dataset are 0 (non-cancellations), it stands to reason that a model with an overall high accuracy rate would perform quite well in predicting the non-cancellations, but poorly at predicting the 1 entries (cancellations).
+Clearly, there is a trade-off between higher recall and overall higher accuracy. Given that most entries in the dataset are 0 (non-cancellations), it stands to reason that a model with an overall high accuracy rate would perform quite well in predicting the non-cancellations, but poorly at predicting the 1 entries (cancellations).
 
 For instance, when an SVM was run on this dataset, the following results were obtained:
 
@@ -188,7 +188,7 @@ In this regard, if one wished to prioritise identification of cancellations as o
 
 ## Conclusion
 
-In this example, we have seen how a Naive Bayes model can be constructed in Python and how model accuracy can be asssesed using precision and recall.
+In this example, we have seen how a Naive Bayes model can be constructed in Python and how model accuracy can be assessed using precision and recall.
 
 The datasets and notebooks for this example are available at the [MGCodesandStats GitHub repository](https://github.com/MGCodesandStats/hotel-modelling), along with further research on this topic.
 
