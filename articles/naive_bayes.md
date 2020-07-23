@@ -14,6 +14,14 @@ A Naive Bayes Classifier is a probabilistic classifier, and one of the most fund
 
 From this standpoint, feature selection is not typically a strength of the Naive Bayes Classifier. Given the assumption that all features are independent of each other, this classifier is at risk of performing poorly when significant correlation exists between the features.
 
+Bayes' Theorem  is defined as follows:
+
+![bayes-theorem.png](bayes-theorem.png)
+
+This theorem works on the basis of **conditional probability**, i.e. the probability of an outcome occurring given the occurrence of a previous outcome. In this instance, the probabilities of a particular event occurring are updated as new information is gathered.
+
+For this particular scenario, we are looking to answer - what is the probability that a customer will cancel their hotel booking given prior probabilities?
+
 In this case, the Gaussian Naive Bayes algorithm for classification is applied. Even though the outcome variable is categorical (1 = cancellation, 0 = no cancellation), many of the features included in the model are continuous. Therefore, it is assumed that these continuous features are distributed according to a normal (Gaussian) distribution.
 
 ## Data Manipulation
@@ -186,6 +194,18 @@ We see that the f1-score accuracy is up to 63%, but recall for class 1 has falle
 
 In this regard, if one wished to prioritise identification of cancellations as opposed to maximising overall accuracy, then the argument could be made that the Naive Bayes model works better in this instance. However, it should be remembered that maximising recall only works to a certain point. If recall was 100%, then all bookings could be classified as a cancellation, and this does not reveal any insights regarding the differences between customers who cancel and those who do not.
 
+## Limitations
+
+As mentioned, Naive Bayes regards all features as independent. In this regard, the model risks poor performance in situations where there is strong conditional dependence among the variables, e.g. let us say that more cancellations are observed across customers from a particular country of origin. However, we also observe that those cancellations are much higher across a particular market segment.
+
+In this regard, given the conditional dependence between these two features, we can no longer be certain that cancellations are higher for customers from a particular country of origin, as it could just so happen that a higher number of customers from a particular market segment are present for bookings from that particular country.
+
+Feature selection is an important part of machine learning - indeed, there are many models that are capable of explaining which features contribute more to influencing the outcome variable, as in the example below.
+
+![gain-feature-importances.png](gain-feature-importances.png)
+
+However, Naive Bayes assumes all features are essentially weighted equally, and this can significantly affect accuracy readings depending on the data.
+
 ## Conclusion
 
 In this example, we have seen how a Naive Bayes model can be constructed in Python and how model accuracy can be assessed using precision and recall.
@@ -196,6 +216,8 @@ The datasets and notebooks for this example are available at the [MGCodesandStat
 
 - [Antonio, Almeida, and Nunes, 2016: Using Data Science to Predict Hotel Booking Cancellations](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations)
 
+- [DZone: Naive Bayes Tutorial: Naive Bayes Classifier in Python](https://dzone.com/articles/naive-bayes-tutorial-naive-bayes-classifier-in-pyt)
+
 - [Gunopulos and Ratanamahatana, 2003: Feature Selection for the Naive Bayesian Classifier Using Decision Trees](https://www.researchgate.net/publication/220355799_Feature_Selection_for_the_Naive_Bayesian_Classifier_Using_Decision_Trees)
 
 - [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://towardsdatascience.com/svms-random-forests-and-unbalanced-datasets-predicting-hotel-cancellations-2b983c2c5731)
@@ -203,3 +225,5 @@ The datasets and notebooks for this example are available at the [MGCodesandStat
 - [Jupyter Notebook Output](https://github.com/MGCodesandStats/hotel-modelling/tree/master/notebooks%20and%20datasets/classification)
 
 - [Scikit-Learn Guide](https://scikit-learn.org/stable/modules/naive_bayes.html)
+
+- [When Dependence Between Events Is Conditional](https://www.probabilisticworld.com/conditional-dependence-independence/)
