@@ -18,11 +18,11 @@ A customer with a high ADR and a low lead time is ideal, as it means that 1) the
 
 ## Data Manipulation
 
-The data is loaded and 200 samples are chosen at random:
+The data is loaded and 100 samples are chosen at random:
 
 ```
 df = pd.read_csv('H1full.csv')
-df = df.sample(n = 200)
+df = df.sample(n = 100)
 ```
 
 The interval (or continuous random variables) are of **lead time** and **ADR** are defined as below:
