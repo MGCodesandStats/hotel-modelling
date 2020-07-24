@@ -159,7 +159,9 @@ We see that the blue category has the highest ADR and lowest lead time (most pro
 
 From this standpoint, the k-means clustering algorithm is offering an efficient way at quickly categorising the hotel's most profitable customers and further analysis can be conducted to analyse certain attributes that are common to the customers in each group.
 
-When it comes to unsupervised learning - it is important to remember that this is largely an **exploratory** method of analysis - the goal is not necessarily prediction but rather to reveal insights about the data that may not have been considered previously.
+When it comes to unsupervised learning - it is important to remember that this is largely an **exploratory** method of analysis - the goal is not necessarily prediction but rather to reveal insights about the data that may not have been considered previously. For instance, why do certain customers have a lower lead time than others? Are customers from certain countries more likely to fit this profile? What about different customer types?
+
+These are all questions that the k-means clustering algorithm may not directly answer for us - but reducing data into separate clusters provides a strong baseline for being able to pose questions such as these.
 
 ## Conclusion
 
