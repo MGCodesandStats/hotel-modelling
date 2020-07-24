@@ -169,7 +169,7 @@ In this example, we have seen:
 - Use of k-means clustering in segmenting hotel customers by profitability
 - Configuration of data to use the k-means model effectively
 
-Many thanks for your time, and the associated GitHub repository for this example can be found [here](https://github.com/MGCodesandStats/hotel-modelling/tree/master/notebooks%20and%20datasets/tensorflow/tf-keras).
+Many thanks for your time, and the associated GitHub repository for this example can be found [here](https://github.com/MGCodesandStats/hotel-modelling).
 
 ## References
 
