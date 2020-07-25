@@ -131,11 +131,11 @@ Specifically, let's have a look at the types of predictions that each model is g
 
 ### Decision Tree Output
 
-![decision-trees-predictions.png](decision-trees-predictions.png)
+![bpred-decisiontrees.png](bpred-decisiontrees.png)
 
 ### Random Forest Output
 
-![random-forest-predictions.png](random-forest-predictions.png)
+![bpred-randomforests.png](bpred-randomforests.png)
 
 We can see that the predictions for the decision tree output has a lot less variation than that of the random forest. It would almost appear that the model is generating the same output for data where the parameters of the features are similar. This would mean that while the decision tree model has a strong degree of accuracy on an average basis, the model is more likely to make larger individual errors than the random forest.
 
