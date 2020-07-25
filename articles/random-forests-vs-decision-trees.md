@@ -12,9 +12,9 @@ However, suppose a nonsensical variable is introduced - the number of New Yorker
 
 That said, introducing this variable will likely cause the "accuracy" of a given model to rise - but this is misleading as it means that the model would not perform well in other scenarios - e.g. when temperatures drop. As such, we can expect such a model to perform well on the training test, but not on a test set (previously unseen data, e.g. ice-cream consumption for New York in the Winter months).
 
-The argument goes that a random forest is less prone to such overfitting, as this model essentialy combines the results of many decision trees and outputs the mean prediction - hence why it is often referred to as an **ensemble method**.
+The argument goes that a random forest is less prone to such overfitting, as this model essentially combines the results of many decision trees and outputs the mean prediction - hence why it is often referred to as an **ensemble method**.
 
-However, can we always expect that accuracy across a random forest will be higher than a decison tree? **This highly depends on the features in the model.**
+However, can we always expect that accuracy across a random forest will be higher than a decision tree? **This highly depends on the features in the model.**
 
 Moreover, accuracy is not the only metric which we should use to judge a model's performance. When it comes to extreme values, averages become meaningless.
 
