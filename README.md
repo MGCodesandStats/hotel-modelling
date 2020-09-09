@@ -8,7 +8,7 @@
 
 The purpose of this project is to predict hotel cancellations for two separate Portuguese hotels (H1 and H2), both on a classification and time series basis. Included in the GitHub repository are the datasets and notebooks for all models run.
 
-The original datasets and research by Antonio et al. can be found here: [Using Data Science to Predict Hotel Booking Cancellations](https://www.researchgate.net/publication/309379684_Using_Data_Science_to_Predict_Hotel_Booking_Cancellations)
+The original datasets and research by Antonio et al. can be found here: [Using Data Science to Predict Hotel Booking Cancellations](https://www.sciencedirect.com/science/article/pii/S2352340918315191)
 
 The classification models were built using data from the H1 dataset, with predictions then compared to the H2 dataset.
 
