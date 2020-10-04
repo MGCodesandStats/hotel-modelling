@@ -15,7 +15,8 @@ class(H1$DepositType)
 
 IsCanceled<-as.numeric(factor(H1$IsCanceled))
 IsCanceled
-IsCanceled[IsCanceled == "2"] <- "0"
+IsCanceled[IsCanceled == "1"] <- "0"
+IsCanceled[IsCanceled == "2"] <- "1"
 IsCanceled<-as.numeric(IsCanceled)
 IsCanceled
 
@@ -51,7 +52,6 @@ IsCanceled_train=IsCanceled[1:32000]
 IsCanceled_val=IsCanceled[32001:40060]
 
 bst <- xgboost(data = train, label = IsCanceled_train, max.depth = 2, eta = 1, nthread = 2, nrounds = 2, objective = "binary:logistic")
-
 pred <- predict(bst, val)
 
 
@@ -100,12 +100,12 @@ test
 
 IsCanceled_H2<-as.numeric(factor(H2$IsCanceled))
 IsCanceled_H2
-IsCanceled_H2[IsCanceled_H2 == "2"] <- "0"
+IsCanceled_H2[IsCanceled_H2 == "1"] <- "0"
+IsCanceled_H2[IsCanceled_H2 == "2"] <- "1"
 IsCanceled_H2<-as.numeric(IsCanceled_H2)
 IsCanceled_H2
 
 pred <- predict(bst, test)
-
 
 print(length(pred))
 print(head(pred))
