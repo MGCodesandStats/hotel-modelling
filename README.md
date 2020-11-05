@@ -12,10 +12,6 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 ## Articles
 
-### ARIMA
-
-- [Predicting Weekly Hotel Cancellations with ARIMA](https://towardsdatascience.com/predicting-weekly-hotel-cancellations-with-arima-4cb4f1849ef6)
-
 ### Classification
 
 - [Building a Naive Bayes Classifier: Predicting Hotel Cancellations](https://towardsdatascience.com/building-a-naive-bayes-classifier-predicting-hotel-cancellations-31e3b8766614)
