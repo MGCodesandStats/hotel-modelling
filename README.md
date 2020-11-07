@@ -36,7 +36,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [Predicting Hotel Cancellations Using InterpretML](https://towardsdatascience.com/predicting-hotel-cancellations-using-interpretml-e4e64fefc7a8)
 
-## Regression Modelling
+## Regression
 
 ### Jupyter Notebooks
 
@@ -66,7 +66,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [Productionizing ML Projects with Google BigQuery and PySpark: Predicting Hotel Cancellations](https://towardsdatascience.com/productionising-ml-projects-with-google-bigquery-and-pyspark-predicting-hotel-cancellations-8bf94fdc4af)
 
-## Time Series Forecasting
+## Time Series
 
 ### Jupyter Notebooks
 
@@ -74,7 +74,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [timeseries-interpretml-xgbregressor.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-interpretml-xgbregressor.ipynb)
 
-- (https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-lstm-adr-h1.ipynb)
+- [timeseries-lstm-adr-h1.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-lstm-adr-h1.ipynb)
 
 - [timeseries-lstm-adr-h2.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-lstm-adr-h2.ipynb)
 
