@@ -5,7 +5,7 @@
 require(xgboost)
 library(Matrix)
 
-H1<-read.csv("H1full.csv")
+H1<-read.csv("H1.csv")
 H1
 
 class(H1$Country)
@@ -73,7 +73,7 @@ xgb.plot.importance(importance_matrix = importance_matrix)
 
 # TEST
 
-H2<-read.csv("H2full.csv")
+H2<-read.csv("H2.csv")
 H2
 
 leadtime<-as.numeric(H2$LeadTime)
