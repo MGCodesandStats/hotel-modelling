@@ -12,7 +12,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 ## Classification
 
-### Jupyter Notebooks
+#### Jupyter Notebooks
 
 - [classification.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/classification.ipynb)
 
@@ -22,7 +22,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [interpretml-dice-ml.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/interpretml-dice-ml.ipynb)
 
-### Articles
+#### Articles
 
 - [Building a Naive Bayes Classifier: Predicting Hotel Cancellations](https://towardsdatascience.com/building-a-naive-bayes-classifier-predicting-hotel-cancellations-31e3b8766614)
 
@@ -38,7 +38,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 ## Regression
 
-### Jupyter Notebooks
+#### Jupyter Notebooks
 
 - [interpretml-regression-svm.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/interpretml-regression-svm.ipynb)
 
@@ -48,7 +48,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [regression-svm.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/regression-svm.ipynb)
 
-### Articles
+#### Articles
 
 - [Regression-based neural networks: Predicting Average Daily Rates for Hotels](https://towardsdatascience.com/regression-based-neural-networks-with-tensorflow-v2-0-predicting-average-daily-rates-e20fffa7ac9a)
 
@@ -56,19 +56,19 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 ## Spark
 
-### Jupyter Notebooks
+#### Jupyter Notebooks
 
 - [spark-h1.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/spark-h1.ipynb)
 
 - [spark-h2.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/spark-h2.ipynb)
 
-### Articles
+#### Articles
 
 - [Productionizing ML Projects with Google BigQuery and PySpark: Predicting Hotel Cancellations](https://towardsdatascience.com/productionising-ml-projects-with-google-bigquery-and-pyspark-predicting-hotel-cancellations-8bf94fdc4af)
 
 ## Time Series
 
-### Jupyter Notebooks
+#### Jupyter Notebooks
 
 - [timeseries-cnn-cancellations-daily-h1.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-cnn-cancellations-daily-h1.ipynb)
 
@@ -84,7 +84,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [timeseries-xgbregressor-h1.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-xgbregressor-h1.ipynb)
 
-### Articles
+#### Articles
 
 - [CNN-LSTM: Predicting Daily Hotel Cancellations](https://towardsdatascience.com/cnn-lstm-predicting-daily-hotel-cancellations-e1c75697f124)
 
