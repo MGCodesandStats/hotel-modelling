@@ -10,42 +10,84 @@ The purpose of this project is to predict hotel cancellations and ADR (average d
 
 The original datasets and research by Antonio et al. can be found here: [Using Data Science to Predict Hotel Booking Cancellations](https://www.sciencedirect.com/science/article/pii/S2352340918315191). All other relevant references have been cited in the below articles.
 
-## Articles
+## Classification
 
-### Classification
+### Jupyter Notebooks
+
+- [classification.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/classification.ipynb)
+
+- [classification-xgboost-hotels.R](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/classification-xgboost-hotels.R)
+
+- [interpretml-classification.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/interpretml-classification.ipynb)
+
+- [interpretml-dice-ml.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/interpretml-dice-ml.ipynb)
+
+### Articles
 
 - [Building a Naive Bayes Classifier: Predicting Hotel Cancellations](https://towardsdatascience.com/building-a-naive-bayes-classifier-predicting-hotel-cancellations-31e3b8766614)
 
 - [Classification of Hotel Cancellations Using KNN and SMOTE](https://towardsdatascience.com/classification-of-hotel-cancellations-using-knn-and-smote-3290cc87e74d)
 
+- [DiCE: Diverse Counterfactual Explanations for Hotel Cancellations](https://towardsdatascience.com/dice-diverse-counterfactual-explanations-for-hotel-cancellations-762c311b2c64)
+
+- [Feature Selection Techniques in Python: Predicting Hotel Cancellations](https://towardsdatascience.com/feature-selection-techniques-in-python-predicting-hotel-cancellations-48a77521ee4f)
+
 - [Imbalanced Classes: Predicting Hotel Cancellations with Support Vector Machines](https://towardsdatascience.com/svms-random-forests-and-unbalanced-datasets-predicting-hotel-cancellations-2b983c2c5731)
 
 - [Predicting Hotel Cancellations Using InterpretML](https://towardsdatascience.com/predicting-hotel-cancellations-using-interpretml-e4e64fefc7a8)
 
-### Feature Selection
+## Regression Modelling
 
-- [Feature Selection Techniques in Python: Predicting Hotel Cancellations](https://towardsdatascience.com/feature-selection-techniques-in-python-predicting-hotel-cancellations-48a77521ee4f)
+### Jupyter Notebooks
 
-### Regression Modelling
+- [interpretml-regression-svm.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/interpretml-regression-svm.ipynb)
 
-- [Predicting Weekly Hotel Cancellations with XGBRegressor](https://towardsdatascience.com/predicting-weekly-hotel-cancellations-with-xgbregressor-d73eb74a8624)
+- [regression-nn-elu.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/regression-nn-elu.ipynb)
 
-- [Support Vector Machines and Regression Analysis](https://towardsdatascience.com/support-vector-machines-and-regression-analysis-ad5d94ac857f)
+- [regression-nn-relu.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/regression-nn-relu.ipynb)
 
-### Spark
+- [regression-svm.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/regression-svm.ipynb)
 
-- [Productionizing ML Projects with Google BigQuery and PySpark: Predicting Hotel Cancellations](https://towardsdatascience.com/productionising-ml-projects-with-google-bigquery-and-pyspark-predicting-hotel-cancellations-8bf94fdc4af)
-
-### TensorFlow Neural Networks
-
-- [CNN-LSTM: Predicting Daily Hotel Cancellations](https://towardsdatascience.com/cnn-lstm-predicting-daily-hotel-cancellations-e1c75697f124)
-
-- [DiCE: Diverse Counterfactual Explanations for Hotel Cancellations](https://towardsdatascience.com/dice-diverse-counterfactual-explanations-for-hotel-cancellations-762c311b2c64)
-
-- [One-Step Predictions with LSTM: Forecasting Hotel Revenues](https://towardsdatascience.com/one-step-predictions-with-lstm-forecasting-hotel-revenues-c9ef0d3ef2df)
+### Articles
 
 - [Regression-based neural networks: Predicting Average Daily Rates for Hotels](https://towardsdatascience.com/regression-based-neural-networks-with-tensorflow-v2-0-predicting-average-daily-rates-e20fffa7ac9a)
 
-### Unsupervised Learning
+- [Support Vector Machines and Regression Analysis](https://towardsdatascience.com/support-vector-machines-and-regression-analysis-ad5d94ac857f)
 
-- [K-Means Clustering: Identifying Profitable Hotel Customers](https://towardsdatascience.com/k-means-clustering-identifying-profitable-hotel-customers-87a1ed8630c9)
+## Spark
+
+### Jupyter Notebooks
+
+- [spark-h1.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/spark-h1.ipynb)
+
+- [spark-h2.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/spark-h2.ipynb)
+
+### Articles
+
+- [Productionizing ML Projects with Google BigQuery and PySpark: Predicting Hotel Cancellations](https://towardsdatascience.com/productionising-ml-projects-with-google-bigquery-and-pyspark-predicting-hotel-cancellations-8bf94fdc4af)
+
+## Time Series Forecasting
+
+### Jupyter Notebooks
+
+- [timeseries-cnn-cancellations-daily-h1.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-cnn-cancellations-daily-h1.ipynb)
+
+- [timeseries-interpretml-xgbregressor.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-interpretml-xgbregressor.ipynb)
+
+- (https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-lstm-adr-h1.ipynb)
+
+- [timeseries-lstm-adr-h2.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-lstm-adr-h2.ipynb)
+
+- [timeseries-lstm-cancellations-h1.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-lstm-cancellations-h1.ipynb)
+
+- [timeseries-lstm-cancellations-h2.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-lstm-cancellations-h2.ipynb)
+
+- [timeseries-xgbregressor-h1.ipynb](https://github.com/MGCodesandStats/hotel-cancellations/blob/master/timeseries-xgbregressor-h1.ipynb)
+
+### Articles
+
+- [CNN-LSTM: Predicting Daily Hotel Cancellations](https://towardsdatascience.com/cnn-lstm-predicting-daily-hotel-cancellations-e1c75697f124)
+
+- [One-Step Predictions with LSTM: Forecasting Hotel Revenues](https://towardsdatascience.com/one-step-predictions-with-lstm-forecasting-hotel-revenues-c9ef0d3ef2df)
+
+- [Predicting Weekly Hotel Cancellations with XGBRegressor](https://towardsdatascience.com/predicting-weekly-hotel-cancellations-with-xgbregressor-d73eb74a8624)
