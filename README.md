@@ -10,7 +10,41 @@ The purpose of this project is to predict hotel cancellations and ADR (average d
 
 The original datasets and research by Antonio et al. can be found here: [Using Data Science to Predict Hotel Booking Cancellations](https://www.sciencedirect.com/science/article/pii/S2352340918315191). All other relevant references have been cited in the below articles.
 
-## Classification
+## Project Stages
+
+**Stage 1: Data Manipulation and Feature Selection**
+
+- Used pandas to collate individual cancellation entries into a weekly time series.
+
+- Applied transformations where appropriate to allow for analysis of categorical features.
+
+- Used the ExtraTreesClassifier and Forward and Backward Feature Selection to identify **lead time**, **country of origin**, **market segment**, **deposit type**, **customer type**, **required car parking spaces**, and **week of arrival** as the most important features in explaining the variation in hotel cancellations.
+
+**Stage 2: Classification**
+
+- Trained classification models on the H1 dataset and tested against the H2 dataset.
+
+- Used the **Explainable Boosting Classifier** by InterpretML, **KNN**, **Naive Bayes**, **Support Vector Machines**, and **XGBoost** to predict cancellations across the test set.
+
+- SVM demonstrated the best performance overall with an f1-score accuracy of 71%, and 66% recall across the cancellation class.
+
+- An ANN model was also trained in conjunction with dice_ml to identify Diverse Counterfactual Explanations for hotel bookings, i.e. changes in features that would cause a non-cancelling customer to cancel, and vice versa.
+
+**Stage 3: Regression**
+
+- Used regression modelling to predict **ADR (average daily rate)** across each customer.
+
+- Trained regression models on the H1 dataset and tested against the H2 dataset.
+
+- Used **SVM models** and **regression-based neural networks** to predict ADR across the test set.
+
+- The neural network with *elu* activation function across the input and hidden layers showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
+
+**Stage 4: Time Series**
+
+Used an LSTM neural network to forecast weekly ADR and cancellation trends. Model demonstrated best results in forecasting ADR for H1 (RMSE of 31 relative to mean ADR of 160) and H2 (RMSE of 36 relative to mean ADR of 131).
+
+### Classification
 
 #### Jupyter Notebooks
 
@@ -36,7 +70,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [Predicting Hotel Cancellations Using InterpretML](https://towardsdatascience.com/predicting-hotel-cancellations-using-interpretml-e4e64fefc7a8)
 
-## Regression
+### Regression
 
 #### Jupyter Notebooks
 
@@ -54,7 +88,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [Support Vector Machines and Regression Analysis](https://towardsdatascience.com/support-vector-machines-and-regression-analysis-ad5d94ac857f)
 
-## Spark
+### Spark
 
 #### Jupyter Notebooks
 
@@ -66,7 +100,7 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - [Productionizing ML Projects with Google BigQuery and PySpark: Predicting Hotel Cancellations](https://towardsdatascience.com/productionising-ml-projects-with-google-bigquery-and-pyspark-predicting-hotel-cancellations-8bf94fdc4af)
 
-## Time Series
+### Time Series
 
 #### Jupyter Notebooks
 
