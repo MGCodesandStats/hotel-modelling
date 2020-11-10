@@ -18,13 +18,13 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 - Applied transformations where appropriate to allow for analysis of categorical features.
 
-- Used the ExtraTreesClassifier and Forward and Backward Feature Selection to identify **lead time**, **country of origin**, **market segment**, **deposit type**, **customer type**, **required car parking spaces**, and **week of arrival** as the most important features in explaining the variation in hotel cancellations.
+- Used the ExtraTreesClassifier and Forward and Backward Feature Selection to identify *lead time*, *country of origin*, *market segment*, *deposit type*, *customer type*, *required car parking spaces*, and *week of arrival* as the most important features in explaining the variation in hotel cancellations.
 
 **Stage 2: Classification**
 
 - Trained classification models on the H1 dataset and tested against the H2 dataset.
 
-- Used the **Explainable Boosting Classifier** by InterpretML, **KNN**, **Naive Bayes**, **Support Vector Machines**, and **XGBoost** to predict cancellations across the test set.
+- Used the *Explainable Boosting Classifier* by InterpretML, *KNN*, *Naive Bayes*, *Support Vector Machines*, and *XGBoost* to predict cancellations across the test set.
 
 - SVM demonstrated the best performance overall with an f1-score accuracy of 71%, and 66% recall across the cancellation class.
 
@@ -32,13 +32,13 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 **Stage 3: Regression**
 
-- Used regression modelling to predict **ADR (average daily rate)** across each customer.
+- Used regression modelling to predict *ADR (average daily rate)* across each customer.
 
 - Trained regression models on the H1 dataset and tested against the H2 dataset.
 
-- Used **SVM models** and **regression-based neural networks** to predict ADR across the test set.
+- Used *SVM models* and *regression-based neural networks* to predict ADR across the test set.
 
-- The neural network with *elu* activation function across the input and hidden layers showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
+- The neural network with *elu* activation function across the input and hidden layers showed the best performance, with a mean absolute error of *28* compared to the mean ADR of *105* across the test set.
 
 **Stage 4: Time Series**
 
