@@ -44,6 +44,8 @@ The original datasets and research by Antonio et al. can be found here: [Using D
 
 Used an LSTM neural network to forecast weekly ADR and cancellation trends. Model demonstrated best results in forecasting ADR for H1 (RMSE of 31 relative to mean ADR of 160) and H2 (RMSE of 36 relative to mean ADR of 131).
 
+## Notebooks and Articles
+
 ### Classification
 
 #### Jupyter Notebooks
