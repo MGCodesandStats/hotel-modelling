@@ -22,7 +22,7 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 - Trained classification models on the H1 dataset and tested against the H2 dataset.
 
-- Used the *Explainable Boosting Classifier* by InterpretML, *KNN*, *Naive Bayes*, *Support Vector Machines*, and *XGBoost* to predict cancellations across the test set.
+- Used the **Explainable Boosting Classifier** by InterpretML, **KNN**, **Naive Bayes**, **Support Vector Machines**, and **XGBoost** to predict cancellations across the test set.
 
 - SVM demonstrated the best performance overall with an f1-score accuracy of **71%**, and **66%** recall across the cancellation class.
 
@@ -30,12 +30,12 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 **Stage 3: Regression**
 
-- Used regression modelling to predict *ADR (average daily rate)* across each customer.
+- Used regression modelling to predict **ADR (average daily rate)** across each customer.
 
 - Trained regression models on the H1 dataset and tested against the H2 dataset.
 
-- Regression-based neural network showed the best performance, with a mean absolute error of *28* compared to the mean ADR of *105* across the test set.
+- Regression-based neural network showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
 
 **Stage 4: Time Series**
 
-Used ARIMA and LSTM models to forecast weekly ADR trends. ARIMA demonstrated best results in forecasting ADR for H1 (RMSE of 10 relative to mean ADR of 160).
+Used ARIMA and LSTM models to forecast weekly ADR trends. ARIMA demonstrated best results in forecasting ADR for H1 (RMSE of **10** relative to mean ADR of **160**).
