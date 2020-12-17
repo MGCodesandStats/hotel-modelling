@@ -38,4 +38,4 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 ### Stage 4: Time Series
 
-Used ARIMA and LSTM models to forecast weekly ADR trends. ARIMA demonstrated best results in forecasting ADR for H1 (RMSE of **10** relative to mean ADR of **160**).
+Used ARIMA and LSTM models to forecast weekly ADR trends. ARIMA demonstrated best results in forecasting ADR for H1 (RMSE of **10** relative to mean ADR of **160**) and H2 (RMSE of **8** relative to mean ADR of **131**.
