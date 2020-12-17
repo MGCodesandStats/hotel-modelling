@@ -12,13 +12,13 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 ## Project Stages
 
-**Stage 1: Data Manipulation and Feature Selection**
+### Stage 1: Data Manipulation and Feature Selection
 
 - Used pandas to collate individual cancellation and ADR entries into a weekly time series format.
 
-- Identified *lead time*, *country of origin*, *market segment*, *deposit type*, *customer type*, *required car parking spaces*, and *week of arrival* as the most important features in explaining the variation in hotel cancellations.
+- Identified **lead time**, **country of origin**, **market segment**, **deposit type**, **customer type**, **required car parking spaces**, and **week of arrival** as the most important features in explaining the variation in hotel cancellations.
 
-**Stage 2: Classification**
+### Stage 2: Classification
 
 - Trained classification models on the H1 dataset and tested against the H2 dataset.
 
@@ -28,7 +28,7 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 - An ANN model was also trained in conjunction with dice_ml to identify Diverse Counterfactual Explanations for hotel bookings, i.e. changes in features that would cause a non-cancelling customer to cancel, and vice versa.
 
-**Stage 3: Regression**
+### Stage 3: Regression
 
 - Used regression modelling to predict **ADR (average daily rate)** across each customer.
 
@@ -36,6 +36,6 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 - Regression-based neural network showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
 
-**Stage 4: Time Series**
+### Stage 4: Time Series
 
 Used ARIMA and LSTM models to forecast weekly ADR trends. ARIMA demonstrated best results in forecasting ADR for H1 (RMSE of **10** relative to mean ADR of **160**).
