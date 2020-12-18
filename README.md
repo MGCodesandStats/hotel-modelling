@@ -20,13 +20,13 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 ### Stage 2: Classification
 
-- Trained classification models on the H1 dataset and tested against the H2 dataset.
+- Trained [classification models](https://github.com/MGCodesandStats/hotel-modelling/blob/master/classification.ipynb) on the H1 dataset and tested against the H2 dataset. Used boto3 and botocore to import data from AWS S3 bucket to SageMaker.
 
 - Used the **Explainable Boosting Classifier** by InterpretML, **KNN**, **Naive Bayes**, **Support Vector Machines**, and **XGBoost** to predict cancellations across the test set.
 
 - SVM demonstrated the best performance overall with an f1-score accuracy of **71%**, and **66%** recall across the cancellation class.
 
-- An ANN model was also trained in conjunction with dice_ml to identify Diverse Counterfactual Explanations for hotel bookings, i.e. changes in feature parameters that would cause a non-canceling customer to cancel, and vice versa.
+- An ANN model was also trained in conjunction with dice_ml to identify [Diverse Counterfactual Explanations](https://github.com/MGCodesandStats/hotel-modelling/blob/master/interpretml-dice-ml.ipynb) for hotel bookings, i.e. changes in feature parameters that would cause a non-canceling customer to cancel, and vice versa.
 
 ### Stage 3: Regression
 
@@ -34,10 +34,10 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 - Trained regression models on the H1 dataset and tested against the H2 dataset.
 
-- Regression-based neural network with elu activation function showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
+- [Regression-based neural network with elu activation function](https://github.com/MGCodesandStats/hotel-modelling/blob/master/regression-nn-elu.ipynb) showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
 
 ### Stage 4: Time Series
 
 - Used ARIMA and LSTM models to forecast weekly ADR trends. 
 
-- ARIMA demonstrated best results in forecasting ADR for H1 (RMSE of **10** relative to mean ADR of **160**) and H2 (RMSE of **8** relative to mean ADR of **131**).
+- ARIMA demonstrated best results in forecasting ADR for [H1](https://github.com/MGCodesandStats/hotel-modelling/blob/master/timeseries-arima-adr-h1.ipynb) (RMSE of **10** relative to mean ADR of **160**) and [H2](https://github.com/MGCodesandStats/hotel-modelling/blob/master/timeseries-arima-adr-h2.ipynb) (RMSE of **8** relative to mean ADR of **131**).
