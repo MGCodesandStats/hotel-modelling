@@ -26,7 +26,7 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 - SVM demonstrated the best performance overall with an f1-score accuracy of **71%**, and **66%** recall across the cancellation class.
 
-- An ANN model was also trained in conjunction with dice_ml to identify Diverse Counterfactual Explanations for hotel bookings, i.e. changes in features that would cause a non-cancelling customer to cancel, and vice versa.
+- An ANN model was also trained in conjunction with dice_ml to identify Diverse Counterfactual Explanations for hotel bookings, i.e. changes in feature parameters that would cause a non-canceling customer to cancel, and vice versa.
 
 ### Stage 3: Regression
 
@@ -40,4 +40,4 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 - Used ARIMA and LSTM models to forecast weekly ADR trends. 
 
-- ARIMA demonstrated best results in forecasting ADR for H1 (RMSE of **10** relative to mean ADR of **160**) and H2 (RMSE of **8** relative to mean ADR of **131**.
+- ARIMA demonstrated best results in forecasting ADR for H1 (RMSE of **10** relative to mean ADR of **160**) and H2 (RMSE of **8** relative to mean ADR of **131**).
