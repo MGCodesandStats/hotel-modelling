@@ -14,7 +14,7 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 ### Stage 1: Data Manipulation and Feature Selection
 
-- Used pandas to collate individual cancellation and ADR entries into a weekly time series format.
+- Used pandas to collate over 115,000 individual cancellation and ADR entries into a weekly time series format.
 
 - Identified **lead time**, **country of origin**, **market segment**, **deposit type**, **customer type**, **required car parking spaces**, and **week of arrival** as the most important features in explaining the variation in hotel cancellations.
 
