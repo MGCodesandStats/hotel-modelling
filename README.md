@@ -4,7 +4,7 @@
 [Terms](https://mgcodesandstats.github.io/terms/) |
 [E-mail](mailto:contact@michael-grogan.com)
 
-# Predicting Hotel Cancellations with Machine Learning
+# Predicting Hotel Cancellations and ADR with Machine Learning
 
 The purpose of this project is to predict hotel cancellations and ADR (average daily rate) values for two separate Portuguese hotels (H1 and H2). Included in the GitHub repository are the datasets and notebooks for all models run.
 
@@ -34,7 +34,7 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 - Trained regression models on the H1 dataset and tested against the H2 dataset.
 
-- Regression-based neural network showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
+- Regression-based neural network with elu activation function showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
 
 ### Stage 4: Time Series
 
