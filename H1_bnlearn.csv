@@ -1,0 +1,1001 @@
+IsCanceled,LeadTime,Meal,Country,MarketSegment,DistributionChannel,ReservedRoomType,AssignedRoomType,BookingChanges,DepositType,CustomerType,RequiredCarParkingSpaces
+0,0,BB       ,PRT,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,0,BB       ,CN,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,1
+0,23,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,FRA,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,14,Undefined,ESP,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,14,Undefined,ESP,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,236,BB       ,GBR,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,26,BB       ,PRT,Offline TA/TO,TA/TO,C               ,C               ,0,No Deposit     ,Transient,0
+0,87,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,28,BB       ,LUX,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,155,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+0,12,BB       ,IRL,Direct,Direct,A               ,G               ,0,No Deposit     ,Transient,0
+1,48,HB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,137,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,169,BB       ,IRL,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,1,BB       ,ITA,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,181,HB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,222,HB       ,FRA,Groups,TA/TO,A               ,H               ,0,No Deposit     ,Transient-Party,0
+1,224,HB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,130,HB       ,CHE,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+0,52,BB       ,BRA,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,143,BB       ,CHN,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,211,HB       ,DEU,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,58,BB       ,AUT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+1,200,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,79,BB       ,USA,Direct,Direct,F               ,F               ,0,No Deposit     ,Transient,1
+0,45,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,74,HB       ,PRT,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,2
+0,136,Undefined,ESP,Offline TA/TO,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+1,304,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+1,350,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,172,HB       ,IRL,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,59,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,2,HB       ,FRA,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,28,BB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+1,65,HB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,87,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,108,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,101,BB       ,DEU,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,BRA,Direct,Direct,C               ,C               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,0
+1,72,HB       ,PRT,Groups,Direct,D               ,D               ,0,No Deposit     ,Transient-Party,0
+1,279,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,39,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,55,BB       ,GBR,Complementary,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,24,BB       ,ESP,Online TA,TA/TO,A               ,B               ,1,No Deposit     ,Transient,0
+0,42,BB       ,PRT,Direct,Direct,E               ,F               ,0,No Deposit     ,Transient,1
+1,76,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,7,BB       ,CHL,Direct,Direct,G               ,G               ,0,No Deposit     ,Transient,1
+1,119,BB       ,CHE,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,41,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,179,HB       ,DEU,Direct,Direct,G               ,G               ,1,No Deposit     ,Transient,0
+0,287,BB       ,GBR,Groups,Corporate,A               ,E               ,1,No Deposit     ,Transient-Party,0
+1,121,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,17,HB       ,CN,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,42,BB       ,GBR,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,143,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,3,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,2,BB       ,GBR,Corporate,Corporate,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,96,HB       ,DEU,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,296,BB       ,GBR,Offline TA/TO,TA/TO,A               ,C               ,1,No Deposit     ,Contract,0
+0,7,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,19,BB       ,ESP,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,40,Undefined,PRT,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,56,BB       ,GBR,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,1
+0,38,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,22,Undefined,ESP,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,16,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,45,HB       ,PRT,Direct,Direct,D               ,D               ,1,No Deposit     ,Transient-Party,0
+0,72,HB       ,GBR,Offline TA/TO,TA/TO,A               ,E               ,1,No Deposit     ,Contract,0
+0,128,HB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Group,0
+0,33,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,128,BB       ,GBR,Direct,Direct,F               ,F               ,0,No Deposit     ,Transient,1
+1,259,BB       ,GBR,Groups,Corporate,A               ,A               ,0,Non Refund     ,Transient,0
+0,11,BB       ,FRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,5,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,234,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,12,BB       ,GBR,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,21,HB       ,POL,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,30,BB       ,PRT,Corporate,Corporate,A               ,A               ,2,No Deposit     ,Transient-Party,0
+1,74,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,30,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,111,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,51,BB       ,USA,Online TA,TA/TO,H               ,H               ,1,No Deposit     ,Transient,1
+0,1,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,1
+1,160,BB       ,PRT,Groups,TA/TO,C               ,C               ,0,No Deposit     ,Transient-Party,0
+0,85,HB       ,FRA,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+1,17,HB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,18,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,194,HB       ,ESP,Online TA,TA/TO,D               ,D               ,3,No Deposit     ,Transient,0
+1,289,FB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,19,BB       ,BRA,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+1,279,HB       ,IRL,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,9,BB       ,GBR,Groups,Corporate,E               ,E               ,0,No Deposit     ,Transient-Party,0
+1,240,HB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,132,BB       ,AUT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+0,222,HB       ,FRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,80,HB       ,FRA,Online TA,TA/TO,E               ,E               ,2,No Deposit     ,Transient,1
+1,15,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,87,BB       ,BRA,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,152,BB       ,GBR,Groups,TA/TO,A               ,C               ,2,No Deposit     ,Transient-Party,0
+0,114,HB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,12,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+0,7,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,23,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,110,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+1,11,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,71,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,43,BB       ,IRL,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,542,HB       ,GBR,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,30,BB       ,FRA,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,12,HB       ,GBR,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+1,237,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,89,BB       ,PRT,Online TA,TA/TO,D               ,F               ,0,No Deposit     ,Transient,0
+0,236,BB       ,GBR,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,1,BB       ,PRT,Corporate,Corporate,D               ,D               ,1,No Deposit     ,Transient,1
+1,159,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,261,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+1,56,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,191,HB       ,GBR,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,78,BB       ,PRT,Corporate,Corporate,A               ,E               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,NULL,Corporate,Corporate,A               ,E               ,0,No Deposit     ,Transient,0
+0,18,BB       ,GBR,Direct,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+0,261,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+1,106,BB       ,BRA,Online TA,TA/TO,A               ,A               ,2,No Deposit     ,Transient,0
+1,78,FB       ,ESP,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,117,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,65,BB       ,LTU,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,1
+1,343,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+1,106,BB       ,PRT,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+0,0,BB       ,USA,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,21,BB       ,GBR,Online TA,TA/TO,H               ,H               ,0,No Deposit     ,Transient,0
+1,118,BB       ,IRL,Online TA,TA/TO,H               ,H               ,0,No Deposit     ,Transient,0
+1,385,BB       ,PRT,Groups,Direct,A               ,A               ,0,Non Refund     ,Transient,0
+0,31,BB       ,PRT,Corporate,Corporate,A               ,A               ,2,No Deposit     ,Transient-Party,0
+1,125,BB       ,CN,Online TA,TA/TO,A               ,B               ,1,No Deposit     ,Transient,0
+0,10,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,30,Undefined,ESP,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,1,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+1,26,BB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,179,BB       ,USA,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+1,143,FB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,365,HB       ,PRT,Online TA,TA/TO,G               ,G               ,2,No Deposit     ,Transient,0
+0,1,HB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient,0
+0,141,HB       ,PRT,Online TA,TA/TO,E               ,E               ,1,No Deposit     ,Transient,1
+0,255,BB       ,IRL,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,5,BB       ,GBR,Groups,Direct,A               ,A               ,3,No Deposit     ,Transient-Party,0
+1,319,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,14,BB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,7,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,1,BB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,44,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,185,HB       ,PRT,Groups,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,24,BB       ,ESP,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,74,BB       ,IRL,Groups,TA/TO,A               ,A               ,2,No Deposit     ,Transient-Party,0
+0,20,BB       ,PRT,Direct,Direct,F               ,G               ,1,No Deposit     ,Transient,0
+0,234,Undefined,SWE,Groups,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,63,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+0,6,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,69,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,1
+0,4,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient,0
+0,251,HB       ,CN,Groups,TA/TO,D               ,E               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,GBR,Direct,Direct,A               ,A               ,2,No Deposit     ,Transient,0
+0,40,HB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,1
+0,45,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+1,242,HB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,245,BB       ,IRL,Direct,Direct,D               ,E               ,0,No Deposit     ,Transient-Party,0
+0,50,BB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,7,BB       ,PRT,Direct,Direct,A               ,C               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,34,BB       ,CN,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,1
+0,302,HB       ,GBR,Groups,Direct,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,79,HB       ,GBR,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+1,55,HB       ,CHE,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,108,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,386,BB       ,GBR,Groups,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,3,BB       ,PRT,Direct,Direct,D               ,D               ,1,No Deposit     ,Transient,1
+1,205,HB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+1,315,BB       ,PRT,Groups,Direct,E               ,E               ,0,No Deposit     ,Transient-Party,0
+0,26,BB       ,AUT,Corporate,Corporate,E               ,E               ,3,No Deposit     ,Group,0
+1,29,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,44,BB       ,GBR,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,542,HB       ,GBR,Groups,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,113,HB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,154,BB       ,PRT,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,237,HB       ,PRT,Direct,Direct,C               ,C               ,1,No Deposit     ,Transient,0
+1,308,HB       ,PRT,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Direct,Direct,H               ,H               ,0,No Deposit     ,Transient,0
+0,31,HB       ,PRT,Groups,Direct,E               ,E               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,1
+1,247,FB       ,ESP,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,36,BB       ,AUT,Corporate,Corporate,A               ,A               ,2,No Deposit     ,Transient-Party,1
+0,282,BB       ,IRL,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,3,BB       ,BEL,Complementary,Direct,A               ,F               ,0,No Deposit     ,Transient,0
+0,25,BB       ,GBR,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,195,HB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,25,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,20,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,1
+0,221,HB       ,FRA,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,78,HB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,8,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,IRL,Direct,Direct,D               ,D               ,1,No Deposit     ,Transient,0
+1,108,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,26,BB       ,PRT,Offline TA/TO,TA/TO,A               ,E               ,0,No Deposit     ,Transient,0
+0,51,BB       ,ESP,Offline TA/TO,TA/TO,F               ,F               ,1,No Deposit     ,Transient,0
+0,9,BB       ,ESP,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,1
+1,0,BB       ,PRT,Direct,Direct,C               ,C               ,0,No Deposit     ,Transient,0
+0,2,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,164,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,23,BB       ,ESP,Offline TA/TO,TA/TO,D               ,E               ,0,No Deposit     ,Contract,0
+1,139,HB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,30,BB       ,GBR,Groups,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,109,BB       ,PRT,Offline TA/TO,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+0,74,BB       ,PRT,Direct,Direct,F               ,F               ,1,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,31,SC       ,PRT,Groups,Direct,E               ,I               ,3,No Deposit     ,Transient-Party,0
+0,157,BB       ,NOR,Online TA,TA/TO,A               ,A               ,2,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,1
+1,41,BB       ,FRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,97,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,3,BB       ,PRT,Direct,Direct,F               ,F               ,0,No Deposit     ,Transient,1
+1,160,BB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+1,309,BB       ,ITA,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,4,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+1,121,HB       ,GBR,Groups,Direct,D               ,D               ,0,Non Refund     ,Transient,0
+0,274,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,114,HB       ,IRL,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+1,211,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,77,BB       ,IRL,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+1,80,BB       ,GBR,Online TA,TA/TO,C               ,C               ,0,No Deposit     ,Transient,0
+0,31,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,406,BB       ,GBR,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Contract,1
+1,152,BB       ,FRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,18,BB       ,USA,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,1
+1,236,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+1,214,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,84,BB       ,ITA,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient-Party,0
+0,130,BB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,5,HB       ,PRT,Offline TA/TO,TA/TO,C               ,C               ,1,No Deposit     ,Transient,0
+0,4,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+1,39,BB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,0,BB       ,ESP,Direct,Direct,C               ,C               ,0,No Deposit     ,Transient,1
+0,309,BB       ,GBR,Offline TA/TO,TA/TO,A               ,D               ,2,No Deposit     ,Contract,0
+0,37,BB       ,GBR,Corporate,Corporate,E               ,E               ,1,No Deposit     ,Transient-Party,1
+1,18,BB       ,PRT,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Group,0
+0,105,Undefined,ESP,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,50,HB       ,ESP,Direct,Direct,F               ,F               ,1,No Deposit     ,Transient,0
+0,3,BB       ,BRA,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,1
+0,8,BB       ,PRT,Corporate,Corporate,A               ,C               ,1,No Deposit     ,Transient-Party,0
+0,256,HB       ,ROU,Offline TA/TO,TA/TO,A               ,A               ,2,No Deposit     ,Transient,1
+0,78,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,56,HB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,72,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,74,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,16,BB       ,PRT,Groups,Corporate,A               ,A               ,5,No Deposit     ,Transient-Party,0
+0,208,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,245,HB       ,CN,Groups,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,1,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,197,HB       ,DEU,Groups,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,29,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,1
+1,83,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,38,BB       ,PRT,Corporate,Corporate,A               ,A               ,3,No Deposit     ,Transient-Party,0
+1,11,BB       ,GBR,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,11,BB       ,GBR,Offline TA/TO,TA/TO,C               ,C               ,0,No Deposit     ,Transient,0
+1,100,BB       ,GBR,Online TA,TA/TO,G               ,G               ,1,No Deposit     ,Transient,0
+0,152,BB       ,ARG,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+1,185,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,3,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,21,BB       ,GBR,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+0,345,BB       ,GBR,Offline TA/TO,TA/TO,A               ,C               ,1,No Deposit     ,Transient,1
+0,9,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient-Party,0
+1,262,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,285,BB       ,IRL,Groups,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,49,BB       ,ESP,Online TA,TA/TO,G               ,G               ,1,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,6,Undefined,ESP,Groups,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,25,HB       ,DEU,Groups,TA/TO,A               ,A               ,1,Non Refund     ,Transient-Party,0
+0,254,BB       ,CN,Groups,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,5,HB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,136,BB       ,IRL,Offline TA/TO,TA/TO,A               ,E               ,0,No Deposit     ,Contract,0
+0,130,BB       ,NLD,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Contract,0
+0,0,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient,1
+0,0,BB       ,FRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,333,HB       ,GBR,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,125,HB       ,DEU,Offline TA/TO,TA/TO,A               ,A               ,1,No Deposit     ,Contract,0
+0,134,BB       ,IRL,Offline TA/TO,TA/TO,D               ,D               ,1,No Deposit     ,Contract,0
+0,248,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,3,No Deposit     ,Transient,0
+0,20,HB       ,ESP,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,186,BB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,299,HB       ,DEU,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,1,BB       ,RUS,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,ITA,Direct,Direct,A               ,D               ,3,No Deposit     ,Transient,0
+0,80,BB       ,IRL,Groups,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,15,HB       ,PRT,Corporate,Direct,D               ,D               ,1,No Deposit     ,Transient-Party,1
+1,121,HB       ,GBR,Groups,Direct,D               ,D               ,0,Non Refund     ,Transient,0
+1,229,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,4,BB       ,GBR,Complementary,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+1,103,BB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,320,HB       ,SWE,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,23,BB       ,PRT,Direct,Direct,G               ,G               ,0,No Deposit     ,Transient,0
+1,90,BB       ,PRT,Online TA,TA/TO,C               ,C               ,0,No Deposit     ,Transient,0
+0,0,BB       ,GBR,Groups,Corporate,A               ,D               ,0,No Deposit     ,Transient,0
+0,92,BB       ,FRA,Online TA,TA/TO,E               ,F               ,0,No Deposit     ,Transient,1
+0,46,HB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,1,No Deposit     ,Transient,1
+0,21,BB       ,PRT,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,36,BB       ,DEU,Corporate,Corporate,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,41,HB       ,ESP,Online TA,TA/TO,C               ,C               ,0,No Deposit     ,Transient,0
+1,46,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,169,HB       ,PRT,Online TA,TA/TO,D               ,D               ,2,No Deposit     ,Transient,1
+1,0,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient,0
+0,2,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,1
+0,226,BB       ,PRT,Online TA,TA/TO,E               ,F               ,1,No Deposit     ,Transient,0
+0,58,HB       ,FRA,Online TA,TA/TO,F               ,F               ,1,No Deposit     ,Transient,1
+0,225,BB       ,IRL,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,3,BB       ,ESP,Online TA,TA/TO,A               ,D               ,2,No Deposit     ,Transient,0
+0,13,BB       ,PRT,Direct,Direct,F               ,F               ,0,No Deposit     ,Transient,0
+0,88,HB       ,PRT,Direct,Direct,G               ,G               ,2,No Deposit     ,Transient,0
+0,2,HB       ,ESP,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,44,BB       ,LTU,Online TA,TA/TO,E               ,G               ,0,No Deposit     ,Transient,0
+0,14,BB       ,IRL,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,38,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,255,HB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+1,244,BB       ,IRL,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,45,BB       ,GBR,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,64,HB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Corporate,Corporate,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,127,HB       ,ITA,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,58,BB       ,GBR,Direct,Direct,F               ,F               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,1
+1,230,BB       ,GBR,Online TA,TA/TO,H               ,H               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,Direct,A               ,A               ,0,No Deposit     ,Transient,1
+0,12,Undefined,PRT,Groups,Direct,A               ,A               ,1,No Deposit     ,Transient-Party,0
+1,162,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,144,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,154,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,113,BB       ,FRA,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,343,HB       ,BEL,Corporate,Corporate,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,31,BB       ,GBR,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,183,FB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+1,37,HB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+1,168,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,0,BB       ,PRT,Corporate,Corporate,A               ,I               ,1,No Deposit     ,Transient-Party,0
+0,2,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,36,HB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,78,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,327,BB       ,IRL,Groups,TA/TO,A               ,C               ,2,No Deposit     ,Transient-Party,0
+1,112,FB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,42,BB       ,BRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,203,HB       ,AUT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,7,BB       ,NLD,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,208,HB       ,PRT,Groups,Direct,A               ,A               ,0,Non Refund     ,Transient,0
+0,16,BB       ,ITA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,84,HB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,7,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient,1
+0,236,BB       ,PRT,Groups,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,1
+1,117,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,330,HB       ,GBR,Online TA,TA/TO,A               ,C               ,1,No Deposit     ,Transient,0
+0,111,BB       ,PRT,Online TA,TA/TO,A               ,H               ,0,No Deposit     ,Transient,0
+0,166,BB       ,CN,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,121,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,86,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+1,312,HB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,75,BB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,275,BB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,23,BB       ,IRL,Online TA,TA/TO,D               ,I               ,0,No Deposit     ,Group,1
+1,92,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,10,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient,0
+1,172,HB       ,PRT,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,107,Undefined,CN,Groups,TA/TO,E               ,E               ,1,No Deposit     ,Transient-Party,0
+1,116,BB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,12,BB       ,POL,Online TA,TA/TO,A               ,A               ,2,No Deposit     ,Transient-Party,1
+0,112,Undefined,ESP,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,22,Undefined,PRT,Groups,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,213,HB       ,DEU,Groups,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,201,BB       ,DEU,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+1,85,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,154,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,42,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,131,HB       ,FRA,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+0,68,HB       ,ESP,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,18,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,31,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,42,BB       ,GBR,Direct,Direct,D               ,D               ,0,No Deposit     ,Group,0
+0,210,BB       ,NOR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,51,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,2,BB       ,MAR,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,1
+0,352,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,1,No Deposit     ,Contract,0
+0,47,BB       ,ESP,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,46,BB       ,PRT,Offline TA/TO,TA/TO,A               ,E               ,1,No Deposit     ,Transient-Party,0
+0,89,BB       ,IRL,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,40,HB       ,PRT,Groups,Direct,A               ,D               ,2,No Deposit     ,Transient-Party,0
+0,39,Undefined,PRT,Groups,Direct,A               ,C               ,1,No Deposit     ,Transient-Party,0
+1,44,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,31,BB       ,PRT,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,24,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,44,HB       ,CHE,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,115,HB       ,GBR,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,92,Undefined,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,3,BB       ,ITA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,12,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,60,BB       ,BRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,2,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+1,80,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,88,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,6,BB       ,CN,Online TA,TA/TO,A               ,E               ,0,No Deposit     ,Transient,0
+0,542,HB       ,GBR,Groups,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,28,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,163,BB       ,CN,Online TA,TA/TO,C               ,C               ,0,No Deposit     ,Transient,1
+0,8,BB       ,PRT,Direct,TA/TO,A               ,C               ,0,No Deposit     ,Transient,1
+1,306,HB       ,ITA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,18,HB       ,PRT,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,6,BB       ,ESP,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,80,BB       ,CN,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,128,HB       ,PRT,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,2,BB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+1,262,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,45,BB       ,NLD,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,18,BB       ,PRT,Corporate,Corporate,A               ,F               ,1,No Deposit     ,Transient,0
+0,131,BB       ,RUS,Online TA,TA/TO,G               ,G               ,1,No Deposit     ,Transient,0
+1,238,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,4,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,101,FB       ,PRT,Direct,Direct,H               ,H               ,5,No Deposit     ,Transient,1
+0,61,HB       ,FIN,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,164,FB       ,PRT,Direct,Direct,C               ,C               ,1,No Deposit     ,Transient,0
+1,40,BB       ,GBR,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,A               ,D               ,1,No Deposit     ,Transient,0
+1,364,BB       ,PRT,Groups,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,236,BB       ,GBR,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,16,BB       ,PRT,Online TA,TA/TO,A               ,I               ,2,No Deposit     ,Transient,1
+0,0,BB       ,PRT,Direct,Direct,A               ,E               ,0,No Deposit     ,Transient,1
+0,167,HB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+1,52,BB       ,PRT,Corporate,Corporate,D               ,D               ,0,No Deposit     ,Transient,0
+0,28,BB       ,ESP,Direct,Direct,A               ,A               ,1,No Deposit     ,Transient,1
+0,194,BB       ,IRL,Online TA,TA/TO,E               ,E               ,1,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,204,BB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,45,BB       ,PRT,Online TA,TA/TO,A               ,C               ,1,No Deposit     ,Transient,0
+0,53,BB       ,IRL,Online TA,TA/TO,A               ,D               ,1,No Deposit     ,Transient,0
+0,48,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,37,BB       ,PRT,Direct,Direct,D               ,D               ,2,No Deposit     ,Transient,0
+0,7,BB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+1,35,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,236,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,213,BB       ,CHE,Direct,Direct,E               ,E               ,2,No Deposit     ,Transient,0
+1,140,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+1,15,Undefined,PRT,Groups,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,89,Undefined,ROU,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,262,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,61,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,122,HB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,3,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,1
+0,8,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,3,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,51,BB       ,PRT,Groups,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,17,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,31,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,167,HB       ,ROU,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,0,BB       ,NLD,Direct,Direct,A               ,A               ,1,No Deposit     ,Transient,0
+0,194,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,207,BB       ,ROU,Offline TA/TO,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,171,HB       ,DEU,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient-Party,0
+1,177,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,118,BB       ,FIN,Direct,Direct,D               ,D               ,2,No Deposit     ,Transient,0
+0,6,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,136,BB       ,CN,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,4,BB       ,GBR,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,D               ,E               ,0,No Deposit     ,Transient,1
+0,17,BB       ,FRA,Direct,Direct,E               ,H               ,0,No Deposit     ,Transient,0
+1,238,BB       ,PRT,Groups,TA/TO,D               ,D               ,0,Non Refund     ,Transient,0
+0,80,BB       ,RUS,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,0,BB       ,FRA,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,1
+0,38,BB       ,PRT,Direct,Direct,A               ,D               ,1,No Deposit     ,Transient,1
+0,1,BB       ,AUT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,58,BB       ,GBR,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,95,FB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+1,147,BB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,26,BB       ,IRL,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,1
+0,15,Undefined,PRT,Corporate,Corporate,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,166,HB       ,DEU,Online TA,TA/TO,E               ,E               ,1,No Deposit     ,Transient,0
+0,2,BB       ,PRT,Corporate,Corporate,A               ,D               ,3,No Deposit     ,Transient,1
+1,170,BB       ,CN,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,130,BB       ,TWN,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+1,196,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,100,BB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,67,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,235,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+0,1,BB       ,PRT,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,203,HB       ,AUT,Groups,TA/TO,A               ,D               ,1,No Deposit     ,Transient-Party,0
+1,44,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,10,BB       ,PRT,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+1,267,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,9,HB       ,ESP,Online TA,TA/TO,E               ,F               ,0,No Deposit     ,Transient,1
+1,86,Undefined,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,30,BB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,164,BB       ,ESP,Online TA,TA/TO,A               ,A               ,2,No Deposit     ,Transient,0
+0,172,BB       ,GBR,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+1,69,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,351,HB       ,GBR,Online TA,TA/TO,E               ,E               ,1,No Deposit     ,Transient,0
+1,134,HB       ,ESP,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,5,BB       ,PRT,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,2,BB       ,IRL,Direct,Direct,G               ,G               ,0,No Deposit     ,Transient,0
+1,7,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient-Party,0
+0,9,BB       ,GBR,Online TA,TA/TO,E               ,F               ,0,No Deposit     ,Transient-Party,0
+0,12,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,1
+0,1,BB       ,FRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,173,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,6,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,210,HB       ,HUN,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,42,BB       ,BEL,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+1,0,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,82,HB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,289,BB       ,EST,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,0,BB       ,PRT,Groups,Direct,A               ,A               ,1,No Deposit     ,Transient,0
+0,335,BB       ,GBR,Groups,Direct,A               ,A               ,1,No Deposit     ,Transient-Party,1
+0,21,BB       ,ESP,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,52,BB       ,PRT,Corporate,Corporate,A               ,F               ,0,No Deposit     ,Transient,0
+0,51,BB       ,BRA,Online TA,TA/TO,D               ,E               ,0,No Deposit     ,Transient,1
+0,39,HB       ,IRL,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+1,238,BB       ,PRT,Groups,TA/TO,D               ,D               ,0,Non Refund     ,Transient,0
+0,12,BB       ,ESP,Online TA,TA/TO,A               ,A               ,2,No Deposit     ,Transient,1
+0,47,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,259,BB       ,GBR,Groups,Corporate,A               ,A               ,0,Non Refund     ,Transient,0
+0,292,HB       ,DEU,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,137,BB       ,IRL,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,13,BB       ,GBR,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,85,BB       ,IRL,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,G               ,G               ,1,No Deposit     ,Transient,1
+1,64,BB       ,PRT,Corporate,Corporate,D               ,D               ,0,No Deposit     ,Transient,0
+0,78,HB       ,GBR,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,195,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,160,HB       ,GBR,Offline TA/TO,TA/TO,D               ,C               ,0,No Deposit     ,Contract,0
+0,13,BB       ,DNK,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,36,BB       ,ITA,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,136,Undefined,ESP,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,230,HB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+0,188,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,4,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,21,BB       ,PRT,Direct,Direct,A               ,A               ,1,No Deposit     ,Transient,0
+0,47,HB       ,ESP,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,203,BB       ,PRT,Groups,TA/TO,A               ,A               ,2,No Deposit     ,Transient-Party,0
+1,74,BB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+0,35,BB       ,FIN,Direct,Direct,F               ,F               ,0,No Deposit     ,Transient,1
+0,0,BB       ,ESP,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,0
+0,80,HB       ,BRA,Online TA,TA/TO,A               ,A               ,2,No Deposit     ,Transient,0
+0,6,BB       ,GBR,Complementary,TA/TO,F               ,F               ,1,No Deposit     ,Transient,0
+0,165,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,204,BB       ,CHE,Online TA,TA/TO,E               ,F               ,0,No Deposit     ,Transient,0
+0,4,HB       ,PRT,Groups,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+0,132,BB       ,ITA,Direct,Direct,C               ,C               ,2,No Deposit     ,Transient,1
+0,1,BB       ,NULL,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+0,80,SC       ,ESP,Groups,TA/TO,A               ,I               ,0,No Deposit     ,Transient-Party,0
+0,320,BB       ,IRL,Online TA,TA/TO,D               ,E               ,0,No Deposit     ,Transient,0
+0,93,BB       ,GBR,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+1,209,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,5,BB       ,PRT,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+1,141,BB       ,ESP,Online TA,TA/TO,H               ,H               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Group,0
+1,144,BB       ,PRT,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,310,HB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,55,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+1,221,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,55,BB       ,PRT,Corporate,Corporate,D               ,D               ,0,No Deposit     ,Transient,0
+1,157,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,49,HB       ,GBR,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,4,BB       ,PRT,Online TA,TA/TO,C               ,C               ,0,No Deposit     ,Transient,0
+1,103,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,171,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,230,BB       ,CN,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,43,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,GBR,Online TA,TA/TO,A               ,E               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,4,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Corporate,Corporate,A               ,A               ,1,No Deposit     ,Transient-Party,0
+1,227,BB       ,CHE,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,48,BB       ,BRA,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,260,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+1,32,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,203,BB       ,GBR,Groups,TA/TO,D               ,D               ,1,No Deposit     ,Transient-Party,0
+1,20,BB       ,PRT,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+1,149,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,3,BB       ,IRL,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,12,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,158,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,117,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,189,HB       ,ESP,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient-Party,0
+0,2,BB       ,USA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,1
+0,177,HB       ,PRT,Direct,Direct,A               ,A               ,1,No Deposit     ,Transient,0
+0,21,BB       ,GBR,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,3,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,15,HB       ,ESP,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,1
+0,51,BB       ,POL,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,17,BB       ,ESP,Online TA,TA/TO,C               ,C               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,18,BB       ,GBR,Direct,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+0,57,FB       ,PRT,Groups,Direct,A               ,D               ,0,No Deposit     ,Transient,0
+0,41,HB       ,ITA,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,114,BB       ,BEL,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,2,BB       ,PRT,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,ESP,Direct,Direct,A               ,E               ,0,No Deposit     ,Transient,0
+0,16,BB       ,NULL,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,3,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,143,HB       ,CN,Groups,TA/TO,E               ,E               ,0,No Deposit     ,Transient-Party,0
+1,23,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,52,BB       ,FRA,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,153,BB       ,PRT,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+1,172,BB       ,BEL,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,157,HB       ,PRT,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,226,BB       ,IRL,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Contract,0
+0,143,BB       ,SWE,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+1,56,BB       ,MAR,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,26,HB       ,ESP,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,38,BB       ,PRT,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,0
+0,102,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,383,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,46,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,94,HB       ,FRA,Direct,Direct,D               ,D               ,1,No Deposit     ,Transient,0
+0,175,BB       ,IRL,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,153,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+1,177,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,212,HB       ,PRT,Groups,Direct,A               ,A               ,0,Non Refund     ,Transient,0
+1,0,BB       ,PRT,Online TA,TA/TO,E               ,F               ,0,Non Refund     ,Transient,0
+0,16,BB       ,MAR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,0,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,84,BB       ,ITA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,252,BB       ,GBR,Groups,TA/TO,D               ,D               ,2,No Deposit     ,Transient-Party,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,1,No Deposit     ,Transient,0
+0,0,BB       ,DEU,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+1,12,Undefined,PRT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,170,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,2,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,227,BB       ,PRT,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,8,BB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+1,277,HB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,4,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+0,78,BB       ,PRT,Corporate,Corporate,A               ,E               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,PRT,Direct,Direct,A               ,E               ,0,No Deposit     ,Transient,0
+0,81,BB       ,IRL,Offline TA/TO,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+1,0,BB       ,AGO,Direct,Direct,G               ,G               ,0,No Deposit     ,Transient,0
+0,167,BB       ,BEL,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,8,BB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,1
+1,44,HB       ,PRT,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+0,386,BB       ,GBR,Groups,Corporate,A               ,D               ,1,No Deposit     ,Transient-Party,0
+1,46,BB       ,IRL,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,ESP,Direct,TA/TO,A               ,G               ,0,No Deposit     ,Transient,1
+1,1,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,18,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,1
+1,100,HB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,66,HB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,1,BB       ,ITA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,105,HB       ,GBR,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,183,BB       ,IRL,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,98,BB       ,DEU,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,4,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient,1
+0,3,BB       ,PRT,Corporate,Corporate,A               ,A               ,1,No Deposit     ,Transient,0
+1,185,Undefined,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,USA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+1,19,BB       ,PRT,Online TA,TA/TO,H               ,H               ,0,No Deposit     ,Transient,0
+0,14,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient,0
+1,163,HB       ,CN,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,39,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,1
+1,139,BB       ,IRL,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,201,BB       ,USA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,8,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient,0
+1,46,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,48,FB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,108,BB       ,CN,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,75,BB       ,IRL,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+1,173,BB       ,IRL,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,6,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+1,163,BB       ,PRT,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+1,0,BB       ,ESP,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,0,HB       ,ESP,Online TA,TA/TO,A               ,D               ,1,No Deposit     ,Transient,0
+0,49,HB       ,USA,Offline TA/TO,TA/TO,E               ,F               ,0,No Deposit     ,Transient,1
+1,73,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,166,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Group,0
+0,1,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,25,HB       ,ESP,Direct,Direct,F               ,F               ,1,No Deposit     ,Transient,0
+0,10,BB       ,ESP,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,2,BB       ,PRT,Corporate,Corporate,A               ,E               ,0,No Deposit     ,Transient,0
+1,142,BB       ,ESP,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,212,HB       ,PRT,Groups,Direct,A               ,A               ,0,Non Refund     ,Transient,0
+0,8,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,332,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,38,BB       ,USA,Online TA,TA/TO,G               ,G               ,1,No Deposit     ,Transient,0
+1,63,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,89,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,81,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,15,BB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient,1
+0,165,BB       ,GBR,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+1,195,HB       ,PRT,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,0
+0,43,HB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,1,BB       ,ESP,Online TA,TA/TO,A               ,B               ,0,No Deposit     ,Transient,0
+0,96,BB       ,DEU,Groups,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,245,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,6,BB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,1,No Deposit     ,Transient,0
+0,47,BB       ,NLD,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,36,BB       ,IRL,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,0
+0,29,BB       ,IRL,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,46,BB       ,IRL,Offline TA/TO,TA/TO,D               ,E               ,0,No Deposit     ,Transient,0
+0,61,BB       ,CN,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+0,1,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient,1
+0,38,BB       ,ESP,Online TA,TA/TO,A               ,F               ,0,No Deposit     ,Transient,0
+0,8,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,27,BB       ,FRA,Online TA,TA/TO,A               ,D               ,1,No Deposit     ,Transient,0
+0,0,BB       ,GBR,Direct,Direct,F               ,F               ,1,No Deposit     ,Transient,1
+1,61,HB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,280,HB       ,ESP,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,5,BB       ,PRT,Online TA,TA/TO,E               ,E               ,2,No Deposit     ,Transient,1
+1,107,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,132,BB       ,DEU,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,15,HB       ,FRA,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,1
+0,14,Undefined,ESP,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,14,HB       ,ESP,Online TA,TA/TO,A               ,E               ,0,No Deposit     ,Transient,0
+1,205,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,255,HB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+0,0,BB       ,FRA,Direct,Direct,A               ,E               ,1,No Deposit     ,Transient,1
+0,34,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,21,BB       ,PRT,Online TA,TA/TO,D               ,I               ,0,No Deposit     ,Transient,0
+0,4,BB       ,CUB,Online TA,TA/TO,A               ,E               ,0,No Deposit     ,Transient,0
+1,312,HB       ,PRT,Groups,TA/TO,E               ,E               ,1,No Deposit     ,Transient-Party,0
+0,259,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,4,No Deposit     ,Transient,0
+1,31,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,100,HB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,1
+0,59,BB       ,PRT,Corporate,Corporate,A               ,A               ,3,No Deposit     ,Transient,0
+0,4,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,26,BB       ,NLD,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,36,BB       ,AUT,Corporate,Corporate,A               ,A               ,1,No Deposit     ,Transient-Party,0
+1,128,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,207,HB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,315,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+1,83,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,4,BB       ,FRA,Online TA,TA/TO,E               ,F               ,0,No Deposit     ,Transient,0
+0,26,BB       ,PRT,Direct,Direct,E               ,E               ,1,No Deposit     ,Transient,0
+0,0,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,20,BB       ,PRT,Online TA,TA/TO,C               ,D               ,0,No Deposit     ,Transient,0
+0,183,HB       ,DEU,Groups,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,152,BB       ,CN,Offline TA/TO,TA/TO,A               ,C               ,1,No Deposit     ,Transient,0
+1,24,BB       ,GBR,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,122,HB       ,PRT,Online TA,TA/TO,E               ,F               ,0,No Deposit     ,Transient,0
+0,232,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,316,BB       ,EST,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,41,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,104,BB       ,PRT,Offline TA/TO,TA/TO,D               ,G               ,6,No Deposit     ,Transient-Party,0
+1,47,BB       ,PRT,Corporate,Corporate,E               ,E               ,0,No Deposit     ,Transient,0
+0,128,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,169,BB       ,BRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,4,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,80,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient,0
+0,90,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+1,252,BB       ,FRA,Online TA,TA/TO,E               ,E               ,1,No Deposit     ,Transient,0
+0,33,HB       ,ESP,Online TA,TA/TO,E               ,E               ,1,No Deposit     ,Transient-Party,1
+0,0,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient,1
+0,27,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+1,40,BB       ,BEL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+0,2,HB       ,GBR,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+1,247,FB       ,ESP,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,140,BB       ,ITA,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient-Party,0
+0,88,BB       ,DEU,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+1,79,HB       ,PRT,Direct,Direct,H               ,H               ,0,No Deposit     ,Transient,0
+0,8,BB       ,GBR,Groups,Corporate,A               ,C               ,2,No Deposit     ,Transient-Party,0
+1,259,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,3,BB       ,PRT,Offline TA/TO,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,119,BB       ,GBR,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,1
+0,28,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,1
+0,24,BB       ,ESP,Corporate,Corporate,A               ,A               ,2,No Deposit     ,Transient-Party,0
+1,53,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,277,HB       ,GBR,Groups,Direct,A               ,A               ,0,Non Refund     ,Transient,0
+0,130,BB       ,TWN,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,112,BB       ,CN,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,55,HB       ,PRT,Online TA,TA/TO,E               ,F               ,1,No Deposit     ,Transient,0
+0,29,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient-Party,1
+0,65,BB       ,FRA,Direct,Direct,F               ,F               ,0,No Deposit     ,Transient,0
+1,32,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,31,BB       ,ROU,Offline TA/TO,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,1,BB       ,RUS,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,197,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,188,BB       ,NOR,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,G               ,G               ,1,No Deposit     ,Transient,1
+1,341,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,159,HB       ,SWE,Groups,Corporate,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,59,HB       ,ESP,Online TA,TA/TO,A               ,D               ,1,No Deposit     ,Transient,0
+1,22,BB       ,PRT,Direct,Direct,A               ,A               ,2,No Deposit     ,Transient,0
+0,184,BB       ,GBR,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Contract,0
+0,0,BB       ,NLD,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,1
+1,17,BB       ,PRT,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,9,HB       ,PRT,Direct,Direct,E               ,E               ,2,No Deposit     ,Transient,1
+0,18,BB       ,CHE,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+1,350,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+0,38,BB       ,ESP,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Offline TA/TO,TA/TO,A               ,I               ,0,No Deposit     ,Transient,0
+0,12,BB       ,BRA,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,FIN,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,7,BB       ,PRT,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,1
+0,107,BB       ,PRT,Online TA,TA/TO,A               ,A               ,2,No Deposit     ,Transient,0
+0,3,BB       ,PRT,Direct,Direct,A               ,D               ,3,No Deposit     ,Transient,0
+0,15,BB       ,ESP,Online TA,TA/TO,A               ,C               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient,0
+0,171,BB       ,IRL,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient-Party,0
+1,103,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,3,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,128,HB       ,PRT,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,240,BB       ,IRN,Online TA,TA/TO,A               ,A               ,3,No Deposit     ,Transient-Party,0
+0,56,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+0,134,BB       ,CN,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,122,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,222,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,140,HB       ,FRA,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,283,BB       ,GBR,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,4,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient,0
+0,116,HB       ,ITA,Direct,Direct,D               ,D               ,1,No Deposit     ,Transient,0
+0,28,BB       ,BRA,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+1,272,BB       ,FIN,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,112,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,2,BB       ,PRT,Online TA,Direct,G               ,G               ,0,No Deposit     ,Transient,1
+1,16,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,13,BB       ,FRA,Offline TA/TO,TA/TO,A               ,D               ,1,No Deposit     ,Transient,0
+0,211,BB       ,GBR,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Contract,0
+0,134,BB       ,GBR,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,157,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,316,BB       ,CN,Online TA,TA/TO,E               ,E               ,1,No Deposit     ,Transient,0
+1,100,BB       ,GBR,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,227,HB       ,PRT,Direct,Direct,G               ,G               ,0,No Deposit     ,Transient,0
+1,383,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,28,BB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+0,93,BB       ,PRT,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,10,HB       ,PRT,Groups,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,26,HB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,83,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,92,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,1
+0,193,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,1,No Deposit     ,Contract,0
+1,279,HB       ,IRL,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,248,BB       ,FRA,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,29,HB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,2,BB       ,PRT,Online TA,TA/TO,D               ,F               ,0,No Deposit     ,Transient,0
+0,149,SC       ,FRA,Online TA,TA/TO,E               ,I               ,13,No Deposit     ,Transient,0
+1,27,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+1,95,BB       ,ESP,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,182,BB       ,PRT,Offline TA/TO,TA/TO,D               ,I               ,0,No Deposit     ,Transient,0
+1,171,BB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,33,BB       ,PRT,Groups,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,1
+0,0,BB       ,PRT,Direct,Direct,A               ,D               ,0,No Deposit     ,Transient-Party,1
+0,34,HB       ,ESP,Direct,Direct,F               ,F               ,2,No Deposit     ,Transient,0
+0,159,BB       ,CN,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,129,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+1,119,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,26,BB       ,GBR,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+1,49,HB       ,PRT,Groups,Direct,E               ,E               ,0,No Deposit     ,Transient-Party,0
+0,9,BB       ,USA,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,6,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+0,59,HB       ,ESP,Online TA,TA/TO,A               ,D               ,2,No Deposit     ,Transient,0
+0,0,HB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+1,41,BB       ,CHE,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,160,BB       ,POL,Direct,Direct,H               ,H               ,0,No Deposit     ,Transient,0
+1,77,BB       ,ESP,Online TA,TA/TO,D               ,D               ,2,No Deposit     ,Transient,0
+0,27,BB       ,FRA,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,53,HB       ,DEU,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,10,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,26,HB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,273,BB       ,AUS,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,PRT,Online TA,Direct,A               ,A               ,0,No Deposit     ,Transient,1
+0,83,HB       ,GBR,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,128,HB       ,FRA,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+1,40,BB       ,PRT,Groups,Corporate,A               ,A               ,0,Non Refund     ,Transient,0
+0,185,BB       ,ITA,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,93,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,33,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,18,HB       ,ESP,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,156,BB       ,IRL,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,1,BB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,1
+0,25,BB       ,FRA,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+1,3,BB       ,PRT,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,208,BB       ,CN,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,167,HB       ,PRT,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,27,HB       ,ITA,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient-Party,0
+0,367,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,27,HB       ,GBR,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+1,13,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,171,HB       ,GBR,Online TA,TA/TO,D               ,D               ,1,No Deposit     ,Transient,0
+0,77,HB       ,DEU,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,210,HB       ,PRT,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+0,53,HB       ,AUT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,12,BB       ,BRA,Online TA,TA/TO,A               ,E               ,0,No Deposit     ,Transient,0
+1,189,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,179,BB       ,PRT,Direct,Direct,D               ,D               ,1,No Deposit     ,Transient,1
+1,116,BB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,0,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,23,BB       ,PRT,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,0
+1,120,HB       ,PRT,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,62,BB       ,PRT,Direct,Direct,D               ,I               ,0,No Deposit     ,Transient,0
+0,241,BB       ,GBR,Groups,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,3,BB       ,PRT,Corporate,Corporate,A               ,I               ,0,No Deposit     ,Transient,0
+1,153,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,14,BB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,38,BB       ,GBR,Online TA,TA/TO,G               ,G               ,1,No Deposit     ,Transient,0
+0,81,BB       ,IDN,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,56,BB       ,AUS,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,3,HB       ,ESP,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,1
+0,222,BB       ,GBR,Online TA,TA/TO,A               ,I               ,1,No Deposit     ,Transient,0
+1,81,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,13,HB       ,IRL,Groups,TA/TO,A               ,D               ,1,No Deposit     ,Transient-Party,0
+0,232,HB       ,EST,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,39,BB       ,POL,Direct,Direct,G               ,G               ,2,No Deposit     ,Transient,0
+0,225,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+0,114,BB       ,GBR,Offline TA/TO,TA/TO,D               ,I               ,0,No Deposit     ,Contract,0
+0,2,BB       ,PRT,Offline TA/TO,TA/TO,A               ,C               ,0,No Deposit     ,Transient,1
+0,1,BB       ,GBR,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,259,BB       ,GBR,Groups,Corporate,A               ,A               ,0,Non Refund     ,Transient,0
+0,9,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,9,BB       ,GBR,Direct,TA/TO,A               ,H               ,0,No Deposit     ,Transient,0
+0,1,BB       ,USA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,105,Undefined,ESP,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,108,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Corporate,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+1,97,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,7,BB       ,PRT,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Offline TA/TO,TA/TO,A               ,I               ,0,No Deposit     ,Group,0
+0,3,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,1
+0,43,BB       ,GBR,Online TA,TA/TO,A               ,D               ,0,No Deposit     ,Transient-Party,0
+1,9,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,3,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,292,HB       ,FRA,Offline TA/TO,TA/TO,A               ,D               ,1,No Deposit     ,Transient-Party,0
+0,2,BB       ,PRT,Online TA,TA/TO,C               ,C               ,0,No Deposit     ,Transient,0
+0,136,BB       ,CHE,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient-Party,0
+1,106,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,230,BB       ,GBR,Offline TA/TO,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,170,BB       ,ROU,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,6,BB       ,PRT,Corporate,Corporate,A               ,D               ,0,No Deposit     ,Transient,0
+0,63,HB       ,GBR,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Contract,0
+0,0,BB       ,USA,Online TA,TA/TO,F               ,G               ,1,No Deposit     ,Transient,0
+0,35,BB       ,BRA,Online TA,TA/TO,C               ,C               ,0,No Deposit     ,Transient,1
+0,0,BB       ,ESP,Offline TA/TO,TA/TO,A               ,D               ,1,No Deposit     ,Transient,0
+0,54,BB       ,GBR,Offline TA/TO,TA/TO,D               ,D               ,0,No Deposit     ,Contract,0
+0,1,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,1
+1,9,BB       ,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,58,HB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+1,24,HB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,108,BB       ,IRL,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,67,BB       ,IRL,Direct,Direct,C               ,C               ,1,No Deposit     ,Transient,0
+0,0,BB       ,ITA,Direct,Direct,H               ,H               ,0,No Deposit     ,Transient,1
+0,0,BB       ,PRT,Direct,Direct,E               ,E               ,0,No Deposit     ,Transient,0
+0,28,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,5,BB       ,ESP,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,2,BB       ,DEU,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,1
+1,136,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+0,1,HB       ,NULL,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+1,332,HB       ,PRT,Groups,TA/TO,D               ,D               ,0,No Deposit     ,Transient-Party,0
+0,17,BB       ,PRT,Groups,Corporate,A               ,A               ,0,No Deposit     ,Transient-Party,1
+1,106,FB       ,PRT,Groups,Direct,A               ,A               ,0,Non Refund     ,Transient,0
+0,13,BB       ,PRT,Direct,Corporate,A               ,A               ,0,No Deposit     ,Transient,0
+0,96,BB       ,FRA,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,1
+1,40,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,264,BB       ,PRT,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,88,BB       ,ESP,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,34,BB       ,PRT,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
+1,152,BB       ,PRT,Groups,TA/TO,D               ,E               ,1,No Deposit     ,Transient-Party,0
+0,185,BB       ,IRL,Online TA,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,159,BB       ,PRT,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,1
+1,462,HB       ,PRT,Groups,TA/TO,A               ,A               ,0,Non Refund     ,Transient,0
+1,149,FB       ,PRT,Offline TA/TO,TA/TO,D               ,D               ,2,No Deposit     ,Transient,0
+0,40,Undefined,PRT,Groups,Direct,A               ,A               ,1,No Deposit     ,Transient,0
+1,35,BB       ,MAR,Online TA,TA/TO,G               ,G               ,0,No Deposit     ,Transient,0
+0,29,HB       ,IRL,Online TA,TA/TO,A               ,A               ,1,No Deposit     ,Transient,0
+0,104,HB       ,FRA,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+0,79,HB       ,PRT,Direct,Direct,G               ,G               ,1,No Deposit     ,Transient,0
+0,0,BB       ,GBR,Direct,Direct,A               ,E               ,1,No Deposit     ,Transient-Party,0
+1,12,Undefined,PRT,Groups,Direct,A               ,A               ,1,No Deposit     ,Transient-Party,0
+1,54,HB       ,PRT,Online TA,TA/TO,D               ,D               ,0,No Deposit     ,Transient,0
+0,0,BB       ,PRT,Direct,Direct,D               ,D               ,0,No Deposit     ,Transient,0
+0,199,BB       ,PRT,Direct,Direct,E               ,E               ,2,No Deposit     ,Transient-Party,0
+1,14,Undefined,PRT,Groups,TA/TO,A               ,A               ,0,No Deposit     ,Transient-Party,0
+0,89,BB       ,CN,Online TA,TA/TO,F               ,F               ,0,No Deposit     ,Transient,0
+0,8,BB       ,PRT,Offline TA/TO,TA/TO,A               ,A               ,0,No Deposit     ,Transient,0
+1,55,BB       ,PRT,Direct,Direct,A               ,A               ,0,No Deposit     ,Transient,0
+0,9,BB       ,POL,Online TA,TA/TO,E               ,E               ,0,No Deposit     ,Transient,0
