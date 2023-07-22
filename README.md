@@ -34,7 +34,7 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 - Trained regression models on the H1 dataset and tested against the H2 dataset.
 
-- [Regression-based neural network with elu activation function](https://github.com/MGCodesandStats/hotel-modelling/blob/master/regression-nn-elu.ipynb) showed the best performance, with a mean absolute error of **28** compared to the mean ADR of **105** across the test set.
+- [Regression-based neural network with elu activation function](https://github.com/MGCodesandStats/hotel-modelling/blob/master/regression-nn-elu.ipynb) showed the best performance, with a mean absolute error of **29** compared to the mean ADR of **105** across the test set.
 
 ### Stage 4: Time Series
 
