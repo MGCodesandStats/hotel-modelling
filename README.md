@@ -19,13 +19,13 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 Average daily rate represents the average rate per day paid by a staying customer at a hotel. This is an important metric for a hotel, as it represents the overall profitability of each customer. In this example, auto_arima is used in Python to forecast the average daily rate over time for a hotel chain.
 
-[![hotel-adr-7](hotel-adr-7.png)](forecasting-adr-arima)
+[![hotel-adr-7](hotel-adr-7.png)](https://www.michael-grogan.com/articles/forecasting-adr-arima)
 
 ### [Handling Imbalanced Classification Data: Predicting Hotel Cancellations Using Support Vector Machines](https://www.michael-grogan.com/articles/hotel-cancellations-svm)
 
 When attempting to build a classification algorithm, one must often contend with the issue of an unbalanced dataset. An unbalanced dataset is one where there is an unequal sample size between classes, which induces significant bias into the predictions of the classifier in question. This example illustrates the use of a Support Vector Machine to classify hotel booking customers in terms of cancellation risk.
 
-[![svm-2](svm-2.png)](hotel-cancellations-svm)
+[![svm-2](svm-2.png)](https://www.michael-grogan.com/articles/hotel-cancellations-svm)
 
 ## Project Stages
 
