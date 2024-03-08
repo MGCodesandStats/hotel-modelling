@@ -26,6 +26,12 @@ When attempting to build a classification algorithm, one must often contend with
 
 [![svm-2](svm-2.png)](https://www.michael-grogan.com/articles/hotel-cancellations-svm)
 
+### [Regression-based neural networks: Predicting Average Daily Rates for Hotels](https://www.michael-grogan.com/articles/regression-based-neural-network)
+
+When it comes to hotel bookings, average daily rate (ADR) is a particularly important metric. This reflects the average rate per day that a particular customer pays throughout their stay. In this particular example, a neural network is built in Keras to solve a regression problem, i.e. one where our dependent variable (y) is in interval format and we are trying to predict the quantity of y with as much accuracy as possible.
+
+[![regression-2](regression-2.png)](https://www.michael-grogan.com/articles/regression-based-neural-network)
+
 ## Project Stages
 
 ### Stage 1: Data Manipulation and Feature Selection
