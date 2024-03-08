@@ -13,7 +13,7 @@ The purpose of this project is to predict hotel cancellations and ADR (average d
 
 The original datasets and research by Antonio et al. can be found here: [Hotel Booking Demand Datasets (2019)](https://www.sciencedirect.com/science/article/pii/S2352340918315191). All other relevant references have been cited in the below articles.
 
-## Findings
+## Articles
 
 ### [Forecasting Hotel Revenue: Predicting ADR Fluctuations with ARIMA](https://www.michael-grogan.com/articles/forecasting-adr-arima)
 
