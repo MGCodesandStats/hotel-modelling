@@ -1,11 +1,3 @@
-[Home](https://mgcodesandstats.github.io/) |
-[Portfolio](https://mgcodesandstats.github.io/articles) |
-[GitHub](https://github.com/mgcodesandstats) |
-[LinkedIn](https://www.linkedin.com/in/michaeljgrogan/) |
-[Stack Overflow](https://stats.stackexchange.com/users/137066/michael-grogan) |
-[Terms](https://mgcodesandstats.github.io/terms/) |
-[E-mail](mailto:contact@michael-grogan.com)
-
 # Predicting Hotel Cancellations and ADR with Machine Learning
 
 The purpose of this project is to predict hotel cancellations and ADR (average daily rate) values for two separate Portuguese hotels (H1 and H2). Included in the GitHub repository are the datasets and notebooks for all models run.
