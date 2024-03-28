@@ -6,23 +6,23 @@ The original datasets and research by Antonio et al. can be found here: [Hotel B
 
 ## Articles
 
-### [Forecasting Hotel Revenue: Predicting ADR Fluctuations with ARIMA](https://www.michael-grogan.com/articles/forecasting-adr-arima)
+### [Forecasting Hotel Revenue: Predicting ADR Fluctuations with ARIMA](https://www.michael-grogan.com/articles/forecasting-adr-arima.html)
 
 Average daily rate represents the average rate per day paid by a staying customer at a hotel. This is an important metric for a hotel, as it represents the overall profitability of each customer. In this example, auto_arima is used in Python to forecast the average daily rate over time for a hotel chain.
 
-[![hotel-adr-7](hotel-adr-7.png)](https://www.michael-grogan.com/articles/forecasting-adr-arima)
+[![hotel-adr-7](hotel-adr-7.png)](https://www.michael-grogan.com/articles/forecasting-adr-arima.html)
 
-### [Handling Imbalanced Classification Data: Predicting Hotel Cancellations Using Support Vector Machines](https://www.michael-grogan.com/articles/hotel-cancellations-svm)
+### [Handling Imbalanced Classification Data: Predicting Hotel Cancellations Using Support Vector Machines](https://www.michael-grogan.com/articles/hotel-cancellations-svm.html)
 
 When attempting to build a classification algorithm, one must often contend with the issue of an unbalanced dataset. An unbalanced dataset is one where there is an unequal sample size between classes, which induces significant bias into the predictions of the classifier in question. This example illustrates the use of a Support Vector Machine to classify hotel booking customers in terms of cancellation risk.
 
-[![svm-2](svm-2.png)](https://www.michael-grogan.com/articles/hotel-cancellations-svm)
+[![svm-2](svm-2.png)](https://www.michael-grogan.com/articles/hotel-cancellations-svm.html)
 
-### [Regression-based neural networks: Predicting Average Daily Rates for Hotels](https://www.michael-grogan.com/articles/regression-based-neural-network)
+### [Regression-based neural networks: Predicting Average Daily Rates for Hotels](https://www.michael-grogan.com/articles/regression-based-neural-network.html)
 
 When it comes to hotel bookings, average daily rate (ADR) is a particularly important metric. This reflects the average rate per day that a particular customer pays throughout their stay. In this particular example, a neural network is built in Keras to solve a regression problem, i.e. one where our dependent variable (y) is in interval format and we are trying to predict the quantity of y with as much accuracy as possible.
 
-[![regression-2](regression-2.png)](https://www.michael-grogan.com/articles/regression-based-neural-network)
+[![regression-2](regression-2.png)](https://www.michael-grogan.com/articles/regression-based-neural-network.html)
 
 ## Project Stages
 
